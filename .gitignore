@@ -1,2 +1,5 @@
 /_site
 *.gem
+*.gemspec
+.sass-cache
+Gemfile.lock
