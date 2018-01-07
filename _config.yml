@@ -24,6 +24,8 @@ twitter_url: https://twitter.com/chrisbobbe
 email: your@email.com
 
 # build settings
+theme: jekyll-theme-prologue
+
 include:
   - _sections
 
