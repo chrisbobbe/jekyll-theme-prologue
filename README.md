@@ -11,7 +11,7 @@ There are two ways to get started:
 1. Fork this repository. If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`.
 2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
 
-Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` exists in this repository and ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, and move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
+Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
 
 Create a `_sections` folder in your project's root directory, or use the one in the GitHub repository, and start adding content there.
 
