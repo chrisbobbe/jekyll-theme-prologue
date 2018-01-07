@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-prologue (0.1.0)
+    jekyll-theme-prologue (0.1.3)
 
 GEM
   remote: https://rubygems.org/
@@ -58,4 +58,4 @@ DEPENDENCIES
   jekyll-theme-prologue!
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.1

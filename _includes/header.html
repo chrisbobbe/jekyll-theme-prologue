@@ -18,18 +18,22 @@
 
       1. Hash link (scrolls to a different section within the page)
 
-      <li><a href="{{ '#foobar' | relative_url }}" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+      <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
       2. Standard link (sends the user to another page/site)
 
-      <li><a href="{{ http://foobar.tld }}" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+      <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
       -->
       <ul>
-        {% assign sections = site.sections | where_exp: 'section','section.order >= 0' | sort: 'order' %}
-        {% unless sections == null %}
+        {% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
+        {% unless site.sections == null %}
+          {% assign sections = sections | sort: 'order' %}
           {% for section in sections %}
-            <li><a href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}-link" class="skel-layers-ignoreHref"><span class="icon {{ section.icon }}">{{ section.title }}</span></a></li>
+            {% assign slug = section.title | slugify | default: 'untitled' %}
+            {% assign title = section.title | default: 'Untitled' %}
+            {% assign icon = section.icon | default: 'fa-question' %}
+            <li><a href="#{{ slug }}" id="{{ slug }}-link" class="skel-layers-ignoreHref"><span class="icon {{ icon }}">{{ title }}</span></a></li>
           {% endfor %}
         {% endunless %}
       </ul>
