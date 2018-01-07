@@ -24,7 +24,7 @@ To set the banner image, replace `images/banner.jpg` with another image with the
 
 Since Jekyll does not support multiple layout-formatted content sections per page, this theme doesn't have a `section.html` layout in the `_layouts` folder. Instead, look for `_layouts/home.html` and `_includes/section.html`.
 
-There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** from your project's root directory please!!) after building. `_site/index.html` is the only html file you need in your built site.
+There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** from your project's root directory please!!) after building. `_site/index.html` is the only html file you need in your built site, as everything is put together there.
 
 # Added Features
 
