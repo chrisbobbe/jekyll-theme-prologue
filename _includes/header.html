@@ -1,0 +1,74 @@
+<!-- Header -->
+<div id="header">
+  
+  <div class="top">
+    
+    <!-- Logo -->
+    <div id="logo">
+      <span class="image avatar48"><img src="{{ 'images/avatar.jpg' | relative_url }}" alt="" /></span>
+      <h1 id="title">{{ site.title}}</h1>
+      <p>{{ site.subtitle }}</p>
+    </div>
+    
+    <!-- Nav -->
+    <nav id="nav">
+      <!--
+      
+      Prologue's nav expects links in one of two formats:
+      
+      1. Hash link (scrolls to a different section within the page)
+      
+      <li><a href="{{ '#foobar' | relative_url }}" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+      
+      2. Standard link (sends the user to another page/site)
+      
+      <li><a href="{{ http://foobar.tld }}" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+        
+      -->
+      <ul>
+        {% assign sections = site.sections | where_exp: 'section','section.order >= 0' | sort: 'order' %}
+        {% unless sections == null %}
+          {% for section in sections %}
+            <li><a href="#{{ section.title | slugify }}" id="{{ section.title | slugify }}-link" class="skel-layers-ignoreHref"><span class="icon {{ section.icon }}">{{ section.title }}</span></a></li>
+          {% endfor %}
+        {% endunless %}
+      </ul>
+    </nav>
+    
+  </div>
+
+  <div class="bottom">
+    
+    <!-- Social Icons -->
+    <ul class="icons">
+      {% if site.twitter_url %}
+      <li><a href="{{ site.twitter_url }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      {% endif %}
+      {% if site.facebook_url %}
+      <li><a href="{{ site.facebook_url }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      {% endif %}
+      {% if site.googleplus_url %}
+      <li><a href="{{ site.googleplus_url }}" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
+      {% endif %}
+      {% if site.instagram_url %}
+      <li><a href="{{ site.instagram_url }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+      {% endif %}
+      {% if site.linkedin_url %}
+      <li><a href="{{ site.linkedin_url }}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      {% endif %}
+      {% if site.pinterest_url %}
+      <li><a href="{{ site.pinterest_url }}" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+      {% endif %}
+      {% if site.slack_url %}
+      <li><a href="{{ site.slack_url }}" class="icon fa-slack"><span class="label">Slack</span></a></li>
+      {% endif %}
+      {% if site.dribbble_url %}
+      <li><a href="{{ site.dribbble_url }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+      {% endif %}
+      {% if site.email %}
+      <li><a href="mailto:{{ site.email }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
+      {% endif %}
+    </ul>
+    
+  </div>
+</div>

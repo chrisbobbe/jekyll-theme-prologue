@@ -1,0 +1,58 @@
+	<!DOCTYPE HTML>
+	<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
+	<html>
+
+	{% include head.html %}
+
+	<body>
+		
+		{% include header.html %}
+		
+		<!-- Main -->
+		<div id="main">
+			{% if site.sections != null %}
+				<!-- Sections -->
+				{% assign sections = site.sections | where_exp: 'section','section.order >= 0' | sort: 'order' %}
+				
+				{% for section in sections %}
+					
+					{% assign id = section.title | slugify %}
+					
+					{% if section.order == 1 %}
+						{% assign class = 'shade-one cover dark' %}
+					{% else %}
+						{% capture class %}
+							shade-{% cycle 'two', 'three', 'four', 'three' %}
+						{% endcapture %}
+					{% endif %}
+					
+					{% if section.auto-header == 'none' %}
+						{% assign header = "" %}
+					{% elsif section.auto-header == 'use-title' %}
+						{% capture header %}
+							<header>
+								<h2>{{ section.title }}</h2>
+							</header>
+						{% endcapture %}
+					{% else %}
+						{% assign header = section.auto-header %}
+					{% endif %}
+					
+					{% assign content = section.content %}
+					
+					{% include section.html id=id class=class header=header content=content %}
+				
+				{% endfor %}
+			
+			{% endif %}
+		</div>
+		
+		{% include footer.html %}
+		
+	</body>
+
+	</html>

@@ -1,0 +1,48 @@
+# site settings
+title: Prologue
+subtitle: by HTML5 UP
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+author: Your Incredible-Name
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
+
+# social settings
+facebook_url:
+github_url: https://github.com/chrisbobbe
+googleplus_url:
+instagram_url:
+linkedin_url: https://www.linkedin.com/in/chrisbobbe1995/
+pinterest_url:
+slack_url:
+twitter_url: https://twitter.com/chrisbobbe
+email: your@email.com
+
+# build settings
+include:
+  - _sections
+
+collections:
+  - sections
+
+markdown: kramdown
+
+sass:
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: _sections
+      type: sections
+    values:
+      title: Untitled
+      auto-header: use-title
+      icon: fa-question
+      order: -1
+      permalink: "/"
