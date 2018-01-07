@@ -1,4 +1,4 @@
-# (WIP) Massively - Jekyll Theme
+# (WIP) Prologue - Jekyll Theme
 
 A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/).
 
@@ -11,10 +11,10 @@ Fork this repository and create a branch named `gh-pages`, then start editing th
 For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details.
 
 All new sections should be added in the `_sections` folder in separate html documents. The following variables can be set with frontmatter:
-- `Title` (required)
-- `Icon` (required)
-- `Order` (required; orders the sequence of sections on the page; if first, it will display with banner.jpg.)
-- `Auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
+- `title` (required)
+- `icon` (required; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
+- `order` (required; orders the sequence of sections on the page. The first section displays with banner.jpg.)
+- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
 To set the banner image, replace `images/banner.jpg` with another image with the same filename. Same for `avatar.jpg`.
 
@@ -24,7 +24,7 @@ To set the banner image, replace `images/banner.jpg` with another image with the
 
 Since Jekyll does not support multiple layout-formatted content sections per page, this theme doesn't have a `section.html` layout in the `_layouts` folder. Instead, look for `_layouts/home.html` and `_includes/section.html`.
 
-There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** your project's root directory please!!) after building. All sections already exist in `_site/index.html`.
+There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** from your project's root directory please!!) after building. `_site/index.html` is the only html file you need in your built site.
 
 # Added Features
 
@@ -33,7 +33,7 @@ There shouldn't be a need to set `permalink` in frontmatter because all content 
 
 # Credits
 
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which inspired me.
+Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me.
 
 Original README from HTML5 UP:
 
