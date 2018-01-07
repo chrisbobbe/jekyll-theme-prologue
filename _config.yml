@@ -1,12 +1,29 @@
-theme: jekyll-theme-prologue
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# site settings
-title: Prologue
-subtitle: by HTML5 UP
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/" # the subpath of your site, e.g. /blog
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+subtitle: Your awesome subtitle
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
+
 author: Your Incredible-Name
+email: your-email@example.com
 street_address: 1234 Somewhere Road
 city: Nashville
 state: TN
@@ -16,31 +33,34 @@ phone: (716) 555-5555
 
 # social settings
 facebook_url:
-github_url: https://github.com/chrisbobbe
+github_url:
 googleplus_url:
 instagram_url:
-linkedin_url: https://www.linkedin.com/in/chrisbobbe1995/
+linkedin_url:
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/chrisbobbe
-email: your@email.com
+twitter_url:
 
-# theme-specific settings
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-prologue
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+# The following settings are NECESSARY for the Prologue theme:
 
 include:
   - _sections
 
 collections:
   - sections
-
-defaults:
-  -
-    scope:
-      path: _sections
-      type: sections
-    values:
-      title: Untitled
-      auto-header: use-title
-      icon: fa-question
-      order: -1
-      permalink: "/"
