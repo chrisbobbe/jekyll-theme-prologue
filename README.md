@@ -1,5 +1,7 @@
 # (WIP) Prologue - Jekyll Theme
 
+[![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
+
 A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/).
 
 **Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
