@@ -1,3 +1,5 @@
+theme: jekyll-theme-prologue
+
 # site settings
 title: Prologue
 subtitle: by HTML5 UP
@@ -23,19 +25,13 @@ slack_url:
 twitter_url: https://twitter.com/chrisbobbe
 email: your@email.com
 
-# build settings
-theme: jekyll-theme-prologue
+# theme-specific settings
 
 include:
   - _sections
 
 collections:
   - sections
-
-markdown: kramdown
-
-sass:
-  style: compressed
 
 defaults:
   -

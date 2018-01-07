@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-prologue (0.1)
+    jekyll-theme-prologue (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -22,6 +22,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
+    jekyll-data (1.0.0)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -52,6 +54,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.12)
   jekyll (~> 3.3)
+  jekyll-data
   jekyll-theme-prologue!
 
 BUNDLED WITH

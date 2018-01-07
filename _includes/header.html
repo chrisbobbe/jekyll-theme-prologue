@@ -1,29 +1,29 @@
 <!-- Header -->
 <div id="header">
-  
+
   <div class="top">
-    
+
     <!-- Logo -->
     <div id="logo">
-      <span class="image avatar48"><img src="{{ 'images/avatar.jpg' | relative_url }}" alt="" /></span>
+      <span class="image avatar48"><img src="{{ 'assets/images/avatar.jpg' | relative_url }}" alt="" /></span>
       <h1 id="title">{{ site.title}}</h1>
       <p>{{ site.subtitle }}</p>
     </div>
-    
+
     <!-- Nav -->
     <nav id="nav">
       <!--
-      
+
       Prologue's nav expects links in one of two formats:
-      
+
       1. Hash link (scrolls to a different section within the page)
-      
+
       <li><a href="{{ '#foobar' | relative_url }}" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-      
+
       2. Standard link (sends the user to another page/site)
-      
+
       <li><a href="{{ http://foobar.tld }}" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-        
+
       -->
       <ul>
         {% assign sections = site.sections | where_exp: 'section','section.order >= 0' | sort: 'order' %}
@@ -34,11 +34,11 @@
         {% endunless %}
       </ul>
     </nav>
-    
+
   </div>
 
   <div class="bottom">
-    
+
     <!-- Social Icons -->
     <ul class="icons">
       {% if site.twitter_url %}
@@ -69,6 +69,6 @@
       <li><a href="mailto:{{ site.email }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
       {% endif %}
     </ul>
-    
+
   </div>
 </div>

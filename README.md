@@ -10,7 +10,7 @@ Fork this repository and create a branch named `gh-pages`, then start editing th
 
 For those unfamiliar with how Jekyll works, check out [jekyllrb.com](https://jekyllrb.com/) for all the details.
 
-All new sections should be added in the `_sections` folder in separate html documents. The following variables can be set with frontmatter:
+All new sections should be added as html documents in the `_sections` folder. The following variables can be set with frontmatter:
 - `title` (required)
 - `icon` (required; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `order` (required; orders the sequence of sections on the page. The first section displays with banner.jpg.)
@@ -24,7 +24,7 @@ To set the banner image, replace `images/banner.jpg` with another image with the
 
 Since Jekyll does not support multiple layout-formatted content sections per page, this theme doesn't have a `section.html` layout in the `_layouts` folder. Instead, look for `_layouts/home.html` and `_includes/section.html`.
 
-There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** from your project's root directory please!!) after building. `_site/index.html` is the only html file you need in your built site, as everything is put together there.
+There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page. In fact, to prevent visitors from requesting individual un-styled html files from `_sections` (i.e., by typing `/_sections/about-me.html` into the address bar), you can delete this directory from `_site` (**NOT** from your project's root directory please!!) after building. `_site/index.html` is the only html file you need in your built site, since everything is combined there.
 
 # Added Features
 
