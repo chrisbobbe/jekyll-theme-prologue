@@ -1,3 +1,15 @@
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory and rename it _config.yml. Please note that
+# none of this code is necessary for runtime EXCEPT the line
+# 
+# collections: [sections]
+#
+# which tells Jekyll to find your content in /_sections. Note which one
+# starts with an underscore and which one doesn't. -- Chris Bobbe
+#
+# ---------------------------------------------------------------
+# 
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
