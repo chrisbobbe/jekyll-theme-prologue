@@ -31,7 +31,7 @@ zip_code: 55555
 country: United States of America
 phone: (716) 555-5555
 
-# social settings
+# Social settings
 facebook_url:
 github_url:
 googleplus_url:
@@ -45,22 +45,5 @@ twitter_url:
 markdown: kramdown
 theme: jekyll-theme-prologue
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# The following settings are NECESSARY for the Prologue theme:
-
-include:
-  - _sections
-
-collections:
-  - sections
+# The following setting is NECESSARY for the Prologue theme:
+collections: [sections]
