@@ -8,7 +8,8 @@
 #
 # which activate the theme and tell Jekyll to find your content
 # in /_sections. Note where "sections" starts with an underscore
-# and where it doesn't. -- Chris Bobbe
+# and where it doesn't. The social settings will make links to 
+# Twitter, etc. -- Chris Bobbe
 #
 # ---------------------------------------------------------------
 # 

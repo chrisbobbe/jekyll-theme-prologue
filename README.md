@@ -2,7 +2,7 @@
 
 A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/).
 
-![Prologue Theme](images/screenshot.png "Prologue Theme Screenshot")
+![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
 # How to Use
 
