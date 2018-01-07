@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["csbobbe@gmail.com"]
 
   spec.summary       = %q{A Jekyll version of the "Prologue" theme by HTML5 UP.}
-  spec.description   = "A Jekyll version of the single-page 'Prologue' theme by HTML5 UP."
+  spec.description   = "A Jekyll version of the single-page 'Prologue' theme by HTML5 UP. Demo: https://chrisbobbe.github.io/jekyll-theme-prologue/"
   spec.homepage      = "https://github.com/chrisbobbe/jekyll-theme-prologue"
   spec.license       = "CC-BY-3.0"
 
