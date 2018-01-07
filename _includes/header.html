@@ -32,7 +32,7 @@
           {% for section in sections %}
             {% assign slug = section.title | slugify | default: 'untitled' %}
             {% assign title = section.title | default: 'Untitled' %}
-            {% assign icon = section.icon | default: 'fa-question' %}
+            {% assign icon = section.icon | default: 'fa-file' %}
             <li><a href="#{{ slug }}" id="{{ slug }}-link" class="skel-layers-ignoreHref"><span class="icon {{ icon }}">{{ title }}</span></a></li>
           {% endfor %}
         {% endunless %}
