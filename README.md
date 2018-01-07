@@ -1,6 +1,6 @@
 # (WIP) Prologue - Jekyll Theme
 
-A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/).
+A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/). Demo: https://chrisbobbe.github.io/jekyll-theme-prologue/
 
 ![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
