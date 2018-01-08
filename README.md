@@ -12,10 +12,12 @@ A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](h
 
 There are two ways to get started:
 
-1. Fork the GitHub [repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. (NOTE: The _config.yml file in this repository has `baseurl` set for my own GitHub Pages site, so you'll probably want to make it blank.)
+1. Fork the GitHub [repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. (NOTE: The _config.yml file in this repository has `baseurl` set for my own GitHub Pages site, so you'll want to change it or make it blank.)
 2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
 
-> Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
+**The following instructions apply to this theme only.**
+
+Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
 
 Create a `_sections` folder in your project's root directory, or use the one provided in the GitHub repository, and start adding content.
 
