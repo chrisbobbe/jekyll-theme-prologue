@@ -1,4 +1,21 @@
- # Welcome to Jekyll!
+# Developer's Note: This is a sample _config.yml file offered with
+# jekyll-theme-prologue for your convenience. To use it, move it to your
+# project's root directory. Please note that the following lines are
+# NECESSARY for Prologue to work correctly:
+# 
+# theme: jekyll-theme-prologue
+# collections: [sections]
+#
+# They activate the theme and tell Jekyll to find your content
+# in /_sections. Note where "sections" starts with an underscore
+# and where it doesn't. The social settings will make links to 
+# Twitter, etc.
+# 
+# Also, be sure to customize baseurl for your site.
+#
+# ---------------------------------------------------------------
+# 
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely edit after that. If you find
@@ -19,7 +36,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-# You'll want to change the baseurl; I've customized it for GitHub Pages:
+# You'll want to customize baseurl for your own site:
 baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 

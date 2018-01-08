@@ -39,22 +39,22 @@
 					{% endif %}
 					
 					{% if section.auto-header == 'none' %}
-						{% assign header = "" %}
+						{% assign heading = "" %}
 					{% elsif section.auto-header == null or section.auto-header == 'use-title' %}
-						{% capture header %}
+						{% capture heading %}
 							<header>
 								<h2>{{ title }}</h2>
 							</header>
 						{% endcapture %}
 					{% else %}
-						{% capture header %}
+						{% capture heading %}
 							<header>
 								<h2>{{ section.auto-header }}</h2>
 							</header>
 						{% endcapture %}
 					{% endif %}
 					
-					{% include section.html id=slug class=class header=header content=section.content %}
+					{% include section.html id=slug class=class heading=heading content=section.content %}
 				
 				{% endfor %}
 			

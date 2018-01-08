@@ -12,30 +12,30 @@ A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](h
 
 There are two ways to get started:
 
-1. Fork the GitHub [repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. (NOTE: The _config.yml file in this repository has `baseurl` set for my own GitHub Pages site, so you'll want to change it or make it blank.)
+1. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. (NOTE: The _config.yml file in this repository has `baseurl` set for my own GitHub Pages site, so you'll want to change it or make it blank.)
 2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
 
 **The following instructions apply to this theme only.**
 
-Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
+Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content. A sample config `_config.yml` is in the GitHub repository for your reference. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then optionally move it to your project's root directory. It will do nothing until you move it there.
 
-Create a `_sections` folder in your project's root directory, or use the one provided in the GitHub repository, and start adding content.
+Create a `_sections` folder in your project's root directory and start adding content. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).
 
 All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with frontmatter:
 - `title` (required)
 - `order` (required; orders the sequence of sections on the page. Section 1 displays with banner.jpg)
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
-- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text in section headings)
+- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
 To set the banner image, overwrite `assets/images/banner.jpg`. Same for `avatar.jpg`.
 
 # Jekyll and the single-page view
 
-**This theme is designed to include all content on a single scrollable page.** That means a few things are different from what you might expect.
+**This theme is designed to include all content on a single scrollable page.** That means a few things are different from what you might expect in Jekyll.
 
-You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. Each section (intro, about me, etc.) is built from an html or Markdown document in the `_sections` folder with corresponding [frontmatter](https://jekyllrb.com/docs/frontmatter/).
+You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. Jekyll does not support multiple layout-formatted content sections per page. Each section (intro, about me, etc.) is built from an html or Markdown document in the `_sections` folder with corresponding [frontmatter](https://jekyllrb.com/docs/frontmatter/).
 
-Since Jekyll does not support multiple layout-formatted content sections per page, this theme doesn't have a `section.html` layout in the `_layouts` folder. If you're looking to customize the templates, go to `_layouts/home.html` and `_includes/section.html`.
+If you're looking to customize the templates, go to `_layouts/home.html` and `_includes/section.html`.
 
 There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page.
 
