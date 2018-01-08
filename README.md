@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
-A Jekyll version of the "Prologue" theme by [HTML5 UP](https://html5up.net/).
+A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](https://html5up.net/). Perfect for a streamlined portfolio.
 
 **Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
 
@@ -17,7 +17,7 @@ There are two ways to get started:
 
 Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
 
-Create a `_sections` folder in your project's root directory, or use the one in the GitHub repository, and start adding content there.
+Create a `_sections` folder in your project's root directory, or use the one provided in the GitHub repository, and start adding content.
 
 All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with frontmatter:
 - `title` (required)
@@ -25,7 +25,7 @@ All new sections should be added as html or Markdown documents in the `_sections
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text in section headings)
 
-To set the banner image, replace `assets/images/banner.jpg` with another image with the same filename. Same for `avatar.jpg`.
+To set the banner image, overwrite `assets/images/banner.jpg`. Same for `avatar.jpg`.
 
 # Jekyll and the single-page view
 
