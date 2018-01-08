@@ -12,7 +12,7 @@ A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](h
 
 There are two ways to get started:
 
-1. Fork this repository. If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`.
+1. Fork the GitHub [repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. (NOTE: The _config.yml file in this repository has `baseurl` set for my own GitHub Pages site, so you'll probably want to make it blank.)
 2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
 
 > Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. An optional sample config called `_sample-config.yml` ships with the gem for your convenience. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then move it to your project directory. It will do nothing until it's renamed `_config.yml` and sits in your project's root directory.
@@ -41,6 +41,7 @@ There shouldn't be a need to set `permalink` in frontmatter because all content 
 
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
 * Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* Custom 404 page called 404.html
 
 # Credits
 

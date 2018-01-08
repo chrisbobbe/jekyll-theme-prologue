@@ -15,13 +15,20 @@
 		<!-- Main -->
 		<div id="main">
 			{% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
+			
+			{% if page.permalink %}
+				<!-- This if statement enables the 404 page -->
+				{% assign sections = sections | push: page %}
+			{% endif %}
+			
 			{% unless sections == null %}
-				<!-- Sections -->
 				{% assign sections = sections | sort: 'order' %}
+				
+				<!-- Sections -->
 				{% for section in sections %}
-					
-					{% assign slug = section.title | slugify | default: 'untitled' %}
+				
 					{% assign title = section.title | default: 'Untitled' %}
+					{% assign slug = section.title | slugify | default: 'untitled' %}
 					
 					{% if section.order == 1 %}
 						{% assign class = 'shade-one cover dark' %}
@@ -40,12 +47,14 @@
 							</header>
 						{% endcapture %}
 					{% else %}
-						{% assign header = section.auto-header %}
+						{% capture header %}
+							<header>
+								<h2>{{ section.auto-header }}</h2>
+							</header>
+						{% endcapture %}
 					{% endif %}
 					
-					{% assign content = section.content %}
-					
-					{% include section.html id=slug class=class header=header content=content %}
+					{% include section.html id=slug class=class header=header content=section.content %}
 				
 				{% endfor %}
 			
