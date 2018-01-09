@@ -14,7 +14,7 @@
 # Also, be sure to customize baseurl for your site.
 #
 # ---------------------------------------------------------------
-# 
+#
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -59,9 +59,9 @@ linkedin_url:
 pinterest_url:
 slack_url:
 twitter_url:
-  
+
 # Search Engine Optimization (SEO) settings:
-google_analytics_tracking_id: 
+google_analytics: 
 
 # Build settings
 markdown: kramdown
