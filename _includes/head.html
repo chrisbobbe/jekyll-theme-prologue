@@ -1,8 +1,35 @@
 <head>
-  <title>{{ site.title }} {{ site.subtitle }}</title>
+  {% if site.google_analytics and jekyll.environment == 'production' %}
+    {% include google_analytics.html %}
+  {% endif %}
+  
+  {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">{% endif %}
+  
+  {% capture page_title %}
+    {% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %} {{ site.title | strip_html }}: {{ site.subtitle | strip_html }}
+  {% endcapture %}
+  {% capture page_description | normalize_whitespace %}
+    {% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}
+  {% endcapture %}
+  {% assign page_title = page_title | normalize_whitespace %}
+  {% assign page_description = page_description | normalize_whitespace %}
+  
+  <title>{{ page_title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | relative_url }}"></script><![endif]-->
+  <meta name="description" content="{{ page_description }}">
+  <meta name="author" content="{{ site.author }}">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="{{ '/images/avatar.jpg' | relative_url }}">
+  <meta property="og:url" content="{{ page.url | relative_url }}">
+  <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+  <meta property="og:description" content="{{ page_description }}">
+  
+  <!-- Styles -->
+  <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | relative_url }}" defer></script><![endif]-->
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | relative_url }}" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="{{ 'assets/css/ie9.css' | relative_url }}" /><![endif]-->

@@ -44,6 +44,7 @@ There shouldn't be a need to set `permalink` in frontmatter because all content 
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
 * Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
 * Custom 404 page called 404.html
+* Site- and page-specific meta tags for SEO
 
 # Credits
 
