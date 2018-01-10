@@ -1,4 +1,5 @@
-# (Work in Progress, Expect Changes) Prologue - Jekyll Theme
+# Prologue - Jekyll Theme
+## (Work in Progress, Expect Changes)
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
