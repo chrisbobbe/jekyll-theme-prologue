@@ -6,13 +6,12 @@
   <meta name="robots" content="{{ page.meta_robots | default: 'index, follow' }}">
   
   {% capture page_title %}
-    {% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %} {{ site.title | strip_html }}: {{ site.subtitle | strip_html }}
+    {% if page.title %}{{ page.title | append: ' | ' }}{% endif %}
+    {{ site.title | 'Untitled website' }}
+    {% if site.subtitle %}{{ site.subtitle | prepend: ' - ' }}{% endif %}
   {% endcapture %}
-  {% capture page_description %}
-    {% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}
-  {% endcapture %}
-  {% assign page_title = page_title | normalize_whitespace %}
-  {% assign page_description = page_description | normalize_whitespace %}
+  {% assign page_title = page_title | strip_html | escape | normalize_whitespace %}
+  {% assign page_description = page.meta_description | default: page.summary | default: site.description | strip_html | escape %}
   
   <title>{{ page_title }}</title>
   <meta charset="utf-8" />
