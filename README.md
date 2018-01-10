@@ -20,7 +20,9 @@ Make sure that `url` and `base_url` are set correctly in `_config.yml`. For loca
 
 To set the banner image, overwrite `assets/images/banner.jpg`. If using the gem, you can add this path to your project directory by making new folders, and Jekyll will automatically look there before falling back on the default theme files. Same for `assets/images/avatar.jpg`.
 
-**The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and this is a good workaround.**
+**The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and the theme provides a workaround.**
+
+You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme.
 
 Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
 
@@ -33,8 +35,6 @@ All new sections should be added as html or Markdown documents in the `_sections
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
 There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page.
-
-You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme.
 
 # Added Features
 
