@@ -10,28 +10,28 @@
 	{% include head.html %}
 
 	<body>
-		
+
 		{% include header.html %}
-		
+
 		<!-- Main -->
 		<div id="main">
 			{% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
-			
+
 			{% if page.permalink %}
 				<!-- This enables the 404 page, the only page that should
 			 		have a permalink declared in its frontmatter. -->
 				{% assign sections = sections | push: page %}
 			{% endif %}
-			
+
 			{% unless sections == null %}
 				{% assign sections = sections | sort: 'order' %}
-				
+
 				<!-- Sections -->
 				{% for section in sections %}
-				
+
 					{% assign title = section.title | default: 'Untitled' %}
 					{% assign slug = section.title | slugify | default: 'untitled' %}
-					
+
 					{% if section.order == 1 %}
 						{% assign class = 'shade-one cover dark' %}
 					{% else %}
@@ -39,7 +39,7 @@
 							shade-{% cycle 'two', 'three', 'four', 'three' %}
 						{% endcapture %}
 					{% endif %}
-					
+
 					{% if section.auto-header == 'none' %}
 						{% assign heading = "" %}
 					{% elsif section.auto-header == null or section.auto-header == 'use-title' %}
@@ -55,16 +55,16 @@
 							</header>
 						{% endcapture %}
 					{% endif %}
-					
+
 					{% include section.html id=slug class=class heading=heading content=section.content %}
-				
+
 				{% endfor %}
-			
+
 			{% endunless %}
 		</div>
-		
+
 		{% include footer.html %}
-		
+
 	</body>
 
 	</html>

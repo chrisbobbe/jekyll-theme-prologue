@@ -186,7 +186,8 @@
 
 		> :last-child,
 		> .container,
-		&:last-child {
+		&:last-child,
+		> .container > :last-child {
 			margin-bottom: 0;
 		}
 
