@@ -13,8 +13,8 @@ A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](h
 
 There are two ways to get started:
 
-1. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in `config.yml	`([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
-2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
+1. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
+2. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in `config.yml	`([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
 
 Make sure that `url` and `base_url` are set correctly in `_config.yml`. For local testing, make them both blank.
 
