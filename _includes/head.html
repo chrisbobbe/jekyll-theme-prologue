@@ -3,9 +3,11 @@
     {% include google_analytics.html %}
   {% endif %}
   
+  <!-- Robots -->
   <meta name="robots" content="{{ page.robots | default: 'index, follow' }}" />
   {% unless page.canonical == false %}<link rel="canonical" href="{{ page.url | absolute_url }}" />{% endunless %}
   
+  <!-- Title, description, author -->
   {% capture page_title %}
     {% if page.title %}{{ page.title | append: ' | ' }}{% endif %}
     {{ site.title }}
@@ -13,10 +15,8 @@
   {% endcapture %}
   {% assign page_title = page_title | escape | normalize_whitespace %}
   {% assign page_description = page.description | default: site.description | default: 'description missing' | escape %}
-  
+
   <title>{{ page_title }}</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="{{ page_description }}" />
   <meta name="author" content="{{ site.author }}" />
   
@@ -29,6 +29,8 @@
   <meta property="og:description" content="{{ page_description }}" />
   
   <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | relative_url }}" defer></script><![endif]-->
   <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}" />
   <!--[if lte IE 8]><link rel="stylesheet" href="{{ 'assets/css/ie8.css' | relative_url }}" /><![endif]-->
