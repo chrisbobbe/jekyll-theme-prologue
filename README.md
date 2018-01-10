@@ -35,7 +35,7 @@ All new sections should be added as html or Markdown documents in the `_sections
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
-There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page.
+There shouldn't be a need to set `permalink` because all content appears on the same page.
 
 # Added Features
 
