@@ -11,7 +11,7 @@
 # and where it doesn't. The social settings will make links to 
 # Twitter, etc.
 # 
-# Also, be sure to customize baseurl for your site.
+# Also, be sure to customize url and baseurl for your site.
 #
 # ---------------------------------------------------------------
 #
@@ -60,7 +60,7 @@ pinterest_url:
 slack_url:
 twitter_url:
 
-# Search Engine Optimization (SEO) settings:
+# Google Analytics Tracking ID goes here:
 google_analytics: 
 
 # Build settings

@@ -3,12 +3,12 @@
     {% include google_analytics.html %}
   {% endif %}
   
-  {% if page.meta_robots %}<meta name="robots" content="{{ page.meta_robots }}">{% endif %}
+  <meta name="robots" content="{{ page.meta_robots | default: 'index, follow' }}">
   
   {% capture page_title %}
     {% if page.title %}{{ page.title | strip_html }} &#8211; {% endif %} {{ site.title | strip_html }}: {{ site.subtitle | strip_html }}
   {% endcapture %}
-  {% capture page_description | normalize_whitespace %}
+  {% capture page_description %}
     {% if page.meta_description %}{{ page.meta_description | xml_escape }}{% elsif page.summary %}{{ page.summary | xml_escape }}{% else %}{{ site.description | xml_escape }}{% endif %}
   {% endcapture %}
   {% assign page_title = page_title | normalize_whitespace %}
@@ -22,7 +22,7 @@
   
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="{{ 'assets/images/avatar.jpg' | relative_url }}">
   <meta property="og:url" content="{{ page.url | relative_url }}">
   <meta property="og:site_name" content="{{ site.title | xml_escape }}">
