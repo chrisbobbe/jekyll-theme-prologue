@@ -3,29 +3,30 @@
     {% include google_analytics.html %}
   {% endif %}
   
-  <meta name="robots" content="{{ page.meta_robots | default: 'index, follow' }}">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}" />
+  {% unless page.canonical == false %}<link rel="canonical" href="{{ page.url | absolute_url }}" />{% endunless %}
   
   {% capture page_title %}
     {% if page.title %}{{ page.title | append: ' | ' }}{% endif %}
-    {{ site.title | 'Untitled website' }}
+    {{ site.title }}
     {% if site.subtitle %}{{ site.subtitle | prepend: ' - ' }}{% endif %}
   {% endcapture %}
-  {% assign page_title = page_title | strip_html | escape | normalize_whitespace %}
-  {% assign page_description = page.meta_description | default: page.summary | default: site.description | strip_html | escape %}
+  {% assign page_title = page_title | escape | normalize_whitespace %}
+  {% assign page_description = page.description | default: site.description | default: 'description missing' | escape %}
   
   <title>{{ page_title }}</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="{{ page_description }}">
-  <meta name="author" content="{{ site.author }}">
+  <meta name="description" content="{{ page_description }}" />
+  <meta name="author" content="{{ site.author }}" />
   
   <!-- Open Graph -->
-  <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="{{ 'assets/images/avatar.jpg' | absolute_url }}">
-  <meta property="og:url" content="{{ page.url | relative_url }}">
-  <meta property="og:site_name" content="{{ site.title | xml_escape }}">
-  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="{{ 'assets/images/avatar.jpg' | absolute_url }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
+  <meta property="og:site_name" content="{{ site.title | escape }}" />
+  <meta property="og:description" content="{{ page_description }}" />
   
   <!-- Styles -->
   <!--[if lte IE 8]><script src="{{ 'assets/js/ie/html5shiv.js' | relative_url }}" defer></script><![endif]-->
@@ -39,7 +40,7 @@
   <script src="assets/js/jquery.scrollzer.min.js" defer></script>
   <script src="assets/js/skel.min.js" defer></script>
   <script src="assets/js/util.js" defer></script>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js" defer></script><![endif]-->
+  <!--[if lte IE 8]><script src="{{ 'assets/js/ie/respond.min.js' | relative_url }}" defer></script><![endif]-->
   <script src="assets/js/main.js" defer></script>
 
 </head>
