@@ -36,19 +36,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
+author: Your Incredible-Name
+email: your-email@example.com
 
 # You'll want to customize baseurl for your own site:
 baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
-
-author: Your Incredible-Name
-email: your-email@example.com
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
 
 # Social settings
 facebook_url:
@@ -61,10 +54,7 @@ slack_url:
 twitter_url:
 
 # Google Analytics Tracking ID goes here:
-google_analytics: 
-
-# Build settings
-markdown: kramdown
+google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
