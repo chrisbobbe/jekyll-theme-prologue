@@ -23,7 +23,7 @@ To set the banner image, overwrite `assets/images/banner.jpg`. If using the gem,
 
 **The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and the theme provides a workaround.**
 
-You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme.
+You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme, but this isn't necessary.
 
 Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
 
