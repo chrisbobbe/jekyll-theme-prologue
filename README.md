@@ -2,11 +2,11 @@
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
+![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
+
 A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](https://html5up.net/). Perfect for a streamlined portfolio.
 
 **Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
-
-![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
 # How to Use
 
@@ -15,40 +15,37 @@ There are two ways to get started:
 1. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. In _config.yml, customize `baseurl` or make it blank, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` ([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
 2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
 
-**The following instructions apply to this theme only.**
+To set the banner image, overwrite `assets/images/banner.jpg`. If using the gem, you can add this path to your project directory by making new folders, and Jekyll will automatically look there before falling back on the theme files. Same for `assets/images/avatar.jpg`.
 
-Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content. A sample config `_config.yml` is in the GitHub repository for your reference. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then optionally move it to your project's root directory. It will do nothing until you move it there.
+**The following instructions are unique to this single-page theme.**
+
+Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and put it all on one page. A sample config `_config.yml` is in the GitHub repository for your reference. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then optionally move it to your project's root directory. It will do nothing until you move it there.
 
 Create a `_sections` folder in your project's root directory and start adding content. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).
 
-All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with frontmatter:
+All new sections should be added as html or Markdown documents in the `_sections` folder. The following variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
 - `title` (required)
 - `order` (required; orders the sequence of sections on the page. Section 1 displays with banner.jpg)
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
-To set the banner image, overwrite `assets/images/banner.jpg`. Same for `avatar.jpg`.
-
-# Jekyll and the single-page view
-
-**This theme is designed to include all content on a single scrollable page.** That means a few things are different from what you might expect in Jekyll.
-
 You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. Jekyll does not support multiple layout-formatted content sections per page. Each section (intro, about me, etc.) is built from an html or Markdown document in the `_sections` folder with corresponding [frontmatter](https://jekyllrb.com/docs/frontmatter/).
 
-If you're looking to customize the templates, go to `_layouts/home.html` and `_includes/section.html`.
+If you're looking to customize the templates, go to `_layouts/home.html` and `_includes/section.html`. Again, if using the gem, you'll have to run `open $(bundle show jekyll-theme-prologue)` on the command line to find the theme files; Jekyll stores it separately to keep your project uncluttered.
 
 There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page.
 
 # Added Features
 
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* Add your **social profiles** easily in `_config.yml`. Only the social profiles buttons you enter in `config.yml` will show up on the site footer.
 * Custom 404 page called 404.html
-* Site- and page-specific meta tags for SEO
+* Comprehensive search engine optimization (SEO) tags based on info you provide in _config.yml
+* Google Analytics built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in _config.yml
 
 # Credits
 
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me.
+Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
 
 Original README from HTML5 UP:
 

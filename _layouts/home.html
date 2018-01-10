@@ -18,7 +18,8 @@
 			{% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
 			
 			{% if page.permalink %}
-				<!-- This if statement enables the 404 page -->
+				<!-- This enables the 404 page, the only page that should
+			 		have a permalink declared in its frontmatter. -->
 				{% assign sections = sections | push: page %}
 			{% endif %}
 			
