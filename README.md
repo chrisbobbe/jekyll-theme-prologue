@@ -12,14 +12,16 @@ A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](h
 
 There are two ways to get started:
 
-1. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`. In _config.yml, customize `baseurl` or make it blank, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` ([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
-2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme).
+1. Fork the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue). If you want to use [GitHub Pages](https://pages.github.com/), create a branch named `gh-pages`, and replace `theme: jekyll-theme-prologue` with `remote_theme: chrisbobbe/jekyll-theme-prologue` in `config.yml	`([GitHub Pages now supports open-source themes on GitHub](https://github.com/blog/2464-use-any-theme-with-github-pages)).
+2. Install the theme using the jekyll-theme-prologue gem. Instructions can be found [here](https://jekyllrb.com/docs/themes/#installing-a-theme). After running `bundle install`, you can find the theme files by running `open $(bundle show jekyll-theme-prologue)`.  A sample working `_config.yml` file ships with the gem; if you want to activate it, move it to your project's root directory. It will do nothing until you move it there, replacing the default `_config.yml` file.
+
+Make sure that `url` and `base_url` are set correctly in `_config.yml`. For local testing, make them both blank.
 
 To set the banner image, overwrite `assets/images/banner.jpg`. If using the gem, you can add this path to your project directory by making new folders, and Jekyll will automatically look there before falling back on the theme files. Same for `assets/images/avatar.jpg`.
 
-**The following instructions are unique to this single-page theme.**
+**The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, so this is a workaround.**
 
-Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and put it all on one page. A sample config `_config.yml` is in the GitHub repository for your reference. If using the gem, run `open $(bundle show jekyll-theme-prologue)` to find this file, then optionally move it to your project's root directory. It will do nothing until you move it there.
+Your `_config.yml` file **must include the following line or it will not work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
 
 Create a `_sections` folder in your project's root directory and start adding content. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue).
 
@@ -29,11 +31,9 @@ All new sections should be added as html or Markdown documents in the `_sections
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
-You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. Jekyll does not support multiple layout-formatted content sections per page. Each section (intro, about me, etc.) is built from an html or Markdown document in the `_sections` folder with corresponding [frontmatter](https://jekyllrb.com/docs/frontmatter/).
-
-If you're looking to customize the templates, go to `_layouts/home.html` and `_includes/section.html`. Again, if using the gem, you'll have to run `open $(bundle show jekyll-theme-prologue)` on the command line to find the theme files; Jekyll stores it separately to keep your project uncluttered.
-
 There shouldn't be a need to set `permalink` in frontmatter because all content appears on the same page.
+
+You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html`. Again, if using the gem, you'll have to run `open $(bundle show jekyll-theme-prologue)` on the command line to find the theme files; Jekyll stores them separately to keep your project uncluttered.
 
 # Added Features
 
