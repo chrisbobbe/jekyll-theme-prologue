@@ -1,12 +1,12 @@
 # Prologue - Jekyll Theme
 
-(Work in progress, expect some changes)
+(Actively maintained, expect some changes)
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
 ![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
-A Jekyll version of the responsive, single-page "Prologue" theme by [HTML5 UP](https://html5up.net/). Perfect for a streamlined portfolio.
+This is Prologue, a simple, single page responsive site template from [HTML5 UP](https://html5up.net/prologue), now available as a Jekyll theme from [Chris Bobbe](https://chrisbobbe.github.io). It features a clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
 
 **Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
 
