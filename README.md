@@ -30,9 +30,9 @@ Make sure that `url` and `base_url` are set for your own website in `_config.yml
 
 Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg`. 48x48 pixels works best.
 
-Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: some alt text` to the section's frontmatter. (Don't forget the alt text for screen readers and SEO.)
+Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: some alt text` to the section's frontmatter. (Don't forget the alt text for screen readers; it won't work without it.)
 
-**The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and the theme provides a workaround.**
+**The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and this theme is a good workaround.**
 
 You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme, but this isn't necessary.
 
@@ -43,6 +43,8 @@ You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and l
 All new sections should be added as html or Markdown documents in the `_sections` folder. The following variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
 - `title` (required)
 - `order` (required; orders the sequence of sections on the page. Section 1 displays with banner.jpg)
+- `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
+- `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers; e.g., "Dome of Light art installation, Kaohsiung, Taiwan")
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
