@@ -33,7 +33,7 @@ Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` i
 Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: some alt text` to the section's frontmatter. (Don't forget the alt text for screen readers; it won't work without it.)
 
 ## Special instructions
-Jekyll does not support multiple layout-formatted content sections per page, and this theme is a good workaround. Bear with me for a few instructions unique to this theme.
+Jekyll does not support multiple layout-formatted content sections per page, and this theme is a good workaround. **Bear with me for a few instructions unique to jekyll-theme-prologue.**
 
 You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and layouts aren't provided for them. If you want to customize the templates, go to `_layouts/home.html` and `_includes/section.html` provided with the theme, but this isn't necessary.
 
