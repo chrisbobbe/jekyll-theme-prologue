@@ -10,6 +10,15 @@ This is Prologue, a simple, single page responsive site template from [HTML5 UP]
 
 **Demo**: https://chrisbobbe.github.io/jekyll-theme-prologue/
 
+# Added Features
+
+* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
+* Add your **social profiles** easily in `_config.yml`. Only the social profiles buttons you enter in `config.yml` will show up on the site footer.
+* Search engine optimization (SEO) meta tags based on info you provide in _config.yml
+* Google Analytics built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in _config.yml as `google_analytics`
+* Custom 404 page (called 404.html; to activate, move it to your project directory).
+* Set a cover photo for any of your sections (not just the first), with alt text for screen readers and SEO
+
 # How to Use
 
 There are two ways to get started:
@@ -19,7 +28,9 @@ There are two ways to get started:
 
 Make sure that `url` and `base_url` are set for your own website in `_config.yml`. For local testing, make them both blank.
 
-To set the banner image, overwrite `assets/images/banner.jpg`. If using the gem, you can add this path to your project directory instead of in the theme files, and Jekyll will automatically look there before defaulting to the theme files. Same for `assets/images/avatar.jpg`.
+Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg`. 48x48 pixels works best.
+
+Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: some alt text` to the section's frontmatter. (Don't forget the alt text for screen readers and SEO.)
 
 **The following instructions are unique to this single-page theme. Jekyll does not support multiple layout-formatted content sections per page, and the theme provides a workaround.**
 
@@ -36,14 +47,6 @@ All new sections should be added as html or Markdown documents in the `_sections
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
 There shouldn't be a need to set `permalink` because all content appears on the same page.
-
-# Added Features
-
-* **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Add your **social profiles** easily in `_config.yml`. Only the social profiles buttons you enter in `config.yml` will show up on the site footer.
-* Custom 404 page (called 404.html; to activate, move to your project directory).
-* Comprehensive search engine optimization (SEO) tags based on info you provide in _config.yml
-* Google Analytics built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in _config.yml
 
 # Credits
 

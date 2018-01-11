@@ -2,15 +2,15 @@
 # jekyll-theme-prologue for your convenience. To use it, move it to your
 # project's root directory. Please note that the following lines are
 # NECESSARY for Prologue to work correctly:
-# 
+#
 # theme: jekyll-theme-prologue
 # collections: [sections]
 #
 # They activate the theme and tell Jekyll to find your content
 # in /_sections. Note where "sections" starts with an underscore
-# and where it doesn't. The social settings will make links to 
+# and where it doesn't. The social settings will make links to
 # Twitter, etc.
-# 
+#
 # Also, be sure to customize url and baseurl for your site.
 #
 # ---------------------------------------------------------------
@@ -38,6 +38,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   and it's mobile-friendly.
 author: Your Incredible Name
 email: your-email@example.com
+avatar: assets/images/avatar.jpg
 
 # You'll want to customize baseurl for your own site:
 baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog

@@ -32,9 +32,13 @@
 					{% assign title = section.title | default: 'Untitled' %}
 					{% assign slug = section.title | slugify | default: 'untitled' %}
 
-					{% if section.order == 1 %}
+					{% if section.cover-photo and section.cover-photo-alt %}
+						{% capture photo %}
+							<img src="{{ section.cover-photo | relative_url }}" alt="{{ section.cover-photo-alt }}" class="back">
+						{% endcapture %}
 						{% assign class = 'shade-one cover dark' %}
 					{% else %}
+						{% assign photo = '' %}
 						{% capture class %}
 							shade-{% cycle 'two', 'three', 'four', 'three' %}
 						{% endcapture %}
@@ -55,9 +59,7 @@
 							</header>
 						{% endcapture %}
 					{% endif %}
-
-					{% include section.html id=slug class=class heading=heading content=section.content %}
-
+					{% include section.html id=slug class=class photo=photo heading=heading content=section.content %}
 				{% endfor %}
 
 			{% endunless %}
