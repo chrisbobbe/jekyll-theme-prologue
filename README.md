@@ -43,13 +43,13 @@ You don't need to use Jekyll's hardcoded support for `_pages` or `_posts`, and l
 
 All new sections should be added as html or Markdown documents in the `_sections` folder. The following variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
 - `title` (required)
-- `order` (required; orders the sequence of sections on the page.)
+- `order` (required; orders the sequence of sections on the page. Example: `1`)
 - `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
 - `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers; e.g., "Dome of Light art installation, Kaohsiung, Taiwan")
-- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes)
+- `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
 - `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
 
-There shouldn't be a need to set `permalink` because all content appears on the same page.
+There shouldn't be a need to set `permalink` because all content displays together in `index.html`.
 
 # Credits
 
