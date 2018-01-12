@@ -1,6 +1,6 @@
 # Prologue - Jekyll Theme
 
-(Actively maintained, expect some changes)
+(Actively maintained, expect some changes. Next update: blogging support, <24 hours)
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
