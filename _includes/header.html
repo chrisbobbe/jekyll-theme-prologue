@@ -1,73 +1,15 @@
+{%- comment -%}
+  Include vars:
+  scrolly_nav
+{%- endcomment -%}
+
 <!-- Header -->
 <div id="header">
-
   <div class="top">
-
-    <!-- Logo -->
-    <div id="logo">
-      <span class="image avatar48"><img src="{{ site.avatar | relative_url }}" alt="{{ site.author | default: 'unknown author' | prepend: 'Avatar of ' }}" /></span>
-      <h1 id="title">{{ site.title }}</h1>
-      <p>{{ site.subtitle }}</p>
-    </div>
-
-    <!-- Nav -->
-    <nav id="nav">
-      <!--
-
-      Prologue's nav expects links in one of two formats:
-
-      1. Hash link (scrolls to a different section within the page); i.e., #portfolio
-      2. Standard link (sends the user to another page/site); i.e., www.google.com
-
-      -->
-      <ul>
-        {% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
-        {% unless sections == null %}
-          {% assign sections = sections | sort: 'order' %}
-          {% for section in sections %}
-            {% assign title = section.title | default: 'Untitled' %}
-            {% assign slug = section.title | slugify | default: 'untitled' %}
-            {% assign icon = section.icon | default: 'fa-file' %}
-            <li><a href="#{{ slug }}" id="{{ slug }}-link" class="skel-layers-ignoreHref"><span class="icon {{ icon }}">{{ title }}</span></a></li>
-          {% endfor %}
-        {% endunless %}
-      </ul>
-    </nav>
-
+    {%- include logo.html -%}
+    {%- include nav.html section_items=include.scrolly_nav -%}
   </div>
-
   <div class="bottom">
-
-    <!-- Social Icons -->
-    <ul class="icons">
-      {% if site.twitter_url %}
-      <li><a href="{{ site.twitter_url }}" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-      {% endif %}
-      {% if site.facebook_url %}
-      <li><a href="{{ site.facebook_url }}" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-      {% endif %}
-      {% if site.googleplus_url %}
-      <li><a href="{{ site.googleplus_url }}" class="icon fa-google-plus"><span class="label">Google Plus</span></a></li>
-      {% endif %}
-      {% if site.instagram_url %}
-      <li><a href="{{ site.instagram_url }}" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-      {% endif %}
-      {% if site.linkedin_url %}
-      <li><a href="{{ site.linkedin_url }}" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-      {% endif %}
-      {% if site.pinterest_url %}
-      <li><a href="{{ site.pinterest_url }}" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-      {% endif %}
-      {% if site.slack_url %}
-      <li><a href="{{ site.slack_url }}" class="icon fa-slack"><span class="label">Slack</span></a></li>
-      {% endif %}
-      {% if site.dribbble_url %}
-      <li><a href="{{ site.dribbble_url }}" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-      {% endif %}
-      {% if site.email %}
-      <li><a href="mailto:{{ site.email }}" class="icon fa-envelope"><span class="label">Email</span></a></li>
-      {% endif %}
-    </ul>
-
+    {%- include social_icons.html -%}
   </div>
 </div>

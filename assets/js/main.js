@@ -45,7 +45,7 @@
 			$('.scrolly').scrolly();
 
 		// Nav.
-			var $nav_a = $('#nav a');
+			var $nav_a = $('#nav a.scrolly');
 
 			// Scrolly-fy links.
 				$nav_a

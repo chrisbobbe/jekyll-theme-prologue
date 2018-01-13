@@ -1,72 +1,15 @@
-	<!DOCTYPE HTML>
-	<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Jekyll integration by Chris Bobbe | chrisbobbe.github.io
-	-->
-	<html>
-
-	{% include head.html %}
-
-	<body>
-
-		{% include header.html %}
-
-		<!-- Main -->
-		<div id="main">
-			{% assign sections = site.sections | where_exp: 'section','section.order >= 1' %}
-
-			{% if page.permalink %}
-				<!-- This enables the 404 page, the only page that should
-			 		have a permalink declared in its frontmatter. -->
-				{% assign sections = sections | push: page %}
-			{% endif %}
-
-			{% unless sections == null %}
-				{% assign sections = sections | sort: 'order' %}
-
-				<!-- Sections -->
-				{% for section in sections %}
-
-					{% assign title = section.title | default: 'Untitled' %}
-					{% assign slug = section.title | slugify | default: 'untitled' %}
-
-					{% if section.cover-photo and section.cover-photo-alt %}
-						{% capture photo %}
-							<img src="{{ section.cover-photo | relative_url }}" alt="{{ section.cover-photo-alt }}" class="back">
-						{% endcapture %}
-						{% assign class = 'shade-one cover dark' %}
-					{% else %}
-						{% assign photo = '' %}
-						{% capture class %}
-							shade-{% cycle 'two', 'three', 'four', 'three' %}
-						{% endcapture %}
-					{% endif %}
-
-					{% if section.auto-header == 'none' %}
-						{% assign heading = "" %}
-					{% elsif section.auto-header == null or section.auto-header == 'use-title' %}
-						{% capture heading %}
-							<header>
-								<h2>{{ title }}</h2>
-							</header>
-						{% endcapture %}
-					{% else %}
-						{% capture heading %}
-							<header>
-								<h2>{{ section.auto-header }}</h2>
-							</header>
-						{% endcapture %}
-					{% endif %}
-					{% include section.html id=slug class=class photo=photo heading=heading content=section.content %}
-				{% endfor %}
-
-			{% endunless %}
-		</div>
-
-		{% include footer.html %}
-
-	</body>
-
-	</html>
+---
+layout: default
+---
+{%- assign _sections = site.sections | sort: 'order' -%}
+{%- include header.html scrolly_nav=_sections -%}
+<!-- Main -->
+<div id="main">
+	{%- if page.content != "" -%}
+		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+	{%- endif -%}
+	<!-- Sections -->
+	{%- for _section in _sections -%}
+		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+	{%- endfor -%}
+</div>
