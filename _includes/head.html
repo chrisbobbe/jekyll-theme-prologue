@@ -13,7 +13,7 @@
     {{- site.title | default: "Untitled Website" -}}
     {%- if site.subtitle -%}{{- site.subtitle | prepend: ' - ' -}}{%- endif -%}
   {%- endcapture -%}
-  {%- assign _page_title = _page_title | escape | normalize_whitespace -%}
+  {%- assign _page_title = _page_title | escape -%}
   {%- assign _page_description = page.description | default: site.description | default: _page_title | escape -%}
 
   <title>{{- _page_title -}}</title>

@@ -38,10 +38,10 @@
 	{%- endcapture -%}
 {%- endif -%}
 
-<section id="{{- _slug | normalize_whitespace -}}" class="{{- _class | normalize_whitespace -}}">
+<section id="{{- _slug -}}" class="{{- _class -}}">
   <div class="container">
-    {{- _photo | normalize_whitespace -}}
-    {{- _heading | normalize_whitespace -}}
+    {{- _photo -}}
+    {{- _heading -}}
     {{- include.content -}}
   </div>
 </section>
