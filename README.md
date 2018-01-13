@@ -60,7 +60,7 @@ title: My Blog
 
 # Add a page
 
-To add a page, just make a new .html or .markdown file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
+To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
 
 ```
 ---
@@ -78,6 +78,10 @@ You can also set these page variables in the frontmatter, if you want:
 **This same set of frontmatter variables can also be included in `index.md` and `blog.html`.**
 
 For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
+
+# Contributing
+
+Please feel free to submit issues and feature requests!
 
 # Credits
 
