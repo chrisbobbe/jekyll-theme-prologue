@@ -648,6 +648,11 @@
 		}
 		> article {
 			text-align: left;
+			header {
+				p {
+					font-style: italic;
+				}
+			}
 		}
 		> section, article {
 			margin: 0;

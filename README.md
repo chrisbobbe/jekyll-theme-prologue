@@ -12,7 +12,8 @@ This is Prologue, a simple, single page responsive site template from [HTML5 UP]
 
 # Added Features
 
-* NEWEST: Blogging and multi-page features you expect from Jekyll
+* NEWEST: **Blogging and multi-page features you expect from Jekyll**
+* Compatible with GitHub Pages
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
 * Build your homepage with custom scrolly sections in the _sections folder
  * Set a cover photo for any section (not just the first), with alt text for screen readers and SEO
