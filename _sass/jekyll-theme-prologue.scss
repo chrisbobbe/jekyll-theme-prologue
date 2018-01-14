@@ -221,7 +221,11 @@
 			margin-bottom: 0;
 		}
 		
-		.row > :not(:first-child) {
+		.row {
+			margin-top: 40px;
+		}
+		
+		.row > * {
 			padding-top: 0;
 		}
 		
