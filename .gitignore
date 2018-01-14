@@ -2,4 +2,3 @@
 *.gem
 .sass-cache
 Gemfile.lock
-_sample-config.yml
