@@ -1,7 +1,5 @@
 # Prologue - Jekyll Theme
 
-(Actively maintained, expect some changes.)
-
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
 ![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
@@ -12,7 +10,7 @@ This is Prologue, a simple, single page responsive site template from [HTML5 UP]
 
 # Added Features
 
-* NEWEST: **Blogging and multi-page features you expect from Jekyll**
+* **Blogging and multi-page features you expect from Jekyll**
 * Compatible with GitHub Pages
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
 * Build your homepage with custom scrolly sections in the _sections folder
@@ -65,8 +63,8 @@ To add a page, just make a new .html or .md file in your project directory. Ther
 
 ```
 ---
-title: My New Page`
-layout: page`
+title: My New Page
+layout: page
 ---
 ```
 
