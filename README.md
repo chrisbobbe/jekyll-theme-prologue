@@ -13,12 +13,12 @@ This is Prologue, a simple, single page responsive site template from [HTML5 UP]
 * **Blogging and multi-page features you expect from Jekyll**
 * Compatible with GitHub Pages
 * **[Formspree.io](https://formspree.io/) contact form integration** - just add your email to the `_config.yml` and it works!
-* Build your homepage with custom scrolly sections in the _sections folder
- * Set a cover photo for any section (not just the first), with alt text for screen readers and SEO
+* Build your homepage with **custom scrolly sections** in the _sections folder
+ * Set a **cover photo** for any section (not just the first), with alt text for screen readers and SEO
 * Add your **social profiles** easily in `_config.yml`.
-* Search engine optimization (SEO) meta tags based on info you provide in `_config.yml` and frontmatter
-* Google Analytics built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in `_config.yml` as `google_analytics`
-* Custom 404 page (called 404.html; to activate, move it to your project directory).
+* Automatic search engine optimization (SEO) **meta tags** based on info you provide in `_config.yml` and frontmatter
+* **Google Analytics** built-in; just put your [Tracking ID](https://support.google.com/analytics/answer/1008080?hl=en) in `_config.yml` as `google_analytics`
+* Custom **404 page** (called 404.html; to activate, move it to your project directory).
 
 # Installation
 
@@ -74,7 +74,7 @@ You can also set these page variables in the frontmatter, if you want:
 - `icon` (optional; see [Font Awesome](http://fontawesome.io/icons/) for icon codes. Example: `fa-github`)
 - `hide` (optional; if `true`, a link won't appear in the nav menu. All this does is remove the nav link; your page will still be served to anyone who has the URL.)
 
-**This same set of frontmatter variables can also be included in `index.md` and `blog.html`.**
+**This same set of frontmatter variables (including `title`) can also be set in `index.md` and `blog.html`.** You may want to give them titles, or hide the homepage link with `hide: true` if the homepage is the only page.
 
 For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
 
