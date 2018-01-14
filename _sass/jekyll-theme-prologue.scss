@@ -221,6 +221,10 @@
 			margin-bottom: 0;
 		}
 		
+		.row > :not(:first-child) {
+			padding-top: 0;
+		}
+		
 		ul, ol {
 			padding-left: 0.25em;
 			margin-left: 1.25em;
