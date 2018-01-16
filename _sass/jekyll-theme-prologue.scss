@@ -156,7 +156,7 @@
 		border: 0;
 		border-top: solid 1px #41484c;
 	}
-	
+
 	code {
 		background: rgba(0, 0, 0, 0.05);
 		border-color: rgba(0, 0, 0, 0.2);
@@ -220,15 +220,15 @@
 		.row > & {
 			margin-bottom: 0;
 		}
-		
+
 		.row {
 			margin-top: 40px;
 		}
-		
+
 		.row > * {
 			padding-top: 0;
 		}
-		
+
 		ul, ol {
 			padding-left: 0.25em;
 			margin-left: 1.25em;
@@ -272,12 +272,12 @@
 			float: left;
 			margin: 0 2em 2em 0;
 		}
-		
+
 		&.right {
 			float: right;
 			margin: 0 0 2em 2em;
 		}
-		
+
 		&.centered {
 			display: block;
 			margin: 0 0 2em 0;
@@ -460,7 +460,7 @@
 			text-align: center;
 			background: #fff;
 			margin: 0;
-			padding: 1em 0 1em 0;
+			padding: 1em;
 			font-size: 0.8em;
 
 			h3 {
@@ -541,11 +541,11 @@
 		margin: 1.75em 1.5em 1.5em 1.5em;
 		min-height: 48px;
 		cursor: default;
-		
+
 		a {
 			border: 0;
 		}
-		
+
 		h1 {
 			position: relative;
 			color: #fff;
@@ -772,7 +772,7 @@
 					}
 				}
 			}
-		
+
 		/* Header */
 			#nav {
 				ul {
@@ -887,7 +887,7 @@
 				br {
 					display: none;
 				}
-				
+
 			}
 
 			.container {
