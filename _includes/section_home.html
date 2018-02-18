@@ -1,0 +1,78 @@
+{%- comment -%}
+  Include vars:
+	title
+  subtitle
+	photo
+	photo-alt
+	auto-header
+	content
+{%- endcomment -%}
+
+{%- assign _title = include.title | default: 'Untitled' -%}
+{%- assign _slug = include.title | strip_html | slugify | default: 'untitled' -%}
+
+{%- if include.photo and include.photo-alt -%}
+	{%- capture _photo -%}
+		<img src="{{- include.photo | relative_url -}}" alt="{{- include.photo-alt -}}" class="back">
+	{%- endcapture -%}
+	{%- assign _class = 'shade-one cover dark' -%}
+{%- else -%}
+	{%- assign _photo = '' -%}
+	{%- capture _class -%}shade-{%- cycle 'two', 'three', 'four', 'three' -%}{%- endcapture -%}
+{%- endif -%}
+
+{%- if include.auto-header == 'none' -%}
+	{%- assign _heading = "" -%}
+{%- else -%}
+	{%- capture _heading -%}
+		<header>
+			<h2>
+        {%- if include.auto-header == null or include.auto-header == 'use-title' -%}
+          {{- _title -}}
+        {%- else -%}
+          {{- include.auto-header -}}
+        {%- endif -%}
+      </h2>
+      {%- if include.subtitle -%}<p>{{- include.subtitle -}}</p>{%- endif -%}
+		</header>
+	{%- endcapture -%}
+{%- endif -%}
+
+<section id="{{- _slug -}}" class="{{- _class -}}">
+  <div class="container">
+    {{- _photo -}}
+    {{- _heading -}}
+    <h4>Welcome to this website. You can view all the full episodes of HIMYM.</h4><br/>
+
+  	<h6 style="font-size:14px">
+  	If you are visiting this website first time, you should know some rules.<br/>
+  	<ol>
+  	<li>You must celebrate Slapsgiving Day!</li>
+  	<li>You must have eaten Turturkeykey once in your lifetime!</li>
+  	<li>You have to enter your google email id below to view the episodes! :p</li>
+  	</ol>
+  	</h6>
+  	<div class="example" id="emailform" style="margin:auto;max-width:400px">
+  	  <input type="text" placeholder="example@gmail.com" name="search2" id="emailid" />
+  	  <button type="submit" id="submitemail">Get Access</button>
+  	</div>
+  	<script type="text/javascript">
+    $(document).ready(function(){
+  	    $("#submitemail").click(function(){
+    			$.ajax({
+      				type: "POST",
+      				url: "//formspree.io/souravkhoso1@gmail.com",
+      				data:{email:$("#emailid").val()},
+      				success:function(data){
+      						$("#emailform").html("Email Submitted to our admins.");
+    				  },
+              error:function(data){
+                  window.alert("Error occured. Try again");
+                  $("#emailid").val("");
+              }
+  	        });
+  	    });
+  	});
+  	</script>
+  </div>
+</section>

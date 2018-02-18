@@ -10,7 +10,9 @@ layout: default
 	  <div class="container">
 			<header>
 				<h2>{{- page.title -}}</h2>
+				{%- comment -%}
 				{%- if page.subtitle -%}<p>{{- page.subtitle -}}</p>{%- endif -%}
+				{%- endcomment -%}
 			</header>
 	    {{- content -}}
 	  </div>

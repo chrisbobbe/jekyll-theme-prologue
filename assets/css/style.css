@@ -1,0 +1,31 @@
+div.example input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 65%;
+    border-radius: 0px !important;
+}
+
+div.example button {
+    float: left;
+    width: 35%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px !important;
+}
+
+div.example button:hover {
+    background: #0b7dda;
+}
+
+div.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
