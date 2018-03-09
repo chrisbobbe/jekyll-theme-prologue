@@ -48,10 +48,10 @@ facebook_url:
 github_url:
 googleplus_url:
 instagram_url:
-linkedin_url:
+linkedin_url: https://www.linkedin.com/stevenhaveman
 pinterest_url:
 slack_url:
-twitter_url:
+twitter_url: https://twitter.com/haveman
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
