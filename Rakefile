@@ -1,8 +1,3 @@
-#
-# Originally imported from https://github.com/jekyller/jasper/blob/master/Rakefile
-# To be adapted for this project
-#
-
 #############################################################################
 #
 # Modified version of jekyllrb Rakefile
@@ -17,8 +12,8 @@ require 'yaml'
 CONFIG = YAML.load(File.read('_config.yml'))
 USERNAME = CONFIG["username"]
 REPO = CONFIG["repo"]
-SOURCE_BRANCH = CONFIG["branch"]
-DESTINATION_BRANCH = "master"
+SOURCE_BRANCH = CONFIG["source_branch"]
+DESTINATION_BRANCH = CONFIG["destination_branch"]
 
 def check_destination
   unless Dir.exist? CONFIG["destination"]
@@ -27,23 +22,6 @@ def check_destination
 end
 
 namespace :site do
-  desc "Generate the site"
-  task :build do
-    check_destination
-    sh "bundle exec jekyll build"
-  end
-
-  desc "Generate the site and serve locally"
-  task :serve do
-    check_destination
-    sh "bundle exec jekyll serve"
-  end
-
-  desc "Generate the site, serve locally and watch for changes"
-  task :watch do
-    sh "bundle exec jekyll serve --watch"
-  end
-
   desc "Generate the site and push changes to remote origin"
   task :deploy do
     # Detect pull request
