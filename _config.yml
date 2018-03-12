@@ -70,8 +70,8 @@ collections: [sections]
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-username: AStateOfSystems
-repo: https://github.com/AStateOfSystems/ASOS
+username: StevenHaveman
+repo: stevenhaveman.github.io
 source_branch: source
 destination_branch: master
-destination: ../gh-pag
+destination: ../gh-pages/
