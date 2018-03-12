@@ -1,4 +1,4 @@
-#travis config file - copied from https://github.com/jekyller/jasper/blob/master/.travis.yml
+#travis config file - originally copied from https://github.com/jekyller/jasper/blob/master/.travis.yml
 
 sudo: false
 language: ruby
@@ -10,15 +10,10 @@ install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet #--trace
-
-# Generate your secure token with the travis gem:
-# get Github token from your Travis CI profile page
-# gem install travis
-# GH_TOKEN from https://github.com/settings/tokens
-# travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
-env:
-  global:
-    secure: "MjqpMRJTvjPFcqIv0pV6LA"
-  only:
-    - master
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
