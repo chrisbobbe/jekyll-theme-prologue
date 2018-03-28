@@ -30,31 +30,31 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-subtitle: Your awesome subtitle
+title: 꾸샤의 개발이야기
+subtitle: PHP, Javascript, jQuery, AJAX, Android, iOS, Windows Mobile, MySQL, MSSQL, ORACLE, FreeBSD, Linux, Windows, Editplus, Android Studio, PhpStorm, HeidSQL, iPutty, Visual Studio, Atom, Eclipse(STS), JAVA(Spring Framework), MacOS, FileZila, Sequel Pro
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
-author: Your Incredible Name
-email: your-email@example.com
+  Goosia는 "It's Good" 의 한국어 발음을 차용한 단어입니다.
+  굿이야 > 구시야 > 꾸샤
+author: Goosia
+email: goosia@goosia.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://goosia.github.io/" # the base hostname & protocol for your site
+url: "https://goosia.github.io" # the base hostname & protocol for your site
 
 # Social settings
-facebook_url:
-github_url:
-googleplus_url:
-instagram_url:
-linkedin_url:
+facebook_url:https://www.facebook.com/ggoosia
+github_url:https://github.com/Goosia
+googleplus_url:https://plus.google.com/u/0/109821063849636772342
+instagram_url:https://www.instagram.com/goosia/
+linkedin_url:https://www.linkedin.com/in/goosia/
 pinterest_url:
-slack_url:
-twitter_url:
+slack_url:https://goosia.slack.com/
+twitter_url:https://twitter.com/ggoosia
 
 # Google Analytics Tracking ID goes here:
-google_analytics:
+google_analytics:UA-69020116-2
 
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
