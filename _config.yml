@@ -33,7 +33,7 @@
 title: 꾸샤의 개발이야기
 subtitle: PHP, Javascript, jQuery, AJAX, Android, iOS, Windows Mobile, MySQL, MSSQL, ORACLE, FreeBSD, Linux, Windows, Editplus, Android Studio, PhpStorm, HeidSQL, iPutty, Visual Studio, Atom, Eclipse(STS), JAVA(Spring Framework), MacOS, FileZila, Sequel Pro
 description: >- # this means to ignore newlines until "baseurl:"
-  Goosia는 Its Good 의 한국어 발음을 차용한 단어입니다.
+  Goosia는 It's Good 의 한국어 발음을 차용한 단어입니다.
   굿이야 - 구시야 - 꾸샤
 author: Goosia
 email: goosia@goosia.com
@@ -54,7 +54,7 @@ slack_url: "https://goosia.slack.com/"
 twitter_url: "https://twitter.com/ggoosia"
 
 # Google Analytics Tracking ID goes here:
-google_analytics:UA-69020116-2
+google_analytics: "UA-69020116-2"
 
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
