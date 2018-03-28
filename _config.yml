@@ -30,8 +30,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-# title: 꾸샤의 개발이야기
-title: Goosias Development Story
+title: 꾸샤의 개발이야기
 subtitle: PHP, Javascript, jQuery, AJAX, Android, iOS, Windows Mobile, MySQL, MSSQL, ORACLE, FreeBSD, Linux, Windows, Editplus, Android Studio, PhpStorm, HeidSQL, iPutty, Visual Studio, Atom, Eclipse(STS), JAVA(Spring Framework), MacOS, FileZila, Sequel Pro
 description: >- # this means to ignore newlines until "baseurl:"
   Goosia는 Its Good 의 한국어 발음을 차용한 단어입니다.
@@ -45,14 +44,14 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://goosia.github.io" # the base hostname & protocol for your site
 
 # Social settings
-facebook_url:https://www.facebook.com/ggoosia
-github_url:https://github.com/Goosia
-googleplus_url:https://plus.google.com/u/0/109821063849636772342
-instagram_url:https://www.instagram.com/goosia/
-linkedin_url:https://www.linkedin.com/in/goosia/
+facebook_url: "https://www.facebook.com/ggoosia"
+github_url: "https://github.com/Goosia"
+googleplus_url: "https://plus.google.com/u/0/109821063849636772342"
+instagram_url: "https://www.instagram.com/goosia/"
+linkedin_url: "https://www.linkedin.com/in/goosia/"
 pinterest_url:
-slack_url:https://goosia.slack.com/
-twitter_url:https://twitter.com/ggoosia
+slack_url: "https://goosia.slack.com/"
+twitter_url: "https://twitter.com/ggoosia"
 
 # Google Analytics Tracking ID goes here:
 google_analytics:UA-69020116-2
