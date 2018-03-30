@@ -2,7 +2,7 @@
 *.gem
 .sass-cache
 Gemfile.lock
-/.vscode/
-/.metadata/
-/RemoteSystemsTempFiles/
-/Servers/
+/.vscode/*
+/.metadata/*
+/RemoteSystemsTempFiles/*
+/Servers/*
