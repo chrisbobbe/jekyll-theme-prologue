@@ -31,9 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: 꾸샤의 개발이야기
-subtitle: <br>
-  Goosia는 It's Good 의 한국어 발음을 차용한 단어입니다.<br>
-  굿이야 - 구시야 - 꾸샤
+subtitle: <br>Goosia는 It's Good 의 한국어 발음을<br> 차용한 단어입니다.<br>굿이야 - 구시야 - 꾸샤
 description: >- # this means to ignore newlines until "baseurl:"
   Goosia는 It's Good 의 한국어 발음을 차용한 단어입니다.
   굿이야 - 구시야 - 꾸샤
