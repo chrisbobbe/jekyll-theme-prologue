@@ -2,4 +2,4 @@
 *.gem
 .sass-cache
 Gemfile.lock
-.vscode
+/.vscode
