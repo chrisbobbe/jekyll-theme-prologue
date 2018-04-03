@@ -1,15 +1,15 @@
 ---
-title: Reading List
-subtitle: a list of books I read
+title: 좋아하는 것
+subtitle: 즐겨보는
 layout: "page"
 icon: fa-book
 order: 3
 ---
 
-I love books! Here are some I'm reading now:
+주로 보는 매체 및 링크, 게임 등
 
-1. Robert Burton: *The Anatomy of Melancholy*
-2. Robert Musil: *The Man Without Qualities*
+1. 내 홈페이지 : http://goosia.com/
+2. 인터넷 강의 인프런 : https://www.inflearn.com/
 3. Kazuo Ishiguro: *The Unconsoled*
 4. Malcolm Lowry: *Under the Volcano*
 5. Virginia Woolf: *The Waves*
