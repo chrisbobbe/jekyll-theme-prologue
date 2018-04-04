@@ -7,7 +7,7 @@ icon: fa-lightbulb-o
 
 <img src="{{ 'assets/images/post03-pic01.png' | relative_url }}" alt="preview progress bar" />
 
-*스타일 부분(style) 
+* 스타일 부분(style) 
 ```
 #progress_bar {margin: 10px 0;padding: 3px;border: 1px solid #000;font-size: 14px;clear: both;opacity: 0;-moz-transition: opacity 1s linear;-o-transition: opacity 1s linear;-webkit-transition: opacity 1s linear;}
 #progress_bar.loading {opacity: 1.0;}
@@ -15,7 +15,7 @@ icon: fa-lightbulb-o
 .collapse { display:none; }
 ```
 
-*스크립트 부분(script)
+* 스크립트 부분(script)
 ```
     var progress = document.querySelector('.percent');
     var insPic =
@@ -88,8 +88,8 @@ icon: fa-lightbulb-o
     }
 ```
 
-*본문부분(HTML) - 굵은 빨간색으로 표시한 곳이 핵심부분이며 나머지는 위 사진에 나타만 전체소스입니다.
-*그 밖에 스타일은 알아서. ㅎㅎ
+* 본문부분(HTML) - 굵은 빨간색으로 표시한 곳이 핵심부분이며 나머지는 위 사진에 나타만 전체소스입니다.
+* 그 밖에 스타일은 알아서. ㅎㅎ
 ```
 <!-- 사진등록 -->
 <div class="agree_layout01">
