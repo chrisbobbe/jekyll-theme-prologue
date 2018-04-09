@@ -22,14 +22,14 @@ HP ENVY 15-Q214TX
 다만, 트랙패드는 기본적인 움직임과 터치 위 아래 스크롤을 제외하고 다 안되는 듯...
 오디오는 소리가 나오기전 툭툭 거리면서 스피커를 긁는 상당히 자극적인 소리가 납니다.
 
-<a href="assets/images/hackintosh/스크린샷-2017-11-15-오후-11.13.25.png"><img class="alignnone size-full wp-image-127" src="assets/images/hackintosh/스크린샷-2017-11-15-오후-11.13.25.png" alt="" width="596" height="367" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.54.48.png"><img class="alignnone size-full wp-image-115" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.54.48.png" alt="" width="618" height="431" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-8.50.11.png"><img class="alignnone size-full wp-image-116" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-8.50.11.png" alt="" width="623" height="225" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.44.34.png"><img class="alignnone size-full wp-image-111" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.44.34.png" alt="" width="777" height="908" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png">
-</a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.47.41.png"><img class="alignnone size-full wp-image-112" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.47.41.png" alt="" width="772" height="898" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.48.31.png"><img class="alignnone size-full wp-image-113" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.48.31.png" alt="" width="775" height="907" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png"><img class="alignnone size-full wp-image-114" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png" alt="" width="777" height="905" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-11-15-오후-11.13.25.png"><img class="alignnone size-full wp-image-127" src="/assets/images/hackintosh/스크린샷-2017-11-15-오후-11.13.25.png" alt="" width="596" height="367" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.54.48.png"><img class="alignnone size-full wp-image-115" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.54.48.png" alt="" width="618" height="431" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-8.50.11.png"><img class="alignnone size-full wp-image-116" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-8.50.11.png" alt="" width="623" height="225" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.44.34.png"><img class="alignnone size-full wp-image-111" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.44.34.png" alt="" width="777" height="908" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png">
+</a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.47.41.png"><img class="alignnone size-full wp-image-112" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.47.41.png" alt="" width="772" height="898" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.48.31.png"><img class="alignnone size-full wp-image-113" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.48.31.png" alt="" width="775" height="907" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png"><img class="alignnone size-full wp-image-114" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png" alt="" width="777" height="905" /></a>
 
-<a href="assets/images/hackintosh/b65791b654753ef92c6dade295269ad2.png"><img class="alignnone size-large wp-image-130" src="assets/images/hackintosh/b65791b654753ef92c6dade295269ad2-1024x576.png" alt="" width="780" height="439" /></a><a href="assets/images/hackintosh/5bfe966b217525e7158cf6988d31af5e.png"><img class="alignnone size-large wp-image-129" src="assets/images/hackintosh/5bfe966b217525e7158cf6988d31af5e-1024x576.png" alt="" width="780" height="439" /></a>
+<a href="/assets/images/hackintosh/b65791b654753ef92c6dade295269ad2.png"><img class="alignnone size-large wp-image-130" src="/assets/images/hackintosh/b65791b654753ef92c6dade295269ad2-1024x576.png" alt="" width="780" height="439" /></a><a href="/assets/images/hackintosh/5bfe966b217525e7158cf6988d31af5e.png"><img class="alignnone size-large wp-image-129" src="/assets/images/hackintosh/5bfe966b217525e7158cf6988d31af5e-1024x576.png" alt="" width="780" height="439" /></a>
 
 [이용중인 앱]
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.25.43.png"><img class="alignnone size-full wp-image-122" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.25.43.png" alt="" width="735" height="963" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.25.43.png"><img class="alignnone size-full wp-image-122" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.25.43.png" alt="" width="735" height="963" /></a>
 
 남은 여정 :
 1. 오디오 툭툭 소리 안나게 하기. =&gt; rehabman git 안에 있는 스크립을 다음과 같이 실행하여 해결 "patch_hda.sh ALC290"
@@ -65,8 +65,8 @@ HP ENVY 15-Q214TX
 <div class="ap_parser"></div>
 - 클로버 EFI, 클로버 컨피그레이터
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png">
-</a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.22.32.png"><img class="size-large wp-image-117 alignnone" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.22.32.png" alt="" width="275" height="244" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-4.49.00-1.png">
+</a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.22.32.png"><img class="size-large wp-image-117 alignnone" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.22.32.png" alt="" width="275" height="244" /></a>
 
 (일부 파일은 설치 후 필요합니다, 뒤에 다시 설명할께요.)
 
@@ -80,7 +80,7 @@ HP ENVY 15-Q214TX
 
 - 리얼맥 혹은 윈도우 가상서버 안의 맥에서 USB를 인식시키고 파티션을 나누지 마시고 한개로 포맷은 Mac OS 확장(Extended) 저널링, 설계는 GUID 파티션맵을 선택 후 지우기 (이름은 usb 같이 일단 짧은 걸로)
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.35.49.png"><img class="alignnone size-large wp-image-120" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.35.49.png" alt="" width="780" height="492" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.35.49.png"><img class="alignnone size-large wp-image-120" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.35.49.png" alt="" width="780" height="492" /></a>
 
 - 포맷된 USB 에 하이 시에라 이미지 넣기. <a href="https://support.apple.com/ko-kr/HT201372" target="_blank" rel="noopener">https://support.apple.com/ko-kr/HT201372</a>
 
@@ -97,13 +97,13 @@ HP ENVY 15-Q214TX
 
 - 클로버 설치 및 다운로드 등등은 다른 게시물에도 많으니!! 아래와 같이 설정합니다.
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png"><img class="alignnone size-full wp-image-118" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png" alt="" width="643" height="456" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png"><img class="alignnone size-full wp-image-118" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png" alt="" width="643" height="456" /></a>
 
 <span style="color: #ff0000;"><strong>- 아래 설치를 누르시고 완료를 하신 기본 파일을 어딘가에 백업해두시고 설치 화면이 나올때까지 헤딩(삽질)을 시작합니다.</strong></span>
 
 - 설치 화면 진입이 된 저의 설정 및 스샷은 아래와 같습니다.
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.29.png"><img class="alignnone size-large wp-image-131" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.29-1024x578.png" alt="" width="780" height="440" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.38.png"><img class="alignnone size-large wp-image-132" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.38-1024x575.png" alt="" width="780" height="438" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.46.png"><img class="alignnone size-large wp-image-133" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.46-1024x575.png" alt="" width="780" height="438" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.01.png"><img class="alignnone size-large wp-image-134" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.01-1024x572.png" alt="" width="780" height="436" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.09.png"><img class="alignnone size-large wp-image-135" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.09-1024x576.png" alt="" width="780" height="439" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.22.png"><img class="alignnone size-large wp-image-136" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.22-1024x574.png" alt="" width="780" height="437" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.35.png"><img class="alignnone size-large wp-image-137" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.35-1024x573.png" alt="" width="780" height="436" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.44.png"><img class="alignnone size-large wp-image-138" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.44-1024x575.png" alt="" width="780" height="438" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.52.png"><img class="alignnone size-large wp-image-139" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.52-1024x580.png" alt="" width="780" height="442" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.01.00.png"><img class="alignnone size-large wp-image-140" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.01.00-1024x572.png" alt="" width="780" height="436" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.29.png"><img class="alignnone size-large wp-image-131" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.29-1024x578.png" alt="" width="780" height="440" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.38.png"><img class="alignnone size-large wp-image-132" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.38-1024x575.png" alt="" width="780" height="438" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.46.png"><img class="alignnone size-large wp-image-133" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.59.46-1024x575.png" alt="" width="780" height="438" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.01.png"><img class="alignnone size-large wp-image-134" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.01-1024x572.png" alt="" width="780" height="436" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.09.png"><img class="alignnone size-large wp-image-135" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.09-1024x576.png" alt="" width="780" height="439" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.22.png"><img class="alignnone size-large wp-image-136" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.22-1024x574.png" alt="" width="780" height="437" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.35.png"><img class="alignnone size-large wp-image-137" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.35-1024x573.png" alt="" width="780" height="436" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.44.png"><img class="alignnone size-large wp-image-138" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.44-1024x575.png" alt="" width="780" height="438" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.52.png"><img class="alignnone size-large wp-image-139" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.00.52-1024x580.png" alt="" width="780" height="442" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.01.00.png"><img class="alignnone size-large wp-image-140" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.01.00-1024x572.png" alt="" width="780" height="436" /></a>
 
 - Boot Graphics, Cpu, Graphics 는 기본이라 스샷하지 않았습니다. (수정내용이 없음)
 
@@ -111,7 +111,7 @@ HP ENVY 15-Q214TX
 
 - 제 설치 USB의 구조입니다.
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.10.15-1.png"><img class="alignnone size-large wp-image-142" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.10.15-1-741x1024.png" alt="" width="741" height="1024" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.10.15-1.png"><img class="alignnone size-large wp-image-142" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.10.15-1-741x1024.png" alt="" width="741" height="1024" /></a>
 
 - 필요없는게 있을 수 도 있습니다. 막 가져다 넣고 정리는 않했어요.
 
@@ -143,15 +143,15 @@ HP ENVY 15-Q214TX
 
 - 이때 USB 꼽힌 상태인데 하드로 부팅이 안될 경우 설치된 하드 디스크를 USB 설치 이미지로 부팅 하여 설치 화면 중 첫화면인 언어 선택 화면에서 상단 사과 마크 누르고 시동디스크(스타트 디스크) 선택을  딱 한번만 하시면 됩니다. [이후에 막 누르면 이 상태에서 시동디스크 선택을 계속 해야됩니다, 설치 화면을 띄우는 시간은 상당히 오래 걸리므로 이 부분 주의하세요. 꿀팁임]
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png"><img class="alignnone size-full wp-image-118" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png" alt="" width="643" height="456" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.18.png"><img class="alignnone size-large wp-image-143" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.18-1024x575.png" alt="" width="780" height="438" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.28.png"><img class="alignnone size-large wp-image-144" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.28-1024x572.png" alt="" width="780" height="436" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.45.png"><img class="alignnone size-large wp-image-145" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.45-1024x576.png" alt="" width="780" height="439" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.52.png"><img class="alignnone size-large wp-image-146" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.52-1024x575.png" alt="" width="780" height="438" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.59.png"><img class="alignnone size-large wp-image-147" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.59-1024x569.png" alt="" width="780" height="433" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.09.png"><img class="alignnone size-large wp-image-148" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.09-1024x570.png" alt="" width="780" height="434" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.16.png"><img class="alignnone size-large wp-image-149" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.16-1024x573.png" alt="" width="780" height="436" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.25.png"><img class="alignnone size-large wp-image-150" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.25-1024x576.png" alt="" width="780" height="439" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.32.png"><img class="alignnone size-large wp-image-151" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.32-1024x574.png" alt="" width="780" height="437" /></a><a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.41.png"><img class="alignnone size-large wp-image-152" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.41-1024x573.png" alt="" width="780" height="436" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png"><img class="alignnone size-full wp-image-118" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-10.27.54.png" alt="" width="643" height="456" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.18.png"><img class="alignnone size-large wp-image-143" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.18-1024x575.png" alt="" width="780" height="438" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.28.png"><img class="alignnone size-large wp-image-144" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.28-1024x572.png" alt="" width="780" height="436" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.45.png"><img class="alignnone size-large wp-image-145" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.45-1024x576.png" alt="" width="780" height="439" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.52.png"><img class="alignnone size-large wp-image-146" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.52-1024x575.png" alt="" width="780" height="438" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.59.png"><img class="alignnone size-large wp-image-147" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.34.59-1024x569.png" alt="" width="780" height="433" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.09.png"><img class="alignnone size-large wp-image-148" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.09-1024x570.png" alt="" width="780" height="434" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.16.png"><img class="alignnone size-large wp-image-149" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.16-1024x573.png" alt="" width="780" height="436" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.25.png"><img class="alignnone size-large wp-image-150" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.25-1024x576.png" alt="" width="780" height="439" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.32.png"><img class="alignnone size-large wp-image-151" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.32-1024x574.png" alt="" width="780" height="437" /></a><a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.41.png"><img class="alignnone size-large wp-image-152" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.35.41-1024x573.png" alt="" width="780" height="436" /></a>
 
 - 부팅 및 오디오가 다 잡힌 부팅 디스크 목록 [물런  kext 파일들은 OS가 설치된 라이브러리 Extensions에 존재합니다.]
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.40.59-1.png"><img class="alignnone size-full wp-image-153" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.40.59-1.png" alt="" width="620" height="710" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.40.59-1.png"><img class="alignnone size-full wp-image-153" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.40.59-1.png" alt="" width="620" height="710" /></a>
 
 - /Library/Extensions
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.43.24-1.png"><img class="alignnone size-full wp-image-154" src="assets/images/hackintosh/스크린샷-2017-10-15-오후-11.43.24-1.png" alt="" width="648" height="773" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.43.24-1.png"><img class="alignnone size-full wp-image-154" src="/assets/images/hackintosh/스크린샷-2017-10-15-오후-11.43.24-1.png" alt="" width="648" height="773" /></a>
 
 - 첨부파일 macOS_EFI.zip 은 OS가 설치 된  EFI 의 내용입니다.
 
@@ -187,14 +187,14 @@ HP ENVY 15-Q214TX
 
 그걸 MaciASL 로 열어서 compile 을 하시면 에러가 나와요. 그걸 잡는 과정이 위의 patch 된 파일을 적용하는 내용입니다.
 
-<a href="assets/images/hackintosh/스크린샷-2017-10-16-오전-12.02.20-1.png"><img class="alignnone size-full wp-image-155" src="assets/images/hackintosh/스크린샷-2017-10-16-오전-12.02.20-1.png" alt="" width="648" height="694" /></a>
+<a href="/assets/images/hackintosh/스크린샷-2017-10-16-오전-12.02.20-1.png"><img class="alignnone size-full wp-image-155" src="/assets/images/hackintosh/스크린샷-2017-10-16-오전-12.02.20-1.png" alt="" width="648" height="694" /></a>
 
 - <strong>IORegistryExplorer 는 현재 시스템 상황을 보는 프로그램이에요.</strong>
 
 첨부파일 :
-<a href="assets/images/hackintosh/USB_EFI.zip">USB EFI 파일</a>
-<a href="assets/images/hackintosh/macOS_EFI.zip">설치된 macOS EFI 파일</a>
-<a href="assets/images/hackintosh/Extensions.zip">설치된 맥의 라이브러리 파일</a>
+<a href="/assets/images/hackintosh/USB_EFI.zip">USB EFI 파일</a>
+<a href="/assets/images/hackintosh/macOS_EFI.zip">설치된 macOS EFI 파일</a>
+<a href="/assets/images/hackintosh/Extensions.zip">설치된 맥의 라이브러리 파일</a>
 
 그럼 이만 총총.
 
