@@ -5,23 +5,19 @@ layout: post
 ---
 
 <h2>특수문자만 골라서 제거하자!</h2>
-<pre><code>preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $string);</pre></code>
+<pre><code>preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}]/i", "", $string);</code></pre>
 
 <h2>알파벳만 남기고 모조리 제거하자!</h2>
-
-<pre><code>preg_replace("/[^a-z]/i", "", $string);</pre></code>
+<pre><code>preg_replace("/[^a-z]/i", "", $string);</code></pre>
 
 <h2>숫자만 남기고 모조리 제거하자!</h2>
-
-<pre><code>preg_replace("/[^\d]/i", "", $string);</pre></code>
+<pre><code>preg_replace("/[^\d]/i", "", $string);</code></pre>
 
 <h2>숫자만 제거하자!</h2>
-
-<pre><code>preg_replace("/[\d]/i", "", $string);</pre></code>
+<pre><code>preg_replace("/[\d]/i", "", $string);</code></pre>
 
 <h2>한글만 남기고 모조리 제거하자!</h2>
-
-<pre><code>preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}0-9a-z]/i", "", $string);</pre></code>
+<pre><code>preg_replace("/[ #\&\+\-%@=\/\\\:;,\.'\"\^`~\_|\!\?\*$#<>()\[\]\{\}0-9a-z]/i", "", $string);</code></pre>
 
 이 정도면 다른 응용은 다들 하겠죠?
 못하면 공부하세용 ㅎㅎ
