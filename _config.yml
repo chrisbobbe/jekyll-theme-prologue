@@ -57,5 +57,5 @@ twitter_url: "https://twitter.com/ggoosia"
 google_analytics: "UA-69020116-2"
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-goosia
-collections: [sections]
+#theme: jekyll-theme-prologue
+#collections: [sections]
