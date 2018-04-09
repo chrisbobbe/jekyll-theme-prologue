@@ -11,9 +11,7 @@ layout: post
 자 갑니다.
 
 1단계 : Remote-FTP 패키지를 설치합니다.
-
 2단계 : 메뉴 : Packages > Remote-FTP > Create SFTP config file 을 선택합니다.
-
 3단계 : 설정을 편집합니다.
 
 
