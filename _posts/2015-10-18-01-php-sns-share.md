@@ -47,3 +47,5 @@ function get_linkedin_shares($url) {
   return intval( $json['count'] );
 }
 ```
+
+<blockquote>facebook, google+, linkedin, php, shared count, SNS, social media, twitter, 공유수, 웹프로그램</blockquote>

@@ -18,6 +18,4 @@ layout: post
 
 ```find . -name "dbconfig.php" -exec sed -i 's/old_ip/new_ip/g' {} \;```
 
-<hr />
 <blockquote>one line command, 문자열 변경, 문자열 치환, 여러파일 변경</blockquote>
-<hr />

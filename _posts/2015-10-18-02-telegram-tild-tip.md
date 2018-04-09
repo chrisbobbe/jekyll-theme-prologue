@@ -16,3 +16,5 @@ layout: post
 ㄱ 누르고 한자 누르고 3번째 8번입니다. 9번에 있는 사람도 있나봐요.
 
 <img src="{{ 'assets/images/post04-pic01.png' | relative_url }}" alt="telegram tild tip" />
+
+<blockquote>telegram, 물결무늬, 텔레그램</blockquote>
