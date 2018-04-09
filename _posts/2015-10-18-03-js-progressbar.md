@@ -90,8 +90,7 @@ icon: fa-lightbulb-o
 
 * 본문부분(HTML) - 굵은 빨간색으로 표시한 곳이 핵심부분이며 나머지는 위 사진에 나타만 전체소스입니다.
 * 그 밖에 스타일은 알아서. ㅎㅎ
-
-```
+<code>
 <div class="agree_layout01">
     <div class="layout01">
         <div class="title01">사진등록<span><a href="#" onclick="closePic();"><img src="/images/btn_close02.png"></a></span></div>
@@ -113,6 +112,6 @@ icon: fa-lightbulb-o
         </div>
     </div>
 </div>
-```
+</code>
 
 <blockquote>filereader, javascript, preview, progress, progressbar, 미리보기, 웹프로그램</blockquote>
