@@ -2,6 +2,7 @@
 title: HP Envy 15-Q214TX 랩탑에 하이 시에라 [High Sierra] 클린 설치
 author: Goosia
 layout: post
+comments: true
 ---
 
 안녕하세요. 커맥(커스텀맥)를 접하고 7일만에 랩탑에 설치를 성공하였습니다.

@@ -2,6 +2,7 @@
 title: Docker, 그것을 알려주마.
 author: Goosia
 layout: post
+comments: true
 ---
 
 도커의 활용성, 개념, 개요 등은 생략합니다.

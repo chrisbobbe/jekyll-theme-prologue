@@ -2,6 +2,7 @@
 title: CentOS 5.11 에 GitLab 설치하기 참조 링크
 author: Goosia
 layout: post
+comments: true
 ---
 
 http://codeholic.net/post/40429221188/centos-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-gitlab-%EC%84%A4%EC%B9%98

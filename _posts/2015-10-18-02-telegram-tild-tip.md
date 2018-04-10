@@ -2,6 +2,7 @@
 title: 텔레그램(Telegram)에서 물결무늬(~) 사용하기
 author: Goosia
 layout: post
+comments: true
 ---
 
 요즘 텔레그램 많이 쓰시죠.

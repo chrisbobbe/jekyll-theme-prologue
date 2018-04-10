@@ -3,6 +3,7 @@ title: 자바스크립트 FileReader를 사용하여 미리보기 및 진행바 
 author: Goosia
 layout: post
 icon: fa-lightbulb-o
+comments: true
 ---
 
 <img src="{{ 'assets/images/post03-pic01.png' | relative_url }}" alt="preview progress bar" />

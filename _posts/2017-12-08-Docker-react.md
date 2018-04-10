@@ -2,6 +2,7 @@
 title: React Docker [쓰다가 멈춤]
 author: Goosia
 layout: post
+comments: true
 ---
 
 # start office node

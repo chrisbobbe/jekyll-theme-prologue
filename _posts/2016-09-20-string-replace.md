@@ -2,6 +2,7 @@
 title: 서버(FreeBSD, Linux 등의 Unix 호환운영체제)내의 텍스트 파일내용 한꺼번에 변경하기(문자열 치환, 변경)
 author: Goosia
 layout: post
+comments: true
 ---
 
 유닉스 호환 시스템에서 문자열 치환, 변경 등의 방법은 상당히 많이 있다.

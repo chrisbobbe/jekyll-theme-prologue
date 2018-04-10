@@ -2,6 +2,7 @@
 title: CentOS 5.11 에 nodejs 최신버전 (v7.8.0) 설치하기
 author: Goosia
 layout: post
+comments: true
 ---
 
 centos 5.11 에는 python 2.14 가 설치되어있는데 2.6 이상이 필요합니다.

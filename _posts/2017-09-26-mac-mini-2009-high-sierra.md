@@ -2,6 +2,7 @@
 title: MacMini 2009 에 하이 시에라 맥오에스(MacOS) 설치하기
 author: Goosia
 layout: post
+comments: true
 ---
 
 맥미니 2009 및 하이 시에라를 지원하지 않는 기종에 설치하는 방법입니다.

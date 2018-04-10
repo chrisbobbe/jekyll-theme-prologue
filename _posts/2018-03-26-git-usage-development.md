@@ -2,6 +2,7 @@
 title: Git 정리[발전편]
 author: Goosia
 layout: post
+comments: true
 ---
 
 <pre class=""><a href="https://backlog.com/git-tutorial/kr/stepup/stepup1_1.html" target="_blank" rel="noopener"> </a></pre>

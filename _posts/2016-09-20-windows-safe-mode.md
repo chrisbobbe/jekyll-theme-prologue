@@ -2,6 +2,7 @@
 title: 윈도우10 안전모드 사용법
 author: Goosia
 layout: post
+comments: true
 ---
 
 hp 로고 후 마우스만 떨렁 떠있어서 좌절 끝에 뭘 어찌 했는지도 모르겠고 esc 키 눌러서 hp 부팅을 찾아서 부팅한 느낌인데.

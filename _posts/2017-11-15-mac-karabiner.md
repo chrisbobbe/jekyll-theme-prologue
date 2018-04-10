@@ -2,6 +2,7 @@
 title: 맥에서 Karabiner 로 윈도우에서 사용하던 키 쓰기
 author: Goosia
 layout: post
+comments: true
 ---
 
 편집기로 ~/.config/karabiner/karabiner.json 파일을 열고 아래 제가 붙여 넣은 소스 중에 마음에 드시는걸 복사해서 넣으세요.

@@ -2,6 +2,7 @@
 title: 윈도우에서 Atom 에디터(Editor)로 아마존(AWS) 리눅스 서버에 연결(접속)하기
 author: Goosia
 layout: post
+comments: true
 ---
 
 안녕하세요. 삽질끝에 알아낸 방법을 공유하고자 포스팅을 합니다.

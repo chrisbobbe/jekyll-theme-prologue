@@ -2,6 +2,7 @@
 title: 현재 웹페이지가 소셜미디어(Social Media, SNS)에 공유 혹은 좋아요 된 수를 가져오는 php 함수
 author: Goosia
 layout: post
+comments: true
 ---
 
 * 가끔 커스텀 디자인을 요구하는 경우가 발생하는데 주요 소셜미디어(SNS, Social Media)는 현재 페이지의 url을 보내면 현재 공유 혹은 좋아요 된 수치를 제공한다.

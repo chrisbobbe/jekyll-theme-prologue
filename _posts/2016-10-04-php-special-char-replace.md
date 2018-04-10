@@ -2,6 +2,7 @@
 title: php에서 문자열에 있는 특수기호, 알파벳, 숫자 등을 골라서 치환(변경)하는 법
 author: Goosia
 layout: post
+comments: true
 ---
 
 <h2>특수문자만 골라서 제거하자!</h2>

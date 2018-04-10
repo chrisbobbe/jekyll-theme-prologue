@@ -2,6 +2,7 @@
 title: Git 정리[기본편]
 author: Goosia
 layout: post
+comments: true
 ---
 
 Git (깃) 의 Commit (커밋)은
