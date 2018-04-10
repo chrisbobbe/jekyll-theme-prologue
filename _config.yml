@@ -52,7 +52,7 @@ linkedin_url: "https://www.linkedin.com/in/goosia/"
 pinterest_url:
 slack_url: "https://goosia.slack.com/"
 twitter_url: "https://twitter.com/ggoosia"
-disqus_name: "goosia"
+disqus: "goosia"
 
 # Google Analytics Tracking ID goes here:
 google_analytics: "UA-69020116-2"
