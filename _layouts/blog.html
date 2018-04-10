@@ -21,5 +21,6 @@ layout: default
 		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
+		<a href="https://xho95.github.io{{ post.url }}#disqus_thread">0 Comments</a>
 	{%- endfor -%}
 </div>
