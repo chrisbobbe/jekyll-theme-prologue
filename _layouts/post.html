@@ -11,13 +11,13 @@ comment: true
 	  <div class="container">
 			<header>
 				<h2>{{- page.title -}}</h2>
-				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+				<p>{%- if page.author -%}{{- page.author -}}, {%- endif -%}{{- page.date | date_to_long_string -}}</p>
 			</header>
 	    {{- content -}}
 	  </div>
 	</article>
 
 	{%- include disqus.html -%}
-	{%- if page.comments %} • <a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a>{% endif -%}
+	{%- if page.comments -%} • <a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a>{%- endif -%}
 	
 </div>
