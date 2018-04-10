@@ -17,7 +17,7 @@ comment: true
 	  </div>
 	</article>
 
-	{% include disqus.html %}
-	{% if page.comments %} • <a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a>{% endif %}
+	{%- include disqus.html -%}
+	{%- if page.comments %} • <a href="{{- site.url -}}{{- page.url -}}#disqus_thread">0 Comments</a>{% endif -%}
 	
 </div>
