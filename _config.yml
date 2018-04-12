@@ -35,24 +35,24 @@ subtitle: <br>Goosia는 It's Good 의 한국어 발음을<br> 차용한 단어�
 description: >- # this means to ignore newlines until "baseurl:"
   Goosia는 It's Good 의 한국어 발음을 차용한 단어입니다.
   굿이야 - 구시야 - 꾸샤
-author: Goosia
-email: goosia@goosia.com
+author: Gsoul-Lee
+email: leegsoul@gmail.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://goosia.github.io" # the base hostname & protocol for your site
+url: "https://gsoul.github.io" # the base hostname & protocol for your site
 
 # Social settings
-facebook_url: "https://www.facebook.com/ggoosia"
-github_url: "https://github.com/Goosia"
-googleplus_url: "https://plus.google.com/u/0/109821063849636772342"
-instagram_url: "https://www.instagram.com/goosia/"
-linkedin_url: "https://www.linkedin.com/in/goosia/"
-pinterest_url:
-slack_url: "https://goosia.slack.com/"
-twitter_url: "https://twitter.com/ggoosia"
-disqus: "goosia"
+# facebook_url: "https://www.facebook.com/ggoosia"
+# github_url: "https://github.com/Goosia"
+# googleplus_url: "https://plus.google.com/u/0/109821063849636772342"
+# instagram_url: "https://www.instagram.com/goosia/"
+# linkedin_url: "https://www.linkedin.com/in/goosia/"
+# pinterest_url:
+# slack_url: "https://goosia.slack.com/"
+# twitter_url: "https://twitter.com/ggoosia"
+disqus: "gsoul"
 
 # Google Analytics Tracking ID goes here:
 google_analytics: "UA-69020116-2"
