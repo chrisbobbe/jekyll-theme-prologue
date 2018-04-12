@@ -655,6 +655,9 @@
 		> section {
 			text-align: center;
 		}
+		> a[href$="disqus_thread"] {
+			padding: 0 20px;
+		}
 		> article {
 			text-align: left;
 			header {
