@@ -581,7 +581,7 @@
 			li {
 				a {
 					display: block;
-					padding: 0.5em 1.5em 0.5em 2.23em;
+					padding: 0.5em 1.5em 0.5em 1.5em;
 					color: rgba(255, 255, 255, 0.5);
 					text-decoration: none;
 					outline: 0;
@@ -592,6 +592,7 @@
 						position: relative;
 						display: block;
 						font-size: 0.8em;
+						padding-left: 2.23em;
 
 						&:before {
 							position: absolute;
