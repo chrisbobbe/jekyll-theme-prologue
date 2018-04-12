@@ -47,8 +47,8 @@ url: "" # the base hostname & protocol for your site
 facebook_url:
 github_url:
 googleplus_url:
-instagram_url:https://www.instagram.com/rogerwang__/
-linkedin_url:https://www.linkedin.com/in/roger-tianyu-wang/
+instagram_url: "https://www.instagram.com/rogerwang__/"
+linkedin_url: "https://www.linkedin.com/in/roger-tianyu-wang/"
 pinterest_url:
 slack_url:
 twitter_url:
