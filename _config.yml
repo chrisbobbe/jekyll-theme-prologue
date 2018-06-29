@@ -44,14 +44,16 @@ baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Social settings
+# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
+twitter_url:
 facebook_url:
-github_url:
 googleplus_url:
 instagram_url:
 linkedin_url:
+github_url:
 pinterest_url:
 slack_url:
-twitter_url:
+dribbble_url:
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
