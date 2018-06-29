@@ -2,7 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @charset "UTF-8";
-@import url("font-awesome.min.css");
+@import "fontawesome-v4-shim.scss";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
@@ -476,11 +476,11 @@
 
 		&:before {
 			display: inline-block;
-			font-family: FontAwesome;
+			font-family: "Font Awesome 5 Free";
 			font-size: 1.25em;
 			text-decoration: none;
 			font-style: normal;
-			font-weight: normal;
+			font-weight: 900;
 			line-height: 1;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
@@ -982,10 +982,10 @@
 					border: 0;
 
 					&:before {
-						font-family: FontAwesome;
+						font-family: "Font Awesome 5 Free";
 						text-decoration: none;
 						font-style: normal;
-						font-weight: normal;
+						font-weight: 900;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
