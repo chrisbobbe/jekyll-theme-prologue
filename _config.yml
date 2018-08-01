@@ -2,7 +2,7 @@
 # jekyll-theme-prologue for your convenience. To use it, move it to your
 # project's root directory. Please note that the following lines are
 # NECESSARY for Prologue to work correctly: 
-#
+# 
 # theme: jekyll-theme-prologue
 # collections: [sections]
 #
