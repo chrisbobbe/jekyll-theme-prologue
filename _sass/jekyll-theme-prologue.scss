@@ -601,6 +601,11 @@
 							width: 1.25em;
 							line-height: 1.75em;
 
+							@include vendor('transition', 'color 0.35s ease-in-out');
+
+							&:hover {
+								color: #fff;
+							}
 						}
 					}
 
