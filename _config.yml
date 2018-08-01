@@ -45,11 +45,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sitongan.github.io" # the base hostname & protocol for your site
 
 # Social settings
-facebook_url:
-github_url:
+facebook_url: "https://www.facebook.com/sitong.an"
+github_url: "https://github.com/sitongan"
 googleplus_url:
 instagram_url:
-linkedin_url:
+linkedin_url: "https://www.linkedin.com/in/sitong-an-71533a94/"
 pinterest_url:
 slack_url:
 twitter_url:
