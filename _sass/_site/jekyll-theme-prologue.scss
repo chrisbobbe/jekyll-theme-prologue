@@ -61,11 +61,10 @@
 /* fade */
 
 	#fade p {
-	    opacity:0;
-	    animation: fadein 2s ease-in forwards;
-	    -moz-animation: fadein 2s ease-in forwards; /* Firefox */
-	    -webkit-animation: fadein 2s ease-in forwards; /* Safari and Chrome */
-	    -o-animation: fadein 2s ease-in forwards; /* Opera */
+	    animation: fadein 2s;
+	    -moz-animation: fadein 2s; /* Firefox */
+	    -webkit-animation: fadein 2s; /* Safari and Chrome */
+	    -o-animation: fadein 2s; /* Opera */
 	}
 	@keyframes fadein {
 	    from {
