@@ -60,6 +60,9 @@
 
 /* fade of title */
 
+	#fade {
+	    height:75vh;
+	}
 	#fade p {
 	    opacity:0;
 	    animation: fadein 0.8s ease-in forwards;
