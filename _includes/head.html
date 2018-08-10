@@ -11,7 +11,6 @@
   {%- capture _page_title -%}
     {%- if page.title -%}{{- page.title | append: ' | ' -}}{%- endif -%}
     {{- site.title | default: "Untitled Website" -}}
-    {%- if site.subtitle -%}{{- site.subtitle | prepend: ' - ' -}}{%- endif -%}
   {%- endcapture -%}
   {%- assign _page_title = _page_title | escape -%}
   {%- assign _page_description = page.description | default: site.description | default: _page_title | escape -%}
