@@ -2,7 +2,6 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @charset "UTF-8";
-@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
@@ -472,23 +471,15 @@
 /* Icons */
 
 	.icon {
-		text-decoration: none;
+		@include icon(before);
+	}
 
-		&:before {
-			display: inline-block;
-			font-family: FontAwesome;
-			font-size: 1.25em;
-			text-decoration: none;
-			font-style: normal;
-			font-weight: normal;
-			line-height: 1;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
+	.icon-r {
+		@include icon(before, regular);
+	}
 
-		> .label {
-			display: none;
-		}
+	.icon-b {
+		@include icon(before, brands);
 	}
 
 /* Header */
@@ -593,7 +584,7 @@
 						display: block;
 						font-size: 0.8em;
 
-						&:before {
+						&::before {
 							position: absolute;
 							left: 0;
 							color: #41484c;
@@ -608,7 +599,7 @@
 						box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 						color: #fff;
 
-						span:before {
+						span::before {
 							color: #e27689;
 						}
 					}
@@ -840,7 +831,7 @@
 							span {
 								padding-right: 2.25em;
 
-								&:before {
+								&::before {
 									left: 100%;
 									margin-left: -1.25em;
 									line-height: 2.25em;
@@ -981,11 +972,11 @@
 					outline: 0;
 					border: 0;
 
-					&:before {
-						font-family: FontAwesome;
+					&::before {
+						font-family: "Font Awesome 5 Free";
 						text-decoration: none;
 						font-style: normal;
-						font-weight: normal;
+						font-weight: 900;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
