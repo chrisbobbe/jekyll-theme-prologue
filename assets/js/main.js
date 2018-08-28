@@ -48,27 +48,29 @@
 			var $nav_a = $('#nav a.scrolly');
 
 			// Scrolly-fy links.
-				$nav_a
-					.scrolly()
-					.on('click', function(e) {
+				if($nav_a.scrolly()){
+					$nav_a
+						.scrolly()
+						.on('click', function(e) {
 
-						var t = $(this),
-							href = t.attr('href');
+							var t = $(this),
+								href = t.attr('href');
 
-						if (href[0] != '#')
-							return;
+							if (href[0] != '#')
+								return;
 
-						e.preventDefault();
+							e.preventDefault();
 
-						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
-								.removeClass('active')
-								.addClass('scrollzer-locked');
+							// Clear active and lock scrollzer until scrolling has stopped
+								$nav_a
+									.removeClass('active')
+									.addClass('scrollzer-locked');
 
-						// Set this link to active
-							t.addClass('active');
+							// Set this link to active
+								t.addClass('active');
 
-					});
+						});
+				}
 
 			// Initialize scrollzer.
 				var ids = [];
