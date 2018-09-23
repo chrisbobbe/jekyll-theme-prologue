@@ -1,14 +1,12 @@
 ---
 title: First Post
-author: Chris
+author: Jiae
 layout: post
 ---
-Lorem ipsum dolor sit amet, iusto ridens dictas te sed. Error latine vis et. Ex cum munere definitiones, ne quas debitis contentiones cum, epicurei constituam ea sit. Dicant aeterno dolorum ex eum, qui everti iisque consectetuer ea! Duo in falli similique, nec tritani accusam te. Enim sapientem intellegat te pri, nam at atqui accumsan vituperata.
+어제 github 사이트로 블로그를 만들 수 있다는 흥미로운 소리를 입사동기에게 듣고 새로 만들어 보았다. 디자인도 기존 tistory 보다 다양한 방식으로 사용할 수 있고, 내 마음대로 커스터마이징 할 수 있다는 점이 가장 좋은 점이다.
 
-Sed id graeci feugiat. No meis summo consequat vel! Albucius phaedrum omittantur eos an, ex sit lorem possim perpetua. Usu et sumo posidonium, ut qui dicat sapientem tincidunt, et has consul oporteat torquatos! In qui fabulas facilisis, justo nonumes an his, quo vidisse nusquam facilisis no. Eam iriure mediocrem suavitate an?
+tistory 블로그를 자주 들어가서 글을 작성하는 것이 번거로워서 많이 쓰지 못했었는데, github에 일일 커밋하는 느낌으로 블로그를 작성하면 재밌을 것 같다. 앞으로 알고리즘이나 공부하던 기술내용들에 대해 블로그를 작성해봐야지!
 
-Quo te solum malorum prompta, porro oblique senserit cum et! Pro wisi cetero periculis ei, nam ullum dicit accusam ne, ad quo apeirian principes dissentiunt. An mea mucius vocent iisque? Vel eu altera consetetur, clita perfecto mea ad. Eos in vero ullum regione, ei veniam disputando pro, nam et iuvaret detracto voluptua.
+원래 embbeded system쪽이나 백엔드쪽만 프로젝트를 했었어서, 지금 회사에서 PM일을 하면서 frontend 개발자들이 어떻게 개발을 하는지 정확하게 알지 못했었는데 이번 기회에 frontend도 공부할 수 있는 좋은 기회가 되었으면 한다.
 
-Ad tritani deleniti sit, ne per ubique habemus singulis. Pro at integre alienum mediocritatem, mea ad libris adipisci necessitatibus, nostro constituam sit te. Recusabo oportere et mea, case minimum deleniti no quo, deseruisse conclusionemque vis te. Nam ex iudicabit constituam accommodare, dicam singulis ex eos! Eu mea viderer ceteros repudiandae, id erat voluptatum mea, ut consul omittam convenire quo. Id justo ipsum mei, modus contentiones per et! At mel omnium lucilius instructior, vel quando graeco in, eos docendi periculis eloquentiam ut.
 
-Eam habemus aliquando ut. Id idque virtute antiopam duo, et idque falli incorrupte eos, in sea omnium instructior. Mei ex nostrud moderatius cotidieque, cu sea partiendo euripidis, eam no tollit doming! Has ne facilisi vulputate, aliquando disputationi mel eu. Ex pri diceret delectus intellegam, regione definiebas pro ex.
