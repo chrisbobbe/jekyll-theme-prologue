@@ -31,7 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Sitong An
-subtitle: Marie Curie Fellow@CERN
+subtitle:
 description: >- # this means to ignore newlines until "baseurl:"
  Marie Curie Fellow @ CERN with INSIGHTS ITN.
  Experimental High Energy Physics PhD student at CMU.
