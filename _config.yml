@@ -1,8 +1,8 @@
 # Developer's Note: This is a sample _config.yml file offered with
 # jekyll-theme-prologue for your convenience. To use it, move it to your
 # project's root directory. Please note that the following lines are
-# NECESSARY for Prologue to work correctly: 
-# 
+# NECESSARY for Prologue to work correctly:
+#
 # theme: jekyll-theme-prologue
 # collections: [sections]
 #
@@ -33,11 +33,11 @@
 title: Sitong An
 subtitle: Marie Curie Fellow@CERN
 description: >- # this means to ignore newlines until "baseurl:"
- Marie Curie Fellow @ CERN with INSIGHTS ITN. 
- Experimental High Energy Physics PhD student at CMU. 
+ Marie Curie Fellow @ CERN with INSIGHTS ITN.
+ Experimental High Energy Physics PhD student at CMU.
  Machine Learning for Particle Physics.
 author: Sitong An
-email: ansitong@gmail.com
+email: s.an@cern.ch
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
@@ -52,7 +52,7 @@ instagram_url:
 linkedin_url: "https://www.linkedin.com/in/sitong-an-71533a94/"
 pinterest_url:
 slack_url:
-twitter_url:
+twitter_url: "https://twitter.com/sitong_an"
 
 # Google Analytics Tracking ID goes here:
 google_analytics: UA-123201178-1
