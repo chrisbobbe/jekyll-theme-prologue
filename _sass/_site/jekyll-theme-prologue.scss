@@ -2,6 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @charset "UTF-8";
+@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 /*
@@ -59,15 +60,12 @@
 
 /* fade of title */
 
-	#fade {
-	    height:75vh;
-	}
 	#fade p {
 	    opacity:0;
-	    animation: fadein 0.8s ease-in forwards;
-	    -moz-animation: fadein 0.8s ease-in forwards; /* Firefox */
-	    -webkit-animation: fadein 0.8s ease-in forwards; /* Safari and Chrome */
-	    -o-animation: fadein 0.8s ease-in forwards; /* Opera */
+	    animation: fadein 1s ease-in forwards;
+	    -moz-animation: fadein 1s ease-in forwards; /* Firefox */
+	    -webkit-animation: fadein 1s ease-in forwards; /* Safari and Chrome */
+	    -o-animation: fadein 1s ease-in forwards; /* Opera */
 	}
 	@keyframes fadein {
 	    from {
@@ -75,7 +73,7 @@
 	    }
 	    to {
 		opacity:1;
-		transform: translateY(-7px);
+		transform: translateY(-70);
 	    }
 	}
 	@-moz-keyframes fadein { /* Firefox */
@@ -84,7 +82,7 @@
 	    }
 	    to {
 		opacity:1;
-		transform: translateY(-7px);
+		transform: translateY(-70);
 	    }
 	}
 	@-webkit-keyframes fadein { /* Safari and Chrome */
@@ -93,7 +91,7 @@
 	    }
 	    to {
 		opacity:1;
-		transform: translateY(-7px);
+		transform: translateY(-70);
 	    }
 	}
 	@-o-keyframes fadein { /* Opera */
@@ -102,7 +100,7 @@
 	    }
 	    to {
 		opacity: 1;
-		transform: translateY(-7px);
+		transform: translateY(-70);
 	    }
 	}
 
@@ -520,15 +518,23 @@
 /* Icons */
 
 	.icon {
-		@include icon(before);
-	}
+		text-decoration: none;
 
-	.icon-r {
-		@include icon(before, regular);
-	}
+		&:before {
+			display: inline-block;
+			font-family: FontAwesome;
+			font-size: 1.25em;
+			text-decoration: none;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
 
-	.icon-b {
-		@include icon(before, brands);
+		> .label {
+			display: none;
+		}
 	}
 
 /* Header */
@@ -633,7 +639,7 @@
 						display: block;
 						font-size: 0.8em;
 
-						&::before {
+						&:before {
 							position: absolute;
 							left: 0;
 							color: #41484c;
@@ -648,7 +654,7 @@
 						box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 						color: #fff;
 
-						span::before {
+						span:before {
 							color: #fff;
 						}
 					}
@@ -880,7 +886,7 @@
 							span {
 								padding-right: 2.25em;
 
-								&::before {
+								&:before {
 									left: 100%;
 									margin-left: -1.25em;
 									line-height: 2.25em;
@@ -1021,11 +1027,11 @@
 					outline: 0;
 					border: 0;
 
-					&::before {
-						font-family: "Font Awesome 5 Free";
+					&:before {
+						font-family: FontAwesome;
 						text-decoration: none;
 						font-style: normal;
-						font-weight: 900;
+						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
 						content: '\f0c9';
@@ -1156,3 +1162,4 @@
 			}
 
 	}
+
