@@ -1,25 +1,43 @@
-/// Makes an element's :before pseudoelement a FontAwesome icon.
-/// @param {string} $content Optional content value to use.
+/// Makes an element's ::before pseudoelement a FontAwesome icon.
 /// @param {string} $where Optional pseudoelement to target (before or after).
-@mixin icon($content: false, $where: before) {
+/// @param {string} $style Which font to use (solid, regular, or brands).
+/// @param {string} $content Optional content value to use.
+@mixin icon($where: before, $style: solid, $content: false) {
 
 	text-decoration: none;
 
-	&:#{$where} {
+	&::#{$where} {
 
 		@if $content {
 			content: $content;
 		}
 
-		-moz-osx-font-smoothing: grayscale;
-		-webkit-font-smoothing: antialiased;
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		text-transform: none !important;
+		@if $style == brands {
+			font-family: "Font Awesome 5 Brands";
+		}
+		@else {
+			font-family: "Font Awesome 5 Free";
+		}
 
+		@if $style == regular {
+			font-weight: 400;
+		}
+		@else {
+			font-weight: 900;
+		}
+
+		display: inline-block;
+		font-size: 1.25em;
+		text-decoration: none;
+		font-style: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 
+	> .label {
+		display: none;
+	}
 }
 
 /// Applies padding to an element, taking the current element-margin value into account.
