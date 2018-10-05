@@ -648,13 +648,8 @@
 						box-shadow: inset 0 0 0.25em 0 rgba(0, 0, 0, 0.125);
 						color: #fff;
 
-<<<<<<< HEAD
-						span:before {
-							color: #fff;
-=======
 						span::before {
-							color: #e27689;
->>>>>>> 5720ca42218f5c3a38fd62b82c29a55941f64f94
+							color: #fff;
 						}
 					}
 				}
@@ -1160,9 +1155,4 @@
 				}
 			}
 
-<<<<<<< HEAD
 	}
-
-=======
-	}
->>>>>>> 5720ca42218f5c3a38fd62b82c29a55941f64f94
