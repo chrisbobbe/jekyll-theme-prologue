@@ -7,5 +7,5 @@
 My edits and changes to this theme. See [original project](https://github.com/chrisbobbe/jekyll-theme-prologue) for documentation.
 
 ## List of Changes
-- Add syntax highlighting with Rouge ("Trac" theme)
+- Add syntax highlighting with Rouge (GitHub theme)
 
