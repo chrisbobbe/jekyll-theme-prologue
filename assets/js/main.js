@@ -41,50 +41,86 @@
 				);
 			});
 
-		// Scrolly links.
-			$('.scrolly').scrolly();
-
 		// Nav.
 			var $nav_a = $('#nav a.scrolly');
 
 			// Scrolly-fy links.
 				$nav_a
-					.scrolly()
-					.on('click', function(e) {
+					.addClass('scrolly')
+                    .on('click', function(e) {
 
-						var t = $(this),
-							href = t.attr('href');
+                        var $this = $(this);
 
-						if (href[0] != '#')
-							return;
+                        // External link? Bail.
+                            if ($this.attr('href').charAt(0) != '#')
+                                return false;
 
-						e.preventDefault();
+                        // Prevent default.
+                            e.preventDefault();
 
-						// Clear active and lock scrollzer until scrolling has stopped
-							$nav_a
-								.removeClass('active')
-								.addClass('scrollzer-locked');
+                        if ($this.hasClass("active"))
+                            return false;
+                        // Deactivate all links.
+                            $nav_a.removeClass('active');
+                            $nav_a.removeClass('active-locked');
 
-						// Set this link to active
-							t.addClass('active');
+                        // Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
 
-					});
+                            $this
+                                .addClass('active')
+                                .addClass('active-locked');
+                        //Return false essentially calls both preventDefault() and stopPropagation()
+                        return false;
+
+					})
 
 			// Initialize scrollzer.
-				var ids = [];
 
-				$nav_a.each(function() {
+				    .each(function() {
 
-					var href = $(this).attr('href');
+                        var	$this = $(this),
+                            id = $this.attr('href'),
+                            $section = $(id);
 
-					if (href[0] != '#')
-						return;
+                        // No section for this link? Bail.
+                        if ($section.length < 1)
+                            return;
 
-					ids.push(href.substring(1));
+                        // Scrollex.
+                        $section.scrollex({
+                            mode: 'middle',
+                            top: '-10vh',
+                            bottom: '-10vh',
+                            initialize: function() {
 
-				});
+								// Deactivate section.
+									$section.addClass('inactive');
 
-				$.scrollzer(ids, { pad: 200, lastHack: true });
+							},
+                            enter: function() {
+
+                                // Activate section.
+									$section.removeClass('inactive');
+
+                                // No locked links? Deactivate all links and activate this section's one.
+                                if ($nav_a.filter('.active-locked').length == 0) {
+
+                                    $nav_a.removeClass('active');
+                                    $this.addClass('active');
+
+                                }
+
+                                // Otherwise, if this section's link is the one that's locked, unlock it.
+                                else if ($this.hasClass('active-locked'))
+                                    $this.removeClass('active-locked');
+
+                            }
+                        });
+			     });
+
+        // Scrolly links.
+			$('.scrolly').scrolly();
+
 
 		// Header (narrower + mobile).
 
