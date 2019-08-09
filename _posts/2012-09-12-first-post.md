@@ -1,14 +1,20 @@
 ---
-title: First Post
-author: Chris
+title: 31th July 2019
+author: Hanueluni1106
 layout: post
 ---
-Lorem ipsum dolor sit amet, iusto ridens dictas te sed. Error latine vis et. Ex cum munere definitiones, ne quas debitis contentiones cum, epicurei constituam ea sit. Dicant aeterno dolorum ex eum, qui everti iisque consectetuer ea! Duo in falli similique, nec tritani accusam te. Enim sapientem intellegat te pri, nam at atqui accumsan vituperata.
+Wednesday 31th of July, 2019
 
-Sed id graeci feugiat. No meis summo consequat vel! Albucius phaedrum omittantur eos an, ex sit lorem possim perpetua. Usu et sumo posidonium, ut qui dicat sapientem tincidunt, et has consul oporteat torquatos! In qui fabulas facilisis, justo nonumes an his, quo vidisse nusquam facilisis no. Eam iriure mediocrem suavitate an?
+I was so nervous. Because this trip was an overseas trip for the first time in five years.
 
-Quo te solum malorum prompta, porro oblique senserit cum et! Pro wisi cetero periculis ei, nam ullum dicit accusam ne, ad quo apeirian principes dissentiunt. An mea mucius vocent iisque? Vel eu altera consetetur, clita perfecto mea ad. Eos in vero ullum regione, ei veniam disputando pro, nam et iuvaret detracto voluptua.
 
-Ad tritani deleniti sit, ne per ubique habemus singulis. Pro at integre alienum mediocritatem, mea ad libris adipisci necessitatibus, nostro constituam sit te. Recusabo oportere et mea, case minimum deleniti no quo, deseruisse conclusionemque vis te. Nam ex iudicabit constituam accommodare, dicam singulis ex eos! Eu mea viderer ceteros repudiandae, id erat voluptatum mea, ut consul omittam convenire quo. Id justo ipsum mei, modus contentiones per et! At mel omnium lucilius instructior, vel quando graeco in, eos docendi periculis eloquentiam ut.
+![KakaoTalk_20190809_162425615.jpg](C:\Users\Administrator\Desktop\KakaoTalk_20190809_162425615.jpg)
 
-Eam habemus aliquando ut. Id idque virtute antiopam duo, et idque falli incorrupte eos, in sea omnium instructior. Mei ex nostrud moderatius cotidieque, cu sea partiendo euripidis, eam no tollit doming! Has ne facilisi vulputate, aliquando disputationi mel eu. Ex pri diceret delectus intellegam, regione definiebas pro ex.
+## In Flight
+
+You should take a deep nap in flight. Because you need Parallax adaptation.
+
+
+![KakaoTalk_20190809_165723384.jpg](C:\Users\Administrator\Desktop\KakaoTalk_20190809_165723384.jpg)
+
+And..I advise you to take slipper(which is laid at your flight) into your hotel. In U.S, the floor is carpeted.
