@@ -1,0 +1,16 @@
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/websocket-driver-0.7.1/ext/websocket-driver
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20190928-14204-135r492.rb extconf.rb
+creating Makefile
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR="
+generating websocket_mask-x64-mingw32.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/websocket-driver-0.7.1/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20190928-14204-1m23bso

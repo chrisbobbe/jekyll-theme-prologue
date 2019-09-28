@@ -1,0 +1,14 @@
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/nio4r-2.5.2/ext/nio4r
+C:/Ruby26-x64/bin/ruby.exe -I C:/Ruby26-x64/lib/ruby/2.6.0 -r ./siteconf20190928-14204-80ikwr.rb extconf.rb
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR=" clean
+make: *** 타겟 'clean'을(를) 만들 규칙이 없습니다.  멈춤.
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR="
+make: 'all'을(를) 위해 할 일이 없습니다.
+
+current directory: E:/Github/HanBock8359.github.io/vendor/cache/gems/nio4r-2.5.2/ext/nio4r
+make "DESTDIR=" install
+make: 'install'을(를) 위해 할 일이 없습니다.
