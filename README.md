@@ -1,113 +1,90 @@
-# Modified Prologue - Jekyll Theme
+# Multiple collection Modified Prologue - Jekyll Theme
 
 [![Gem Version](https://badge.fury.io/rb/jekyll-theme-prologue.svg)](https://badge.fury.io/rb/jekyll-theme-prologue)
 
 ![Prologue Theme](assets/images/screenshot.png "Prologue Theme Screenshot")
 
 
-1. **Your `_config.yml` file must include the following line or your homepage won't work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
+This theme is a modified version of the jekyll theme [Prologue](https://github.com/chrisbobbe/jekyll-theme-prologue).
 
-2. **Create a `_sections` folder** in your project's root directory and start adding content to your homepage. Set a cover photo in any of the sections by adding `cover-photo: path/to/photo.jpg` and `cover-photo-alt: your alt text here` to the section's frontmatter. Sample content is provided in the [GitHub repository](https://github.com/chrisbobbe/jekyll-theme-prologue/tree/master/_sections).
+The installation and configuration of the theme is similar to the original one.
 
-All new sections should be added as html or Markdown documents in the `_sections` folder. The following section variables can be set with [frontmatter](https://jekyllrb.com/docs/frontmatter/):
-- `title` (required)
-- `order` (required; orders the sequence of sections on the page. Example: `1`)
-- `cover-photo` (optional; sets a background image for the section. Example: `assets/images/banner.jpg`)
-- `cover-photo-alt` (required if using a cover photo. Describes the photo for screen readers and SEO; e.g. "Dome of Light art installation, Kaohsiung, Taiwan")
-- `icon` (optional; see [Font Awesome](https://fontawesome.com/icons) for icon codes. Example: `fa-github`)
-- `icon-style` (optional; "solid" is default, "regular" for outline style icons, or "brands" for logos)
-- `auto-header` (optional; "use-title" is default, "none" for no header, or custom header text)
-- `hide` (optional; if `true`, the section won't appear)
+## Additions and modifications to original theme
 
-# Start blogging!
+The additions to the original theme are:
 
-Jekyll has great resources to get you started writing blog posts. Check out [this Jekyll Docs page](https://jekyllrb.com/docs/posts/) first. When you've written a post or two, copy the following into a new file in your project directory called `blog.html`, and you'll see a link to your blog from the homepage:
+* Multiple collection management if desired.
+* sections of each collection may be full rendered in one page (as in the original theme) or you may choose to generate separate full pages and a collection page with excerpts of each section (page) and a follo up link.
+* I have include support to LaTeX equiations display using mathjax.
+* Section content and excerps in the collection scrolling page is displayed left justify instead of centered.
+* I have stablished Form Matter defaults in the _config.yml file in order use correct layouts (page,post and draft) when a file in a collection does not declare a layout in its Form Matter.
 
+## changing 'read more' label
+
+In order to change the give the user the oportunity to change 'read more' label associated to links generated in excerpts of pages and posts, I have created a them configurations variable.
+You can change it in '_config.yml' file in the section theme-options.
+```
+theme-options:
+  readmorelabel: "what ever you want"
+```
+
+
+## How to configure multiple collections
+
+You can create as many collections as you want.
+
+You have to declare them in the collecions section of your '_config.yml' file.
+
+For example:
+
+THe default configuration of this theme declares two collections in th config file, sections and others:
+
+
+```
+  collections:
+    sections:
+      output: false
+    others:
+      output: true
+```
+
+sections collection behaves just like the one in the original Prologue theme.
+It renders all its sections in one page and does not create a _sections subdirectory.
+You can read the full content of each section in the single index.html page that it renders.
+
+In order to get this you specify output: false or just don't specify output at all.
+
+others collection renders generates each page separately, in the _others directory and generates a excerpt of each section in the others.html file witha "Read more" link to read the full content.
+
+You need page for each collection, with just the [Front Matter](https://jekyllrb.com/docs/front-matter/)
+
+index.md for the *sections* collection, with this Front Matter:
 ```
 ---
-layout: blog
-title: My Blog
+layout: home
+title: My Great Homepage
+icon: fa-home
+order: 1
 ---
 ```
 
--- and that's it!
+You have to declare a home layout, that renders the scrolling page with the sections content.
+There is no collection entry, or alternatively you can declarre collection to be 'sections'.
 
-# Add a page
-
-To add a page, just make a new .html or .md file in your project directory. There's an example called `reading-list` [provided](https://github.com/chrisbobbe/jekyll-theme-prologue/blob/master/reading-list.md) with the GitHub repository. Add this frontmatter:
-
+others.md for the *others* collection, with this Front Matter:
 ```
 ---
-title: My New Page
-layout: page
+layout: home
+collection: others
+title: Other sections
+icon: fa-hotel
+order: 2
 ---
 ```
 
-You can also set these page variables in the frontmatter, if you want:
-- `subtitle`
-- `order` (orders links in the nav menu, e.g. `1`)
-- `icon` (optional; see [Font Awesome](https://fontawesome.com/icons) for icon codes. Example: `fa-github`)
-- `icon-style` (optional; "solid" is default, "regular" for outline style icons, or "brands" for logos)
-- `hide` (optional; if `true`, a link won't appear in the nav menu. All this does is remove the nav link; your page will still be served to anyone who has the URL.)
+You declare a **home** *layout* in order to get others.html scrolling page with sections content of *others* collection.
 
-**This same set of frontmatter variables (including `title`) can also be set in `index.md` and `blog.html`.** You may want to give them titles, or hide the homepage link with `hide: true` if the homepage is the only page.
+You must declare 'collection: others' in order to get the pages list of the others collection.
+If you omit it you will get a duplicate of the pages in *sections* collection, which is the default.
 
-For advanced SEO, this theme also lets you add `permalink` (see [Jekyll Docs](https://jekyllrb.com/docs/permalinks/#where-to-configure-permalinks)), `robots` (string, e.g. "noindex, nofollow"), and `canonical` (boolean; true is default) to any page or post.
-
-# Contributing
-
-Please feel free to submit issues and feature requests!
-
-# Credits
-
-Thanks to @andrewbanchich for his many Jekyll adaptations of HTML5 UP's elegant themes, which helped and inspired me, and of course many thanks to HTML5 UP.
-
-Original README from HTML5 UP:
-
-```
-Prologue by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
-
-This is Prologue, a simple, single page responsive site template. It features a
-clean, minimalistic design and a sticky sidebar with navigation-linked scrolling.
-
-Demo content images* are courtesy of the ridiculously talented Felicia Simion. Check out
-more of her amazing work over at deviantART:
-
-http://ineedchemicalx.deviantart.com/
-
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Felicia's work without her explicit permission!)
-
-Demo banner images* courtesy of Unsplash, a radtastic collection of CC0 (public domain)
-images you can use for pretty much whatever.
-
-(* = Not included)
-
-AJ
-aj@lkn.io | @ajlkn
-
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Felicia Simion (ineedchemicalx.deviantart.com)
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fortawesome.github.com/Font-Awesome)
-
-	Other
-		jQuery (jquery.com)
-		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
-		CSS3 Pie (css3pie.com)
-		background-size polyfill (github.com/louisremi)
-		Respond.js (j.mp/respondjs)
-		jquery.scrolly (@ajlkn)
-		jquery.scrollzer (@ajlkn)
-		Skel (skel.io)
-```
+As others collection has been declared with 'output: true' in the config file, you will get a scrolling page with excerpts and "read me" links that point to the full page content.

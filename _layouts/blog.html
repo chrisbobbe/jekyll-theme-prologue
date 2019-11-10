@@ -3,6 +3,15 @@ layout: default
 ---
 {%- assign _posts = site.posts | sort: 'date' | reverse -%}
 {%- include header.html scrolly_nav=_posts -%}
+
+<!-- get the label to use in read more links if one is configured in _config.yml -->
+{%- if site.theme-options.readmorelabel and site.theme-options.readmorelabel != "" -%}
+  {%- assign _readmorelabel = site.theme-options.readmorelabel -%}
+{%- else -%}
+  {%- assign _readmorelabel = "Read more" -%}
+{%- endif -%}
+
+
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
@@ -18,7 +27,7 @@ layout: default
 			{{- _post.date | date_to_long_string -}}
 		{%- endcapture -%}
 		{%- capture _excerpt -%}<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
-		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
+		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">{{- _readmorelabel -}}</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{%- endfor -%}

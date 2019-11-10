@@ -58,6 +58,33 @@ dribbble_url:
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
+#Stablish default layouts for posts and collections
+defaults:
+  -
+   scope:
+    path: ""
+    type: "posts"
+   values:
+    layout: "post"
+  -
+   scope:
+    path: ""
+    type: "drafts"
+   values:
+    layout: "draft"
+  -
+   scope:
+    path: ""
+   values:
+    layout: "page"
+
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
-collections: [sections]
+collections:
+  sections:
+    output: false
+  others:
+    output: true
+
+theme-options:
+  readmorelabel: "read more"

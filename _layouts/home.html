@@ -1,8 +1,23 @@
 ---
 layout: default
 ---
-{%- assign _sections = site.sections | sort: 'order' -%}
+{%- if page.collection and page.collection != "" -%}
+  {%- assign _collection = site.collections | where: "label" , page.collection | first -%}
+{%- else -%}
+  {%- assign _collection = site.collections | where: "label" , "sections" | first -%}
+{%- endif -%}
+{%- assign _sections = _collection.docs | sort: 'order' -%}
 {%- include header.html scrolly_nav=_sections -%}
+{%- if site.theme-options.readmorelabel and site.theme-options.readmorelabel != "" -%}
+  {%- assign _readmorelabel = site.theme-options.readmorelabel -%}
+{%- else -%}
+  {%- assign _readmorelabel = "Read more" -%}
+  {%- endif -%}
+{%- if _collection.output -%}
+  {%- assign _output = _collection.output -%}
+{%- else -%}
+    {%- assign _output = false -%}
+{%- endif -%}
 <!-- Main -->
 <div id="main">
 	{%- if page.content != "" -%}
@@ -10,6 +25,21 @@ layout: default
 	{%- endif -%}
 	<!-- Sections -->
 	{%- for _section in _sections -%}
-		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+    {%- if _section.auto-header -%}
+      {%-if _section.auto-header == "none"-%}
+        {%- assign _autoheader = false -%}
+      {%- else -%}
+        {%- assign _autoheader = true -%}
+      {%- endif -%}
+    {%- else -%}
+        {%- assign _autoheader = true -%}
+    {%- endif -%}
+    {%- if _output and _autoheader -%}
+      {%- capture _excerpt -%}<p>{{- _section.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
+      {%- capture _link -%}<a href="{{- _section.url | absolute_url -}}">{{- _readmorelabel -}}</a>{%- endcapture -%}			{%- assign _content = _excerpt | append: _link -%}
+      {%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_content -%}
+    {%- else -%}
+      {%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
+    {%- endif -%}
 	{%- endfor -%}
 </div>
