@@ -688,7 +688,7 @@
 				position: relative;
 				z-index: 0;
 				img.back {
-					position: relative;
+					position: absolute;
 					object-fit: cover;
 					width: 100%;
 					height: 100%;
@@ -699,7 +699,7 @@
 			}
 
 			&.shade-one {
-				background-color: #000000;
+				background-color: #81918E;
 			}
 
 			&.shade-two {
