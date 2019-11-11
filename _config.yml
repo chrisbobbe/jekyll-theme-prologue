@@ -30,7 +30,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CAD TEAM\nCONFERENCE
+title: CAD TEAM CONFERENCE
+title_1: CAD TEAM
+title_2: CONFERENCE
 subtitle: Catch Phrase
 description: >- # this means to ignore newlines until "baseurl:"
   This is the demo site for a Jekyll theme version of
