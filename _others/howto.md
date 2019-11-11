@@ -1,7 +1,7 @@
 ---
 title: How to use several collections
-icon: fa-tools
-order: 2
+icon: fa-comment
+order: 1
 ---
 You can create as many collections as you want.
 
