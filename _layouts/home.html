@@ -9,6 +9,9 @@ layout: default
 		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
 	{%- endif -%}
 	<!-- Sections -->
+	<section id="intro" class="shade-one cover dark" style="padding: 0 0 0 0;">
+			<img src="/assets/images/banner.jpg" alt="example cover photo" class="back">
+	</section>
 	{%- for _section in _sections -%}
 		{%- include section.html title=_section.title photo=_section.cover-photo photo-alt=_section.cover-photo-alt auto-header=_section.auto-header content=_section.content -%}
 	{%- endfor -%}
