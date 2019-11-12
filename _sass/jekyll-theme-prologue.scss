@@ -3,7 +3,8 @@
 @import 'libs/mixins';
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-@import url('https://fonts.googleapis.com/css?family=Roboto|Noto+Sans+KR|Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
 
 /*
 	Prologue by HTML5 UP
@@ -1111,5 +1112,5 @@
 
 	/* Custom */
 	#portfolio {
-		font-family: 'Roboto','Noto Sans KR','Nanum Gothic',sans-serif;
+		font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
    }
