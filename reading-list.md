@@ -1,8 +1,8 @@
 ---
-title: Reading List
+title: Event
 subtitle: a list of books I read
 layout: "page"
-icon: fa-book
+icon: fa-gift
 order: 3
 ---
 
