@@ -5,7 +5,7 @@ layout: default
 
 <!-- Main -->
 <div id="main">
-	<!-- Page -->
+	<!-- Event -->
 	<article class="shade-two">
 	  <div class="container">
 			<header>
@@ -15,4 +15,6 @@ layout: default
 	    {{- content -}}
 	  </div>
 	</article>
+
+	{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
 </div>
