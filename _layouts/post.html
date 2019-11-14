@@ -15,4 +15,6 @@ layout: default
 	    {{- content -}}
 	  </div>
 	</article>
+
+	{% if site.disqus-shortname %}{% include disqus.html %}{% endif %}
 </div>
