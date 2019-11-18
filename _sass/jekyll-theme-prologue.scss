@@ -802,6 +802,11 @@
 				.session_item {
 					width: 380px;
 					margin: 15px;
+
+					&.session_cnt_box {
+						height: 370px;
+						padding: 39px 40px 42px;
+					}
 				}
 			}
 	}
@@ -892,6 +897,11 @@
 				.session_item {
 					width: 380px;
 					margin: 15px;
+
+					&.session_cnt_box {
+						height: 370px;
+						padding: 39px 40px 42px;
+					}
 				}
 			}
 
@@ -1083,8 +1093,13 @@
 
 			#topic {
 				.session_item {
-					width: 255px;
+					width: 285px;
 					margin: 5px;
+
+					&.session_cnt_box {
+						height: 258px;
+						padding: 28px 30px;
+					}
 				}
 			}
 	}
@@ -1160,8 +1175,13 @@
 
 			#topic {
 				.session_item {
-					width: 255px;
+					width: 285px;
 					margin: 5px;
+
+					&.session_cnt_box {
+						height: 258px;
+						padding: 28px 30px;
+					}
 				}
 			}
 
