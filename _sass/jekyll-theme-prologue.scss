@@ -718,6 +718,18 @@
 		}
 	}
 
+/* Topic */
+
+	#topic {
+		.session_item {
+			margin: 0;
+			padding: 0;
+			display: inline-block;
+			background-color: #fff;
+			border: solid 1px #d9dee1;
+		}
+	}
+
 /* Wide */
 
 	@include breakpoint(wide) {
@@ -746,6 +758,15 @@
 				margin-left: 300px;
 			}
 
+		/* Topic */
+
+			#topic {
+				.session_item {
+					width: 380px;
+					margin: 15px;
+				}
+			}
+
 	}
 
 /* Normal */
@@ -772,6 +793,15 @@
 					hr {
 						margin: auto 1.25em;
 					}
+				}
+			}
+
+		/* Topic */
+
+			#topic {
+				.session_item {
+					width: 380px;
+					margin: 15px;
 				}
 			}
 	}
@@ -854,6 +884,15 @@
 
 			#main {
 				margin-left: 20%;
+			}
+
+		/* Topic */
+
+			#topic {
+				.session_item {
+					width: 380px;
+					margin: 15px;
+				}
 			}
 
 	}
@@ -1039,6 +1078,15 @@
 					}
 				}
 			}
+
+		/* Topic */
+
+			#topic {
+				.session_item {
+					width: 285px;
+					margin: 5px;
+				}
+			}
 	}
 
 /* Mobile */
@@ -1105,6 +1153,15 @@
 							margin-top: 0;
 						}
 					}
+				}
+			}
+
+		/* Topic */
+
+			#topic {
+				.session_item {
+					width: 285px;
+					margin: 5px;
 				}
 			}
 
