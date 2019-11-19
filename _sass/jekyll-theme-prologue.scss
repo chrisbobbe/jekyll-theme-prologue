@@ -723,14 +723,14 @@
 	#topic {
 		.session_item {
 			margin: 0;
+			margin-left: 0;
+			margin-bottom: 0;
 			padding: 0;
+			padding-left: 0;
 			display: inline-block;
 			background-color: #fff;
 			border: solid 1px #d9dee1;
-		}
-
-		.session_title {
-			margin-left: 0;
+			font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
 		}
 	}
 
