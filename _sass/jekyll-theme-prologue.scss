@@ -721,16 +721,55 @@
 /* Topic */
 
 	#topic {
-		.session_item {
+		div, dl, dd, ul, li, span, img, dd {
 			margin: 0;
-			margin-left: 0;
-			margin-bottom: 0;
 			padding: 0;
-			padding-left: 0;
+		}
+
+		.session_item {
+			width: 380px;
+			margin: 15px;
 			display: inline-block;
 			background-color: #fff;
 			border: solid 1px #d9dee1;
 			font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+		}
+
+		.session_cnt_box {
+			height: 370px;
+			padding: 39px 40px 42px;
+		}
+
+		.session_cnt {
+			height: 100%;
+		}
+
+		.session_title {
+			height: 96px;
+			font-size: 22px;
+		}
+
+		.session_tag_item {
+			font-size: 14px;
+			color: #6e96ff;
+			display: inline-block;
+		}
+
+		.session_list {
+			display: inline-block;
+		}
+
+		.session_info_imgarea {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			overflow: hidden;
+		}
+
+		.session_speaker {
+			margin-top: 8px;
+			font-size: 16px;
+			color: #aaa;
 		}
 	}
 
@@ -775,9 +814,28 @@
 					padding: 39px 40px 42px;
 				}
 
+				.session_cnt {
+					margin-top: 19px;
+					font-size: 14px;
+				}
+
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag_item {
+					font-size: 14px;
+				}
+
+				.session_info_imgarea {
+					width: 100px;
+					height: 100px;
+				}
+
+				.session_speaker {
+					margin-top: 8px;
+					font-size: 16px;
 				}
 			}
 
@@ -823,9 +881,28 @@
 					padding: 39px 40px 42px;
 				}
 
+				.session_cnt {
+					margin-top: 19px;
+					font-size: 14px;
+				}
+
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag_item {
+					font-size: 14px;
+				}
+
+				.session_info_imgarea {
+					width: 100px;
+					height: 100px;
+				}
+
+				.session_speaker {
+					margin-top: 8px;
+					font-size: 16px;
 				}
 			}
 	}
@@ -923,9 +1000,28 @@
 					padding: 39px 40px 42px;
 				}
 
+				.session_cnt {
+					margin-top: 19px;
+					font-size: 14px;
+				}
+
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag_item {
+					font-size: 14px;
+				}
+
+				.session_info_imgarea {
+					width: 100px;
+					height: 100px;
+				}
+
+				.session_speaker {
+					margin-top: 8px;
+					font-size: 16px;
 				}
 			}
 
@@ -1126,9 +1222,28 @@
 					padding: 28px 30px;
 				}
 
+				.session_cnt {
+					margin-top: 7px;
+					font-size: 12px;
+				}
+
 				.session_title {
 					height: 78px;
 					font-size: 16px;
+				}
+
+				.session_tag_item {
+					font-size: 12px;
+				}
+
+				.session_info_imgarea {
+					width: 66px;
+					height: 66px;
+				}
+
+				.session_speaker {
+					margin-top: 3px;
+					font-size: 12px;
 				}
 			}
 	}
@@ -1216,6 +1331,25 @@
 				.session_title {
 					height: 78px;
 					font-size: 16px;
+				}
+
+				.session_cnt {
+					margin-top: 7px;
+					font-size: 12px;
+				}
+
+				.session_tag_item {
+					font-size: 12px;
+				}
+
+				.session_info_imgarea {
+					width: 66px;
+					height: 66px;
+				}
+
+				.session_speaker {
+					margin-top: 3px;
+					font-size: 12px;
 				}
 			}
 
