@@ -726,6 +726,11 @@
 			padding: 0;
 		}
 
+		img {
+			width: 100%;
+			height: 120%;
+		}
+
 		.session_item {
 			width: 380px;
 			margin: 15px;
@@ -741,12 +746,18 @@
 		}
 
 		.session_cnt {
+			font-size: 14px;
 			height: 100%;
 		}
 
 		.session_title {
 			height: 96px;
 			font-size: 22px;
+			color: #2c303d;
+		}
+
+		.session_tag {
+			margin-bottom: 19px;
 		}
 
 		.session_tag_item {
@@ -815,13 +826,16 @@
 				}
 
 				.session_cnt {
-					margin-top: 19px;
 					font-size: 14px;
 				}
 
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag {
+					margin-bottom: 19px;
 				}
 
 				.session_tag_item {
@@ -882,13 +896,16 @@
 				}
 
 				.session_cnt {
-					margin-top: 19px;
 					font-size: 14px;
 				}
 
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag {
+					margin-bottom: 19px;
 				}
 
 				.session_tag_item {
@@ -1001,13 +1018,16 @@
 				}
 
 				.session_cnt {
-					margin-top: 19px;
 					font-size: 14px;
 				}
 
 				.session_title {
 					height: 96px;
 					font-size: 22px;
+				}
+
+				.session_tag {
+					margin-bottom: 19px;
 				}
 
 				.session_tag_item {
@@ -1223,13 +1243,16 @@
 				}
 
 				.session_cnt {
-					margin-top: 7px;
 					font-size: 12px;
 				}
 
 				.session_title {
 					height: 78px;
 					font-size: 16px;
+				}
+
+				.session_tag {
+					margin-bottom: 7px;
 				}
 
 				.session_tag_item {
@@ -1333,8 +1356,11 @@
 					font-size: 16px;
 				}
 
+				.session_tag {
+					margin-bottom: 7px;
+				}
+
 				.session_cnt {
-					margin-top: 7px;
 					font-size: 12px;
 				}
 
