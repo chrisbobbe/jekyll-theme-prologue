@@ -1,8 +1,8 @@
 ---
-title: 메모리 덤프 분석 보조 도구
-author: 김용수 책임
+title: 테스트/업데이트
+author: 안태준 선임
 layout: post
-icon: fa-trash-alt
+icon: fa-sync
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
