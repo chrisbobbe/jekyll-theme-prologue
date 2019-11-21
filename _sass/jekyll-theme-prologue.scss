@@ -731,6 +731,11 @@
 			height: 120%;
 		}
 
+		.container {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
 		.session_item {
 			width: 380px;
 			margin: 15px;
@@ -757,6 +762,7 @@
 		}
 
 		.session_tag {
+			height: 39px;
 			margin-bottom: 19px;
 		}
 
@@ -781,6 +787,41 @@
 			margin-top: 8px;
 			font-size: 16px;
 			color: #aaa;
+		}
+
+		/* swiper */
+		
+		.swiper-container {
+			width: 100%;
+			height: 380px;
+			margin: 0 auto;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+
+		.swiper-pagination {
+			position: relative;
+			text-align: center;
+		}
+
+		.swiper-pagination-bullet {
+			margin: 0 10px;
 		}
 	}
 
@@ -812,47 +853,6 @@
 				margin-left: 300px;
 			}
 
-		/* Topic */
-
-			#topic {
-				.session_item {
-					width: 380px;
-					margin: 15px;
-				}
-
-				.session_cnt_box {
-					height: 370px;
-					padding: 39px 40px 42px;
-				}
-
-				.session_cnt {
-					font-size: 14px;
-				}
-
-				.session_title {
-					height: 96px;
-					font-size: 22px;
-				}
-
-				.session_tag {
-					margin-bottom: 19px;
-				}
-
-				.session_tag_item {
-					font-size: 14px;
-				}
-
-				.session_info_imgarea {
-					width: 100px;
-					height: 100px;
-				}
-
-				.session_speaker {
-					margin-top: 8px;
-					font-size: 16px;
-				}
-			}
-
 	}
 
 /* Normal */
@@ -882,46 +882,6 @@
 				}
 			}
 
-		/* Topic */
-
-			#topic {
-				.session_item {
-					width: 380px;
-					margin: 15px;
-				}
-
-				.session_cnt_box {
-					height: 370px;
-					padding: 39px 40px 42px;
-				}
-
-				.session_cnt {
-					font-size: 14px;
-				}
-
-				.session_title {
-					height: 96px;
-					font-size: 22px;
-				}
-
-				.session_tag {
-					margin-bottom: 19px;
-				}
-
-				.session_tag_item {
-					font-size: 14px;
-				}
-
-				.session_info_imgarea {
-					width: 100px;
-					height: 100px;
-				}
-
-				.session_speaker {
-					margin-top: 8px;
-					font-size: 16px;
-				}
-			}
 	}
 
 /* Narrow */
@@ -1002,47 +962,6 @@
 
 			#main {
 				margin-left: 20%;
-			}
-
-		/* Topic */
-
-			#topic {
-				.session_item {
-					width: 380px;
-					margin: 15px;
-				}
-
-				.session_cnt_box {
-					height: 370px;
-					padding: 39px 40px 42px;
-				}
-
-				.session_cnt {
-					font-size: 14px;
-				}
-
-				.session_title {
-					height: 96px;
-					font-size: 22px;
-				}
-
-				.session_tag {
-					margin-bottom: 19px;
-				}
-
-				.session_tag_item {
-					font-size: 14px;
-				}
-
-				.session_info_imgarea {
-					width: 100px;
-					height: 100px;
-				}
-
-				.session_speaker {
-					margin-top: 8px;
-					font-size: 16px;
-				}
 			}
 
 	}
@@ -1247,16 +1166,21 @@
 				}
 
 				.session_title {
-					height: 78px;
+					height: 70px;
 					font-size: 16px;
 				}
 
 				.session_tag {
+					height: 35px;
 					margin-bottom: 7px;
 				}
 
 				.session_tag_item {
 					font-size: 12px;
+				}
+
+				.session_list_wrap {
+					height: 78px;
 				}
 
 				.session_info_imgarea {
@@ -1267,6 +1191,21 @@
 				.session_speaker {
 					margin-top: 3px;
 					font-size: 12px;
+				}
+
+				/* swiper */
+
+				.swiper-container {
+					height: 260px;
+					margin: 0 auto;
+				}
+				
+				.swiper-pagination {
+					text-align: center;
+				}
+
+				.swiper-pagination-bullet {
+					margin: 0 5px;
 				}
 			}
 	}
@@ -1337,48 +1276,7 @@
 					}
 				}
 			}
-
-		/* Topic */
-
-			#topic {
-				.session_item {
-					width: 285px;
-					margin: 5px;
-				}
-
-				.session_cnt_box {
-					height: 258px;
-					padding: 28px 30px;
-				}
-
-				.session_title {
-					height: 78px;
-					font-size: 16px;
-				}
-
-				.session_tag {
-					margin-bottom: 7px;
-				}
-
-				.session_cnt {
-					font-size: 12px;
-				}
-
-				.session_tag_item {
-					font-size: 12px;
-				}
-
-				.session_info_imgarea {
-					width: 66px;
-					height: 66px;
-				}
-
-				.session_speaker {
-					margin-top: 3px;
-					font-size: 12px;
-				}
-			}
-
+			
 	}
 
 	/* Custom */
