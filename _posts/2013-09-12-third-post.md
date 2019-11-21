@@ -3,6 +3,7 @@ title: 김종남 수석님의 주제
 author: 김종남 수석
 layout: post
 icon: fa-lightbulb
+image: assets/images/pic03.jpg
 ---
 See the icon?
 

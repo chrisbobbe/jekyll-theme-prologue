@@ -3,6 +3,7 @@ title: 테스트/업데이트
 author: 안태준 선임
 layout: post
 icon: fa-sync
+image: assets/images/pic03.jpg
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

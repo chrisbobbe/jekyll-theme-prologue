@@ -3,6 +3,7 @@ title: 겁나 빠른 정보 검색
 author: 심후성 수석
 layout: post
 icon: fa-lightbulb
+image: assets/images/pic03.jpg
 ---
 
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.

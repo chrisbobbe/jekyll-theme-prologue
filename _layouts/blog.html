@@ -10,17 +10,33 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
-		{%- capture _title -%}
-			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+		{%- capture _title -%}		 	
+
+			{%- if _post.icon != "" -%}			
+				<span class="icon {{ }} {{- _post.icon -}}"></span>		
+			{%- endif -%}		
+
+			<a href="{{- _post.url | absolute_url -}}">&nbsp{{- _post.title -}}</a>
 		{%- endcapture -%}
 		
 		{%- capture _subtitle -%}
-			{{- _post.author }}
+			{{- _post.author }}<br>
+
+			{%- if _post.image != "" -%}
+				<img src="{{- _post.image -}}">
+			{%- endif -%}
+						
+
+			{%- if _post.hashtags != "" -%}<br>
+				{{- _post.hashtags }}
+			{%- endif -%}
+
 		{%- endcapture -%}
 
 		{%- capture _excerpt -%}<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>{%- endcapture -%}
 		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
+
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
 	{%- endfor -%}
 </div>
