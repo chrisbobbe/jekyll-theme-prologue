@@ -1,6 +1,6 @@
 ---
 title: Event
-subtitle: a list of books I read
+subtitle: 컨퍼런스 참석자들을 위한 사전 이벤트
 layout: "page"
 icon: fa-gift
 order: 3
