@@ -44,7 +44,7 @@ logo: assets/images/CTC_LOGO__white_48.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://phj0319.github.io/" # the base hostname & protocol for your site
+url: "http://cad_team_conf.github.io/" # the base hostname & protocol for your site
 
 # BuildSettings
 disqus-shortname: phj0319
