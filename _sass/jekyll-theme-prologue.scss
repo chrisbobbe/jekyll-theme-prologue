@@ -762,12 +762,18 @@
 		}
 
 		.session_tag {
-			height: 39px;
+			height: 35px;
 			margin-bottom: 19px;
+		}
+
+		.session_tag_list {
+			height: 35px;
+			line-height: 24px;
 		}
 
 		.session_tag_item {
 			font-size: 14px;
+			margin: 0 8px 0 0;
 			color: #6e96ff;
 			display: inline-block;
 		}
@@ -834,7 +840,7 @@
 		.swiper-pagination {
 			position: relative;
 			text-align: center;
-			display: none;
+			display: block;
 		}
 
 		.swiper-pagination-bullet {
@@ -1188,8 +1194,11 @@
 				}
 
 				.session_tag {
-					height: 35px;
 					margin-bottom: 7px;
+				}
+
+				.session_tag_list {
+					line-height: 18px;
 				}
 
 				.session_tag_item {
@@ -1214,18 +1223,12 @@
 
 				.swiper-container {
 					height: 260px;
-					margin: 0 auto;
 				}
 
 				.swiper-button-prev, .swiper-button-next {
 					display: none;
 				}
 				
-				.swiper-pagination {
-					text-align: center;
-					display: block;
-				}
-
 				.swiper-pagination-bullet {
 					margin: 0 5px;
 				}
