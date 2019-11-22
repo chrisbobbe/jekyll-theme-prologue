@@ -1,9 +1,11 @@
 ---
 title: 마우스로 코딩해보자
+subtitle: 블록 코딩의 생태계?
 author: 박홍진 담당
 layout: post
 icon: fa-mouse-pointer
 image: assets/images/pic03.jpg
+hashtags: "#블록코딩 #탈코드화"
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

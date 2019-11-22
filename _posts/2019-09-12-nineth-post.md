@@ -1,9 +1,12 @@
 ---
 title: 카메라를 활용한 모바일 CAD
+subtitle: 모바일 Archi Design이라니!?
 author: 손영민 담당
 layout: post
 icon: fa-camera
 image: assets/images/pic03.jpg
+hashtags: "#MobileArchiDesign #카메라 #해치"
+
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
