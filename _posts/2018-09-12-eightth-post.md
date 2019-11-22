@@ -1,5 +1,6 @@
 ---
 title: PC TUTORIAL/ ArchiDesign M
+subtitle: subtitle needed
 author: 김성수 담당
 layout: post
 icon: fa-mobile-alt

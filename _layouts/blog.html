@@ -11,15 +11,18 @@ layout: default
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
 		{%- capture _title -%}
-
 			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+
+			
 		{%- endcapture -%}
 		
 		{%- capture _subtitle -%}
-			{{- _post.author }}<p/>
+		|&nbsp&nbsp{{- _post.subtitle }}&nbsp&nbsp|
+
+			<p>{{- _post.author }}</p>
 
 		
-			{%- if _post.image != "" -%}			
+			{%- if _post.image != "" -%}
 			<p><img src="{{- _post.image -}}"></p>
 			{%- if _post.hashtags != "" -%}
 				<b><font color="#3B6CEB">{{- _post.hashtags }}</font></b>

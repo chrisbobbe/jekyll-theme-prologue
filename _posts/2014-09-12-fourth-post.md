@@ -3,7 +3,7 @@ title: 배근도
 subtitle: DShop의 대체
 author: 곽대영 책임
 layout: post
-icon: fa-lightbulb
+icon: fa-table
 image: assets/images/pic03.jpg
 hashtags: "#물량 #DShop #설계코드"
 
