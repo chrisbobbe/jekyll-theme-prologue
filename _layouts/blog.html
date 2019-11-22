@@ -10,26 +10,27 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
-		{%- capture _title -%}		 	
+		{%- capture _title -%}
+			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
 
-			{%- if _post.icon != "" -%}			
-				<span class="icon {{ }} {{- _post.icon -}}"></span>		
-			{%- endif -%}		
-
-			<a href="{{- _post.url | absolute_url -}}">&nbsp{{- _post.title -}}</a>
+			
 		{%- endcapture -%}
 		
 		{%- capture _subtitle -%}
-			{{- _post.author }}<br>
+		|&nbsp&nbsp{{- _post.subtitle }}&nbsp&nbsp|
 
+			<p>{{- _post.author }}</p>
+
+		
 			{%- if _post.image != "" -%}
-				<img src="{{- _post.image -}}">
+			<p><img src="{{- _post.image -}}"></p>
+			{%- if _post.hashtags != "" -%}
+				<b><font color="#3B6CEB">{{- _post.hashtags }}</font></b>
 			{%- endif -%}
-						
+		{%- endif -%}
+			
 
-			{%- if _post.hashtags != "" -%}<br>
-				{{- _post.hashtags }}
-			{%- endif -%}
+			
 
 		{%- endcapture -%}
 

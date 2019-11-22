@@ -1,10 +1,11 @@
 ---
-title: 장대성 팀장님의 주제
-author: 장대성
+title: CAD 탐구영역
+subtitle: 주변에 싸이코가 없으면 제가 싸이코라면서요?
+author: 장대성 책임
 layout: post
 icon: fa-lightbulb
 image: assets/images/pic03.jpg
-hashtags: "#이런거#저런거#그런거#어쩌고#저쩌고"
+hashtags: "#음성인식 #개망함 #나만궁금한 #팀역사 #사진은28세때 #ipSDK #좀도와주세요"
 ---
 Lorem ipsum dolor sit amet, iusto ridens dictas te sed. Error latine vis et. Ex cum munere definitiones, ne quas debitis contentiones cum, epicurei constituam ea sit. Dicant aeterno dolorum ex eum, qui everti iisque consectetuer ea! Duo in falli similique, nec tritani accusam te. Enim sapientem intellegat te pri, nam at atqui accumsan vituperata.
 
