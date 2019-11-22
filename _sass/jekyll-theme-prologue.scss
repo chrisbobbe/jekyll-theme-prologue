@@ -792,9 +792,11 @@
 		/* swiper */
 		
 		.swiper-container {
-			width: 100%;
+			width: 90%;
 			height: 380px;
 			margin: 0 auto;
+			display: inline-block;
+			vertical-align: middle;
 		}
 
 		.swiper-slide {
@@ -815,9 +817,24 @@
 			align-items: center;
 		}
 
+		.swiper-button-prev {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			left: 0 !important;
+		}
+
+		.swiper-button-next {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			right: 0 !important;
+		}
+
 		.swiper-pagination {
 			position: relative;
 			text-align: center;
+			display: none;
 		}
 
 		.swiper-pagination-bullet {
@@ -1199,9 +1216,14 @@
 					height: 260px;
 					margin: 0 auto;
 				}
+
+				.swiper-button-prev, .swiper-button-next {
+					display: none;
+				}
 				
 				.swiper-pagination {
 					text-align: center;
+					display: block;
 				}
 
 				.swiper-pagination-bullet {

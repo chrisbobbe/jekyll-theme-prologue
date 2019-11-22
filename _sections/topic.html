@@ -4,6 +4,10 @@ icon: fa-th
 order: 3
 ---
 
+<!-- Prev Arrows -->
+<div class="swiper-button-prev"></div>
+
+<!-- Contents -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -365,6 +369,9 @@ order: 3
     </div>
 </div>
 
+<!-- Next Arrows -->
+<div class="swiper-button-next"></div>
+
 <!-- Add Pagination -->
 <div class="swiper-pagination"></div>
 
@@ -372,9 +379,24 @@ order: 3
 <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         paginationClickable: true,
         centeredSlides: true,
-        spaceBetween: 30
+        spaceBetween: 30,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: true,
+        // Responsive breakpoints
+        breakpoints: {
+            //mobile, normal, narrower, narrow
+            1620: {
+            slidesPerView: 1
+            },
+            //wide
+            1880: {
+            slidesPerView: 2
+            }
+        }
     });
 </script>
 
