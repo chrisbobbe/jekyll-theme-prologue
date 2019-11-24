@@ -5,8 +5,11 @@ author: 곽대영 책임
 layout: post
 icon: fa-table
 image: assets/images/pic03.jpg
-hashtags: "#물량 #DShop #설계코드"
-
+profileimage: assets/images/speaker/dykwak.jpg
+hashtags: 
+  - 물량
+  - DShop
+  - 설계코드
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

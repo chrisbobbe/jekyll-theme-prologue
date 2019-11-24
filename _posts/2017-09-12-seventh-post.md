@@ -5,7 +5,10 @@ author: 박홍진 담당
 layout: post
 icon: fa-mouse-pointer
 image: assets/images/pic03.jpg
-hashtags: "#블록코딩 #탈코드화"
+profileimage: assets/images/speaker/phj0319.jpg
+hashtags: 
+  - 블록코딩
+  - 탈코드화
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

@@ -5,7 +5,15 @@ author: 장대성 책임
 layout: post
 icon: fa-lightbulb
 image: assets/images/pic03.jpg
-hashtags: "#음성인식 #개망함 #나만궁금한 #팀역사 #사진은28세때 #ipSDK #좀도와주세요"
+profileimage: assets/images/speaker/dsjang.jpg
+hashtags: 
+  - 음성인식
+  - 개망함
+  - 나만궁금한
+  - 팀역사
+  - 사진은28세때
+  - ipSDK
+  - 좀도와주세요
 ---
 Lorem ipsum dolor sit amet, iusto ridens dictas te sed. Error latine vis et. Ex cum munere definitiones, ne quas debitis contentiones cum, epicurei constituam ea sit. Dicant aeterno dolorum ex eum, qui everti iisque consectetuer ea! Duo in falli similique, nec tritani accusam te. Enim sapientem intellegat te pri, nam at atqui accumsan vituperata.
 

@@ -5,8 +5,12 @@ author: 김용수 책임
 layout: post
 icon: fa-trash-alt
 image: assets/images/pic03.jpg
-hashtags: "#메모리 #메모리덤프 #비정상종료 #안정화"
-
+profileimage: assets/images/speaker/kys0522.jpg
+hashtags: 
+  - 메모리
+  - 메모리덤프
+  - 비정상종료
+  - 안정화
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

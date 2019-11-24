@@ -5,8 +5,10 @@ author: 김성수 담당
 layout: post
 icon: fa-mobile-alt
 image: assets/images/pic03.jpg
-hashtags: "#튜토리얼 #ADM"
-
+profileimage: assets/images/speaker/kss0625.jpg
+hashtags: 
+  - 튜토리얼
+  - ADM
 ---
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 

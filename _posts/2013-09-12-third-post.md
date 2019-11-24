@@ -5,7 +5,12 @@ author: 김종남 수석
 layout: post
 icon: fa-laptop
 image: assets/images/pic03.jpg
-hashtags: "#CuttingView #주석품질 #속성복사 #CadGrid대체"
+profileimage: assets/images/speaker/jnkim.jpg
+hashtags: 
+  - CuttingView
+  - 주석품질
+  - 속성복사
+  - CadGrid대체
 ---
 See the icon?
 

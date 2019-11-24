@@ -24,9 +24,13 @@ layout: default
 		
 			{%- if _post.image != "" -%}
 			<p><img src="{{- _post.image -}}"></p>
-			{%- if _post.hashtags != "" -%}
-				<b><font color="#3B6CEB">{{- _post.hashtags }}</font></b>
-			{%- endif -%}
+			<b>
+				<font color="#3B6CEB">
+					{%- for _hashtag in _post.hashtags -%}
+						#{{- _hashtag }}&nbsp
+					{%- endfor -%}
+				</font>
+			</b>
 		{%- endif -%}
 			
 

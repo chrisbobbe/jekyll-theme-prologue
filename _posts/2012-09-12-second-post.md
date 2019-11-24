@@ -5,7 +5,10 @@ author: 심후성 수석
 layout: post
 icon: fa-star
 image: assets/images/pic03.jpg
-hashtags: "#실시간검색 #자료구조"
+profileimage: assets/images/speaker/hsshim.jpg
+hashtags: 
+  - 실시간검색
+  - 자료구조
 ---
 
 Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
