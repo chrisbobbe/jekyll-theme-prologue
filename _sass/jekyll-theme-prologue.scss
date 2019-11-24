@@ -654,6 +654,9 @@
 					font-style: italic;
 				}
 			}
+			p {
+				font-size: 12pt;
+			}
 		}
 		> section, article {
 			margin: 0;
@@ -1162,6 +1165,12 @@
 
 				> section, article {
 					padding: 3em 0;
+				}
+
+				> article {
+					p {
+						font-size: 10pt;
+					}
 				}
 
 				section {
