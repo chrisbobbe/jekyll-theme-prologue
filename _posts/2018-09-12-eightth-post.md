@@ -1,6 +1,6 @@
 ---
 title: PC TUTORIAL/ ArchiDesign M
-subtitle: subtitle needed
+subtitle: What do clients want?
 author: 김성수 선임
 layout: post
 icon: fa-mobile-alt
