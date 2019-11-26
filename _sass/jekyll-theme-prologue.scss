@@ -721,9 +721,9 @@
 		}
 	}
 
-/* Topic */
+/* Session */
 
-	#topic {
+	#session {
 		div, dl, dd, ul, li, span, img, dd {
 			margin: 0;
 			padding: 0;
@@ -848,6 +848,14 @@
 
 		.swiper-pagination-bullet {
 			margin: 0 10px;
+		}
+	}
+
+/* Custom */
+	#just-cad-it {
+		p {
+			font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
+			font-size: 1em;
 		}
 	}
 
@@ -1180,9 +1188,9 @@
 				}
 			}
 
-		/* Topic */
+		/* Session */
 
-			#topic {
+			#session {
 				.session_item {
 					width: 285px;
 					margin: 5px;
@@ -1200,6 +1208,7 @@
 				.session_title {
 					height: 50px;
 					font-size: 16px;
+					line-height: 120%;
 				}
 
 				.session_tag {
@@ -1260,6 +1269,10 @@
 				font-weight: 300;
 			}
 
+			h3 {
+				font-size: 1em;
+			}
+
 			.container {
 				padding: 0 15px 0 15px;
 			}
@@ -1310,17 +1323,11 @@
 					}
 				}
 			}
-			
-	}
-
-	/* Custom */
-	#just-cad-it {
-		p {
-			font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
-		}
-	}
-   #about-conference {
-	   p {
-			font-family: 'Roboto','Noto Sans KR',AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif;
-	   }
+	
+		/* Custom */
+			#just-cad-it {
+				p {
+					font-size: 0.8em;
+				}
+			}
 	}
