@@ -10,7 +10,8 @@ layout: default
 	  <div class="container">
 			<header>
 				<h2>{{- page.title -}}</h2>
-				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+				<h4>|&nbsp&nbsp{{- page.subtitle -}}&nbsp&nbsp|</h4>
+				<p>{% if page.author %}{{ page.author }} {% endif %}</p>
 			</header>
 	    {{- content -}}
 	  </div>
