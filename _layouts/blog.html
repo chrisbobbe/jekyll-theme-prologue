@@ -23,7 +23,7 @@ layout: default
 
 		
 			{%- if _post.image != "" -%}
-			<p><img src="{{- _post.image -}}"></p>
+			<p><img src="{{- _post.image -}}" style="max-width: 450px; width: 95%; height: auto;"></p>
 			<b>
 				<font color="#3B6CEB">
 					{%- for _hashtag in _post.hashtags -%}
