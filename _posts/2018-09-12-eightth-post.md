@@ -1,5 +1,5 @@
 ---
-title: PC TUTORIAL/ ArchiDesign M
+title: PC TUTORIAL/ArchiDesign M
 subtitle: What do clients want?
 author: 김성수 선임
 layout: post
