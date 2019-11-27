@@ -585,6 +585,7 @@
 						position: relative;
 						display: block;
 						font-size: 0.8em;
+						padding-left: 2.25em;
 
 						&::before {
 							position: absolute;
@@ -1091,6 +1092,10 @@
 					li {
 						a {
 							padding: 0.5em 1.25em 0.5em 1.25em;
+
+							span {
+								padding-left: 2.25em;
+							}
 						}
 					}
 				}
