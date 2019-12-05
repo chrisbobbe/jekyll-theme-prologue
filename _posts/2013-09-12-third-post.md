@@ -11,26 +11,50 @@ hashtags:
   - 주석품질
   - 속성복사
 ---
-See the icon?
 
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
+#### 1.	도면의 생성
+이 글을 읽고 계신 남성분들 성격 급하시죠? 저도 성격이 급한 편인데요, 우리나라 남성 분들 성격이 얼마나 급하냐 하면 화장실 갈 때도 대부분 화장실 들어가기 전에 지퍼부터 내리십니다. ㅎㅎ 맞지요? 그 정도로 성격이 급하십니다.
+이런 8282 문화가 오늘날의 눈부신 발전을 이룬 우리를 만들었을 지도 모릅니다. ㅎㅎ
+도면을 생성하는 데에도 속도가 중요한데요,
 
-<span class="image left"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_01.png' | relative_url }}" alt="" /></span>
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+보통 숙련된 엔지니어가 교량 단면도를 1장 만드는데 3일 정도가 소요됩니다. 교량의 길이가 1km라고 가정했을 때 기본 설계 40m를 기준으로 25장의 단면도를 생성해야 하고 간단한 산수로도 총 75일, 2달 보름 정도가 걸리죠.
+그런데 만약 설계 변경이 일어나거나 갑작스런 지장물이 생겨 도면을 다시 만들어야 한다면..
+아마도 우리 엔지니어는 거의 멘붕에 빠져 버릴 것입니다.
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/gif_01.gif' | relative_url }}" alt="" /></span>
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+하지만 Drafter를 이용하면 3일 걸리는 단면도를 단, 3초만에 뽑아 낼 수 있습니다. CIM에서 단면 뷰를 정의하고 Drafter를 실행하면 PSC BOX의 단면도가 바로 생성 되구요,
+생성된 단면도를 이용하여 Drafter 내에서 도면내의 도면 기능 (Cutting View 기능)을 이용하면 측면의 Detail 도면을 바로 생성할 수 있습니다.
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+#### 2.	도면의 품질
+도면이 빠르게만 생성되면 안되겠죠.. 100% 완벽한 납품 도면 수준은 아니더라도 실시 설계 기준 80%정도 도면 품질을 보장해야 합니다.
+도면에서 가장 많은 정보를 담고 있는 주석에 대한 생성과 편집에 대한 용이성을 제공하여 80%에서 100%으로 가기 위한 옵션들로 엔지니어로 하여금 보다 쉬운 Retourtch 작업을 할 수 있도록 준비하였습니다.
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_02.jpg' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_03.jpg' | relative_url }}" alt="" /></span>
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus tempor euismod pri.
+기획자분들 이나 사업팀 분들은 이런 경험이 있으실 텐데요, 엔지니어링 업계에 근무하시는 분들은 책상위에 쌓여있는 납품 도서의 눈물을 아실 겁니다.  이 많은 보고서와 도면을 만들기 위해 합동 사무실을 차리고 짧게는 5~6개월, 길게는 1년간 야근 철야를 하면서 납품 도서를 만들어 냅니다.
+Drafter가 빠르게 도면을 생성하는 것은 의미가 없고 얼마나 도면 품질을 확보한 결과물을 만들어 주느냐가 중요합니다.
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/gif_02.gif' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/gif_03.gif' | relative_url }}" alt="" /></span>
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+보시는 부재는 원형 기둥의 주석 기호와 주석 기호 Rubber Band 기능으로 도면의 품질을 한 단계 더 끌어올렸습니다.
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+#### 3.	도면의 품격
+Drafter는 지금까지 아무도 시도하지 않았던 Smart 복사 기능을 만들었습니다. 이름하여 Smart Match인데요,
+한마디로 정답 도면을 제시하고 정답 도면으로부터 Style과 주석 기호, Dimension, Sheet등 납품도면으로서 가치가 있는 요소들을 복사하여 보다 쉽고 빠르게 도면의 품질을 완성합니다.
+
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_04.jpg' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_05.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/gif_04.gif' | relative_url }}" alt="" /></span>
+
+왼쪽이 2연 PSC 박스교의 정답 도면이고 이 정답 도면을 토대로 오른쪽 대상 부재에 그대로 적용하는 것입니다.
+ 
+#### 4.	마무리 글
+세상에는 많은 토목 BIM 제품이 있습니다. 마이크로스테이션, 레빗, 테클라, 올플랜, 오토데스크 시빌3D, 인로드 등 우리와 동시대를 살아가는 제품들입니다. 시장에서 Only One 제품, Just One 제품이 될 수 있도록 CIM의 노력은 계속 될 것입니다.
+
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_06.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/jnkim/pic_07.png' | relative_url }}" alt="" /></span>

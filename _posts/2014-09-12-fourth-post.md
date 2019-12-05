@@ -13,22 +13,38 @@ hashtags:
   - 아무도 모르는 DShop
   - 설계코드
 ---
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+#### 배근도란 ?
+철근콘크리트 구조물에서 부재의 철근배치를 나타낸 도면. 철근의 위치, 강종, 사이즈, 개수 뿐만 아니라, 철근의 이음 정착 등을 고려한 치수와 조립방법 등을 자세하게 나타낸 도면을 의미합니다
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+<span class="image left"><img src="{{ 'assets/images/post/dykwak/pic_01.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/dykwak/pic_02.png' | relative_url }}" alt="" /></span>
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+#### 이게 왜 필요한 거지 ?
+철근콘크리트 구조물에서 철근은 매우 복잡하게 배치되고 경우에 따라 다양한 방법으로 조립됩니다. 설계자가 의도한대로 구조물 성능을 발휘하기 위해서는 철근이 제대로 조립되어야 하는 것이고, 그러기 위해서 배근도가 필요한 것입니다. 
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+#### 나라마다 다른 것인가 ?
+각 나라의 설계 기준별로 세부사항에서 차이가 있습니다. 설계 기준에서 강제하지 않는 매우 세부적인 사항들은 시공하는 업체에 따라 다르기도 합니다.
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+#### 외국에서 사용하는 배근도 이미지
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus tempor euismod pri.
+<span class="image left"><img src="{{ 'assets/images/post/dykwak/pic_03.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/dykwak/pic_04.png' | relative_url }}" alt="" /></span>
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+#### 배근도 개발 중에 어려웠던 점 
+개발 중에 메인 기획자가 몇 번 교체됐습니다 
+저도 내용을 잘 모르는데 기획자까지 여러 번 교체 되면서 프로그램이 산으로 갈 뻔 했습니다 
+다행하게도 지금은 박성봉 선임이 잘 해주고 있습니다 
+배근을 그리기 위한 조건들이 복잡해서 어려웠습니다 
+팀에서 뿐만 아니라 설계팀과 기획팀에서 많은 도움을 받았습니다
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+#### DSHOP ?
+2010년도에 개발된 프로그램으로 Drawing이 개발되기 전에 Gen과 연동되는 도면프로그램입니다 
+구조도면 및 물량산출 자동 생성 프로그램으로 해석 및 설계 결과를 이용하여 도면을 비롯해서 각종 결과물을 자동으로 작성하는 프로그램입니다
+현재는 개발했던 분들이 한 분도 안 계시고 마지막으로 임채호 책임님 마저 일본으로 가셨습니다
+이 부분에서 문제점이 히스토리를 아는 분도 없고 대만, 이태리, 영국. 미국 등으로 버전이 분리되어 있어서 수정이 정말로 까다로웠습니다 
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+<span class="image left"><img src="{{ 'assets/images/post/dykwak/pic_05.png' | relative_url }}" alt="" /></span>
+
+배근도 개발의 목표는 
+#### NGEN 매출에 기여가 되었으면 좋겠습니다 그리고 DSHOP 을 대체할 수 있으면 좋겠습니다

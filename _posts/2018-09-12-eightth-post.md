@@ -10,22 +10,69 @@ hashtags:
   - 튜토리얼
   - ADM
 ---
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+#### TUTORIAL
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+##### 모바일 UI 에서는 볼 수 있는 STEP BY STEP 형식의 튜토리얼 왜 PC에서는 보기 힘들까?
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_01.png' | relative_url }}" alt="" /></span>
+예시) 모바일 게임의 STEP BY STEP 튜토리얼
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+PC 프로그램은 UI의 위치, 크기 등이 동적으로 변하기 때문에 대부분 글이나 이미지로 사용자를 가이드한다.
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_02.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_03.png' | relative_url }}" alt="" /></span>
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus tempor euismod pri.
+##### PC에서도!
+유동적인 UI를 갖게되는 PC에서도 모바일의 STEP BY STEP 형식 튜토리얼을 구현해 사용자들이 쉽게 튜토리얼을 사용 할 수 있도록 해보자!
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+이를 구현하기 위해 새로운 THREAD에서 투명한 다이얼로그를 띄워야 했다.
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_04.png' | relative_url }}" alt="" /></span>
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+그리고 STEP 단위로 완전히 독립적으로 메뉴를 찾거나, 다이얼로그를 찾거나, 다이얼로그 아이템을 찾도록 하였다.
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_05.png' | relative_url }}" alt="" /></span>
+
+각 스텝 별로 TIMER를 돌면서 위치를 찾고 해당 위치에 박스를 쳐주거나 gif를 띄워주는 등 인식을 하고 종료 조건에 따라 다음 스텝으로 이동한다.
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_06.png' | relative_url }}" alt="" /></span>
+
+##### 구현결과
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/tutorial.gif' | relative_url }}" alt="" /></span>
+
+#### ArchiDesign M
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_07.png' | relative_url }}" alt="" /></span>
+
+##### 꾸준히 고객의 니즈가 있는 아키디자인 앱
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_08.png' | relative_url }}" alt="" /></span>
+
+간단히 확인 하는 목적 등으로 모바일 뷰어에 대한 니즈가 있다. 
+Autocad, zwcad등도 모바일 캐드를 가지고있다.
+ARCHIDESIGN은 정보를 가지고있는 CAD인 만큼 정보기준 검색 등 더욱더 의미있는 모바일 캐드를 만들 수 있겠다.
+
+ODA 엔진은 멀티플랫폼을 지원하고 이를 활용해 만들면 되겠다고 판단하였다.
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_09.png' | relative_url }}" alt="" /></span>
+
+ODA엔진을 ios에 맞게 라이브러리로 빌드한 후 이를 Objective-C++ 프로젝트에 링크하였고 이이 Objective-C++ 및 C++로 응용 개발 및 기반작업을 하였다.
+
+##### 지금까지 개발된 항목은 아래와 같다..
+
+<span class="image left"><img src="{{ 'assets/images/post/kss0625/pic_10.png' | relative_url }}" alt="" /></span>
+
+1.	파일 : CLOUD에서 도면을 가져와 로컬에 저장할 수 있고 이를 열거나 로컬에서 삭제할 수 있다.
+2.	레이어 : 도면에 있는 레이어들의 목록을 볼 수 있으며 레이어를 끄고 켤 수 있다.
+3.	특성창 : 선택된 객체의 특성들을 확인할 수 있다.
+4.	윈도우 : MDWG 도면을 열었을 경우 원하는 윈도우를 확인 할 수 있다.
+
+##### PLAN
+1.	모든 ArchiDesign Custom 객체 지원
+2.	Sheet찾기, 정보 찾기 자원
+3.	Dist 등 Viewer필수 기능 지원
+
+영상.
+<span class="image left"><video src="{{ 'assets/images/post/kss0625/adm2.mp4' | relative_url }}" controls="controls" style="width:100%;"></video></span>

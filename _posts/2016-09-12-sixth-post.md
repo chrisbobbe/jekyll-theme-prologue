@@ -10,22 +10,78 @@ hashtags:
   - 자동화테스트
   - 핫픽스업데이트
 ---
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+#### 자동화 테스트
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+자동화 테스트 목적
+	제품의 안정성, 명령의 정확성등 제품의 품질을 테스트
+	제품의 특성을 반영한 실제 사용자 패턴을 이용한 테스트 진행
+	IRX를 활용한 테스트 스크립터(AutoIt, Python)에서 부족한 부분 지원
+	개발자와 기획자들에게 테스트의 결과 공유와 누적된 결과를 제공
+자동화 테스트 시스템
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+<span class="image left"><img src="{{ 'assets/images/post/atj1126/pic_01.png' | relative_url }}" alt="" /></span>
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+1.	문제 분석 – 제품의 결함을 발견하거나, 추가/수정된 기능의 완성도를 측정
+	제품의 결함을 발견하거나, 추가/수정된 기능의 완성도를 측정하는 등 제품을 이용한 테스트항목을 발견
+2.	테스트 케이스 작성 – 문제현상을 확인 할 수 있는 테스트 케이스 작성
+	문제 현상 확인이나 분석을 위해 필요한 스크립트 형태로 작성
+3.	자동화 테스트 – 테스트 스크립트 기반한 자동화 테스트
+4.	문제 수정 – 테스트의 결과를 이용해 문제 현상 해결
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+<span class="image left"><img src="{{ 'assets/images/post/atj1126/pic_02.png' | relative_url }}" alt="" /></span>
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus tempor euismod pri.
+1.	테스트 – 테스트케이스를 진행하는 단계
+	테스트는 기능/비기능 테스트로 구분된다.
+i.	기능테스트 – 기능테스트는 제품이 제공하는 단위 기능 또는 단위 기능들의 조합을 테스트한다. 테스트에 대한 예상 가능한 결과물이 생성
+ii.	비기능테스트 – 기능테스트를 제외한 테스트. 제품 동작 중 사용하는 시스템 리소스, 제품의 성능 등을 측정한다. 사용량, 측정치등 예상이 힘든 결과물이 생성.
+	테스트 스크립트가 안정적으로 수행될 수 있도록 보장이 필요하다.
+2.	판단 – 테스트의 결과를 검증하는 단계
+	테스트와 테스트 스크립터에 대한 신뢰도를 검증한다.
+i.	스크립터 검증 – 테스트를 진행하는 도중 스크립터 자체의 동작에 문제가 발생하지 않았는지에 대한 검증. 테스트가 정상적으로 완료되었음을 확인
+ii.	테스트 검증 – 테스트의 결과물(로그, 화면정보 등)을 이용하여 목표결과와 얼마나 근접한지 비교/분석.
+3.	피드백 – 테스트와 판단의 결과를 공유하는 단계
+	여러 환경에서 자동화 테스트가 수행되어야 한다.
+	테스트의 결과를 테스트 단위 또는 누적된 결과로 제공해야 한다.
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+자동화 테스트
+1.	테스트 – AutoIt, Python을 사용한 테스트 수행
+	IRX를 이용한 도면의 분석 및 스크립트 작성
+	스크립터를 이용한 안정적인 테스트 진행
+	기본적인 캐드 객체 생성, 특정 기능 테스트를 진행
+	상시테스트와 출시테스트를 진행
+2.	판단 – 테스트 결과 등을 이용한 검증
+	스크립터 동작 로그 및 결과물을 분석하여 검증을 위한 데이터 수집
+	검증을 위한 이미지 비교, 도면 데이터 비교등을 수행
+3.	피드백 – RT_Server를 이용한 원격 테스트 환경 지원
+	RT_Server를 이용한 AutoIt 원격 테스트를 지원
+	테스트 결과를 보존 및 기록.
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+#### 핫픽스
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+핫픽스의 목적
+	기존의 제품 배포 방식은 고객에게 가기까지 시간이 길다.
+	추후 사용량이 증가했을 때 배포에 부하가 적어야 한다.
+	여러 플랫폼과 제품에 적용 가능한 방식을 사용하여야 한다.
+
+핫픽스 구현 기술
+1.	델타 패치
+A.	파일의 업데이트를 원본 파일과 수정되는 파일의 차이점인 차분파일(델타파일)을 이용하여 업데이트를 진행하는 방식
+
+<span class="image left"><img src="{{ 'assets/images/post/atj1126/pic_03.jpg' | relative_url }}" alt="" /></span>
+
+2.	패치 제가 툴
+A.	누적되는 패치의 관리가 되어야한다.
+B.	XML 형태의 범용적인 다큐먼트를 사용하여 설정을 변경
+
+<span class="image left"><img src="{{ 'assets/images/post/atj1126/pic_04.png' | relative_url }}" alt="" /></span>
+
+3.	패치 배포
+A.	기존의 SmartUpdate용 서버를 사용하여 핫픽스 패치 배포.
+B.	고객 PC의 DesktopApp을 사용하여 손쉽게 패치 적용
+
+<span class="image left"><img src="{{ 'assets/images/post/atj1126/pic_05.png' | relative_url }}" alt="" /></span>
+
+핫픽스 적용 사례
+1.	Archi Design 적용 사례
+A.	Archi Design 2020 버전에 적용하여 3번의 Hotfix 배포 완료 및 사용자에게 제공완료

@@ -11,24 +11,53 @@ hashtags:
   - 카메라
   - 해치
 ---
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+#### 모바일 캐드 기능에 핸드폰의 기능을 추가한다는 것은
 
-<span class="image left"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span>
+가볍게 들고 다니며 크게 활용할 수 있는 포터블이 더욱더 우리의 삶에 큰 효용을 주면서 모바일에 관한 가치는 점점 커져만 갔다. 그에 따라 직접 건축 현장에서 일하시는 분들은 몇몇 부분들에 관해서는 모바일로 도면을 볼 수 있는 상황이라면 큰 도움을 줄 수 있을 것이라 생각했다. 그러면서 모바일 도면에다가 핸드폰에서 사용할 수 있는 마이크 / 터치스크린 / 카메라 같은 부분들을 활용해서 무언가 재밌는 걸 할 수 있지 않을까 생각을 했다.
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+그러면서 현재 모바일로 된 CAD 제품들을 살펴보기 시작했다. (물론 유료버전은 안쓰고,,)
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_01.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_02.png' | relative_url }}" alt="" /></span>
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+뭔가 모바일로 세부적인 내용들을 편집하는 것에는 무리가 있어 보였으나, 기본적인 동작들이나 뷰어로써의 역할로써는 충분한 것 같았다.
+각 제품들 안에도 모바일의 특성을 이용한 기능들이 몇 개가 있었다. 자유형 선을 그린다거나, 음성인식과 같은 기능들이 일부 들어있었다. 뭔가 특별함이 느껴지는 것 같아 신기하다는 생각이 들었다. 그러면서 여기 없는 것들 중에 재밌게 할 만한 것들을 찾아보게 되었고, 카메라를 통해 인식한 영상으로 도면에 뭔가를 할 수 없을까라는 생각으로 이번 프로젝트를 진행하게 되었다.
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+##### 1.	우선 뷰어 생성부터!
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus tempor euismod pri.
+기본적인 캐드 뷰어를 만들어야한다! 부터 시작하였다. 우리 소스의 기반이 되는 ODA나 ICAD에는 모바일 뷰어에 관한 예제 코드가 존재 하였고, 그것으로부터 시작하면 와 금방하겠지라는(지금 생각해보면 되도 않은 헛된) 생각과 함께 시작했다. 
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_03.png' | relative_url }}" alt="" /></span>
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+난제였다. 오류는 어마어마하게 터지고, 멘탈은 살살 녹았다. 겨우겨우 온갖 사이트들을 뒤져서 빌드를 성공해보았지만, 몇몇 파일은 존재하지 않았고, 결국 실행을 성공했을 때도 꾸역꾸역 끼워맞춰서 어디서 어떻게 터질지 모르는 코드 상태로 실행을 성공하였다.
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_04.png' | relative_url }}" alt="" /></span>
+
+그러던 도중 성수가(여윽시 갓성수) ODA홈페이지에서 코드를 다시 받아서 모듈을 잘 맞춰주면 그런거 없이 잘 만들어진다는 좋은 정보를 주었다.
+
+정말 모듈을 잘 맞추니 기본적인 안드로이드 설정만 맞춰주니 잘 실행되었다. 개꿀이였다. 진짜 그간의 고생이 너무 허탈했지만, 나름 거기서도 배울 수 있었으니 좋은 경험이였다고 생각한다. 실행했을 때, 그냥 진짜 순수 뷰어 그 자체였다. 그래서 ¬뷰어에다가 이것저것 봐가면서 하나하나 기능을 붙여보았다. 선그리기, Undo/Redo, 객체 선택 등등을 해보았다. 신기했다. 그러다보니 어느새 상반기가 훌쩍 지나가 있었다.
+
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_06.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_07.png' | relative_url }}" alt="" /></span>
+
+##### 2.	카메라로 어떤걸???
+
+이제 카메라를 이용해 어떻게 할지를 고민해보았다. 처음에는 그냥 사진에 있는거 보이는 그대로 도면에 블록처럼 찍을 수 있게! 라는 생각을 했었다. 지금 생각해보면 그것도 터무니 없네,,, 방향을 잘 잡아주신 팀장님께 정말 감사함을 느낀다. 우선 카메라 실행하는 코드부터 진행해보도록 했다. 카메라 실행 코드는 역시 카메라는 사람들이 많이 사용하는 기능이라 그런지 검색 한번에 쉽게 찾을 수 있었다. 그렇게 카메라를 실행하고 사진을 뽑아내는 것까지 끝.
+
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_08.png' | relative_url }}" alt="" /></span>
+
+그 후 이제 찍은 영상으로 어떤 식으로 각종 선들을 뽑아낼까를 고민해보았다. (고민하고 빨리 실행했어야 하는데,,,(11월 28일의 나))
+
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_09.png' | relative_url }}" alt="" /></span>
+
+출시도 있었지만, 이리저리 미뤄지다보니 다급하게 진행되었고, 이리저리 조사하면서 금방 할 수 있는 OpenCV를 이용하도록 결정했다. 우선 선만을 표현하자고 해서 Canny Edge Detection과 Hough Transform을 이용해 선을 추출하는 방식으로 진행을 했고, 그로부터 좌표를 알 수 있게 되었다. 그 후 어떻게 활용할까를 팀장님과 같이 고민하면서 해치 패턴을 가볍게 표현할 수 있으면 어떨까라는 아이디어가 나왔고, 그래서 해치 패턴을 뽑는 방식을 연구하였다. 조사하고 몇 번의 실패를 통해 해치 패턴의 방식도 찾아 내었고, 일단 삼위일체를 위한 3가지의 재료는 완성되었다. 그 후 합치는 과정을 통해 촬영을 통해 어줍잖은 해치 패턴을 뽑아낼 수 있었다.
+
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_10.png' | relative_url }}" alt="" /></span>
+
+##### 3.	모바일 뷰어를 통한 해치 생성
+
+그 후 이제 따로 연습을 위해 만들었던 카메라 / OpenCV 기능의 예제 파일을 통해 모바일 뷰어에 합쳤다. 그리고 해치 패턴을 표현할 수 있는 코드도 만들었다. 현재는 여기까지 진행되었고, 사용자가 만든 해치 패턴 파일을 적용할 수 있는 방법을 찾고 있는 중이다. 여기까지 생각해보면 이게 문득 효용이 있나 싶지만, 아마 추후에 클라우드 기능같은 것들이 추가되면 그리고 촬영을 한 것들을 좀 더 효율적인 방식으로 쓸 수 있는 방식들을 더 찾아낸다면 새롭게 큰 효용을 낼 수 있을 것이라 생각된다. 그래도 일단은 모바일의 기반을 닦고 쓸 수 있게 성수랑 같이 이루어냈다는거에 큰 의미가 있다고 생각한다. 
+
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_11.png' | relative_url }}" alt="" /></span>
+<span class="image left"><img src="{{ 'assets/images/post/sym0417/pic_12.png' | relative_url }}" alt="" /></span>
