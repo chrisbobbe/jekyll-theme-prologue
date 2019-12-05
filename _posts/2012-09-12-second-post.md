@@ -12,69 +12,224 @@ hashtags:
   - 대규모 검색
 ---
 
-Lorem ipsum dolor sit amet, harum malorum nominavi mea et. Atqui maluisset duo cu, summo dignissim voluptatum sit ut. Ad quo quidam delicatissimi. Cum nihil noster patrioque id. Per at maiorum definitiones. Cu vix sint aliquip. No duo alia sale persecuti.
+실시간 텍스트 검색에 관심이 생겨 개발 연구를 시작하였다.
+시작 전에 얼마만큼의 데이터량에 대해서 실시간 반응을 해줄 수 있을 것인지 목표를 잡아봐야 했다. 음… 1만? 10만…?? 조금 과한가?
 
-Pri id consul meliore luptatum, vix iudico impetus salutatus eu, duo at causae admodum complectitur. Qui eu salutandi dignissim, ea dictas audire commodo eos, vim cu autem dicam. Novum placerat moderatius sea ex, debet labitur reprehendunt mei ad. Tempor theophrastus et est, id tollit ponderum usu, at vis consul detraxit. Sit ut adhuc aeque.
+일단 5만개 정도로 시작해봐야겠다는 생각이 든다.
 
-Ut eum labore antiopam. Cum eu modus rationibus. Illud deleniti cum cu. At vix illum vitae tation, solet oporteat complectitur at vel. Vim te simul eleifend, et per insolens conceptam, ad sint posidonium est. Ad vocent propriae principes duo.
+#### 원래 얼마나 빠를 수 있을까?
 
-<span class="image right"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span>
+이게 정말 가능한지 프로토 타입을 만들기 전에 인터넷으로 관련 자료를 찾아보다가 아래 사이트를 발견하게 되었다.
+ 
+Lightning Fast Filtering in JavaScript
+https://chrissmith.xyz/lightning-fast-filtering-in-javascript/ 
 
-Audire periculis id vis, cum eu sonet option patrioque, his dicam sanctus imperdiet ad. Ad sonet dolorum est. Eu dolore adipisci volutpat mei, eu nec nisl molestiae. Usu ad veri omnesque pertinacia, duis scripserit ad nam. Quo id eligendi legendos.
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_01.png' | relative_url }}" alt="" /></span>
 
-Eos cu partiendo vituperatoribus. Mel id duis delenit atomorum, mei tamquam nostrum ne, id eum hinc decore mediocrem. Mei feugiat habemus tincidunt ut, atqui detraxit ex usu. Vix ad commodo eripuit alienum, an has idque delicatissimi. Dolores reformidans mel ne, duis numquam disputando quo te.
+자바 스크립트로 약 10만개 Text 데이터에 대한 실시간 검색 속도를 보여주는 사이트였는데, 사실 약간은 충격이었다. 
+자바 스크립트는 C/C++ 보다 성능이 한참 나쁜데도 10만개 데이터에 대해 실시간 결과를 보여주고 있었던 것이다.
 
-Eum eu tritani accusata qualisque, pro ei purto vocent. Vim in insolens hendrerit similique. Nobis munere antiopam ei vix. Cum no labore partiendo conceptam. Sea id vide viderer mandamus, magna posidonium nam at. Ad populo persius duo, vel audire detracto scribentur ut.
+C++ 개발자로서 생각할 때, 그렇다면 당연히 C++에서는 100만개 이상 데이터에서도 이 속도를 낼 수 있겠다는 감이 들었다.
 
-Vim te fastidii sententiae. Vix ad facilis gloriatur, mei an diceret iracundia vituperatoribus. Iudico consetetur dissentiunt pri ut. Consul dictas pri ne. Nec an alia volumus scaevola, eos movet deleniti argumentum te. Latine abhorreant his ad, ut modus in the following table:
+그래서 100만 Text 데이터에 대해서 0.1초 이내의 반응 속도로 결과를 보여주는 것으로 목표는 수정되었다. 이대로만 된다면 말 그대로 실시간 검색을 해주는 것이 될 것이다.
 
-<div class="table-wrapper">
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Item 1</td>
-        <td>Ante turpis integer aliquet porttitor.</td>
-        <td>29.99</td>
-      </tr>
-      <tr>
-        <td>Item 2</td>
-        <td>Vis ac commodo adipiscing arcu aliquet.</td>
-        <td>19.99</td>
-      </tr>
-      <tr>
-        <td>Item 3</td>
-        <td> Morbi faucibus arcu accumsan lorem.</td>
-        <td>29.99</td>
-      </tr>
-      <tr>
-        <td>Item 4</td>
-        <td>Vitae integer tempus condimentum.</td>
-        <td>19.99</td>
-      </tr>
-      <tr>
-        <td>Item 5</td>
-        <td>Ante turpis integer aliquet porttitor.</td>
-        <td>29.99</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td colspan="2"></td>
-        <td>100.00</td>
-      </tr>
-    </tfoot>
-  </table>
-</div>
 
-Amet illum at sea, est autem fabulas eu, quod nonumes lobortis no sed. Has ei fugit adipisci reprimique. Enim tamquam ornatus pri ei. Alii harum invidunt nec ex, pri vidit latine ne. Has vocent nominati rationibus ad, ex partiendo prodesset moderatius has, vim quod paulo ad. Ex nec etiam electram, pri illud appetere eu.
+#### 문자열 비교 알고리즘은 어떤 것을 사용하는 게 좋을까?
 
-An nobis instructior eos, eam libris aperiam corrumpit ex. Case omnesque eu per. Et vix iisque tritani. Autem posidonium eu vis, sit et mutat brute. Usu ne postulant intellegat omittantur, mazim saperet adolescens mel at.
+위 사이트의 소스를 분석해 보니, 특별한 자료구조를 사용하지 않고 filter()함수에 단순히 문자열 비교 함수(indexOf())를 호출하는 것 만으로 이 속도가 나오고 있었다.
 
-Nam at velit percipit detraxit, quas modus mea ut. Ius an natum doctus vivendum. Quo at debet vidisse viderer, mollis eripuit ex nec. Sed ut choro saepe, sale augue sea et. His nemore dolorum mnesarchum at, ius an adipisci aliquando, laoreet placerat ea ius.
+하지만 C++에는 그 함수가 없다. 
+그리고 C++ 자존심상 무조건 javascript 보다는 빠르고 싶었다.
+
+그래서 문자열 비교 알고리즘부터 좋은 것으로 사용하기 위해 이미 알려진 알고리즘 벤치마킹을 조사했다. 그렇게 좋다고 알려진 알고리즘이 아래 3개다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_02.png' | relative_url }}" alt="" /></span>
+(출처 : http://1ambda.github.io/algorithm/algorithm-part2-4/)
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_03.png' | relative_url }}" alt="" /></span>
+
+흠.
+흠흠..
+흠흠흠...
+
+이거 정말 장인 정신과 학자 정신을 발휘해서 위의 알고리즘들을 깊게 파봐야 하는 상황인게 맞는 걸까? 하는 의문이 들었다….
+일단 대략적으로 어떤 개념으로 문자열 비교 속도를 높이는 지는 알겠는데,
+개념을 아는 것과 구현을 하는 것은 천지차라서, 꽨 긴 시간을 투자해야 문자열 비교 부분을 확인 할 수 있는 상황으로 보였다.
+
+
+#### 무시할 수 없는 Visual C++ 런타임 함수 성능 - strstr은 생각보다 겁나 빠르다.
+
+대규모 데이터 검색을 하려면 실제로는 데이터들에 대한 자료구조가 더 중요할 텐데…
+
+그래서 알고리즘 구현을 위한 연구를 하기 보다는 
+좀더 좋은 다른 방법이 없는지 검색하는데 더 시간을 쏟았다.
+
+그렇게 보던 중 아래 글이 눈에 들어왔다.
+
+보이어-무어(Boyer-Moore) 알고리즘이 정말 빠를까?
+https://www.sysnet.pe.kr/2/0/1705 
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_04.png' | relative_url }}" alt="" /></span>
+
+무시할 수 없는 Visual C++ 런타임 함수 성능
+https://www.sysnet.pe.kr/2/0/1843
+
+내용의 요지는 
+MS에서 최적화 시켜놓은 strstr() 함수의 런타임 함수(어셈블리어)는 보이어-무어(Boyer-Moore) 알고리즘보다 빠르다는 실험 결과입니다.
+
+단, 위 글의 결과에도 나오지만, 검색 문자열이 긴 경우에 (건너뛰기를 멀리할 수 있으니) boyer-moore 알고리즘은 효율적입니다. 
+(하지만, 현실에서 사람들이 던지는 검색어가 긴 경우는 사실 많지 않지요.)
+
+나의 경우는 유니코드 빌드를 사용하는데,
+당연히 strstr 의 유니코드 버전 wcsstr을 사용해도 동일한 효과가 있다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_05.png' | relative_url }}" alt="" /></span>
+
+이로써 1차 문제인 문자열 비교 알고리즘에 대한 고민은 해결되었다.
+
+
+#### 순차검색을 위한 자료구조 - Trie
+
+Text 검색에서 가장 중요하게 생각한 점은 “꼭 일치 검색을 해야 하는가?”이다.
+사용자의 입장에서는 정확한 단어가 떠오르지 않을 경우가 너무나 많다.
+하지만 대략 어떤 글자나 단어들이 포함되어 있는지를 알기 때문에 알고 있는 몇 글자를 먼저 타이핑해서 1차 검색 필터링을 해보고, 거기서 나온 결과 후보들을 보고
+2차로 추가 단어를 입력해서 원하는 결과를 구체화 시키는 게 편하다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_06.png' | relative_url }}" alt="" /></span>
+
+메신저 프로그램 등에서 욕설 등의 금지어를 검색하기 위한 방법으로 많이 사용되는 자료구조로 Trie가 있다.
+수천, 수만개의 금지어들 중에서 사용자가 입력하고 있는 단어가 금지가 들어가고 있는지 실시간으로 확인해서 경고 메세지를 뿌려주기 위해 사용된다.
+
+개념은 단순하다.
+예를 들어, “안녕하세요” 라는 단어가 금지어로 등록되어 있다면 “안”, “안녕”, “안녕하, “안녕하세”, “안녕하세요”, “녕”, “녕하”, “녕하세”, .. 과 같이 포함 글자들을 나눠서 트리 구조로 저장해 놓는 것이다.
+
+트리 구조이기 때문에 데이터 전체를 검색할 필요없이 Tree 구조를 통해 몇번의 비교 만으로 빠르게 금지어 여부를 판단할 수 있다는 장점이 있다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_07.png' | relative_url }}" alt="" /></span>
+
+짧은 단어에 영어만을 대상으로 한다면 큰 문제가 되지 않을 가능성은 있으나, 한글이 포함된 문장을 가지고 약 10만개의 데이터로 위 구조를 작성해 보니 여지없이 메모리 부족 에러가 떴다. (당연히 데이터 로딩은 더욱 지루하게 오래 걸렸다. 컴터 멈춘 거 같은 느낌을 받으면서 인내심을 가지고 기다린 결과는 위의 화면이다… ㅠ.ㅠ)
+
+
+#### 순차검색 자료구조 - 아이디어1 : 중복제거 정렬된 문자열
+
+뭔가 다른 아이디어가 필요했다.
+
+고민 끝에 생각해 본 새로운 아이디어는 
+단어 단위로 끊어서 인덱싱을 하는 것이다.
+
+이때 인덱싱 키(단어)는 문자로 정렬을 한 후 중복 글자는 제거하는 방식을 생각했다.
+단어 단위로 모두 인덱싱 하면 키 갯수가 너무 많아져 문자열 비교 횟수가 너무 많아지지 않도록 하기 위한 고민의 결과다. 
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_08.png' | relative_url }}" alt="" /></span>
+
+위 그림은 아이디어가 실제 적용되었을 때 얼마 만큼의 메모리가 필요할 지를 시뮬레이션 해 보기 위해 그려본 데이터 연관관계도이다.
+
+맨 앞의 “010-9371-0174”를 인덱싱 한다면 
+“00011134779”로 먼저 정렬하고
+중복 글자를 제거해서 “013479” 라는 단어를 인덱싱 키로 사용한다.
+
+그리고, 그 위쪽에 한 글자씩을 인덱싱 키로 가지는 구조를 하나 더 두어서
+위와 같은 연관구조 그래프를 생성하게 된다.
+
+이제 한 글자씩 입력했을 때 얼마나 문자열 비교 횟수가 줄어들 수 있는지 보자.
+
+예를 들어 ‘6’이라는 글자를 첫번째로 입력하면 
+‘6’을 키로 하는 해시리스트로 “0124567”과 “0125678”이라는 두 개의 인덱싱 키와 만나게 된다.
+그러면 이 키를 가지는 다음 결과 리스트들을 문자열 비교 없이 바로 받아올 수 있게 된다.
+
+추가로 ‘4’를 입력하여 “6 4” 라는 검색어가 들어오게 되면, 두번째 ‘4’는 한 글자 인덱스에서 찾는 게 아니라 ‘6’을 키로 하는 “0124567”과 “0125678” 두 개의 인덱싱 키에서 ‘4’를 포함하는 키만을 찾게 된다.
+이렇게 “0124567”라는 인덱싱 키가 찾아지면 거기에 물려있는 데이터 리스트를 받아오기만 하면 된다.
+
+이번에는 “4227”이라는 검색어로 찾는 경우를 보자.
+검색어도 인덱싱 키와 마찬가지로 “정렬 + 중복제거”를 해주면 “247”을 찾게 된다.
+먼저 ‘2’를 가지고 “01234579”, “012579”, “0124567”, “0125678” 네 개의 인덱싱 키를 찾게 된다.
+이 인덱싱 키를 대상으로 나머지 ‘4’와 ‘7’이 포함된 인덱싱 키로 필터링을 해주면 “01234579”와 0124567” 두 개의 인덱싱 키가 남게 된다.
+이 두 개의 인덱싱 키에 물려있는 데이터 리스트들에 대해서만 “4227” 문자열을 포함하는지 비교 연산을 수행해주면 된다.
+즉, “010-2335-7419”와 “010-2665-4227” 두 개에 대해서 문자열 비교를 해서 최종적으로 “010-2665-4227” 결과를 찾게 된다.
+
+대량의 데이터들에 대해서는 Tree 구조와 마찬가지로 문자열 비교횟수를 확 줄여줄 수 있는 구조라는 생각에 처음에는 기뻤다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_09.png' | relative_url }}" alt="" /></span>
+
+그런데, 막상 그래프 모양으로 가시화해서 눈으로 보니, “키 -> 데이터 리스트”로 가는 Leaf 수가 너무 많다는 생각이 들었다. (연관정보도 실제 데이터로 가지고 있어야 하기 때문에 메모리를 차지하게 된다. 즉 Trie와 마찬가지로 메모리를 너무 많이 먹는 구조가 될 가능성이 크다.)
+
+때문에 아이디어를 코딩으로 구현해서 테스트를 해보기 전에 약간 회의적인 전망이 생겼다.
+좀더 머리를 쥐어 짜 보기로 했다.
+
+
+#### 순차검색 자료구조 – 아이디어2 : 테이블 연관 구조
+
+이번에는 아이디어의 핵심은 문장 또는 단어에서 ‘형태소(한글자) 단위’로 인덱싱을 하겠다는 거다. 
+정확히는 문자열 비교연산없이 HashKey 비교 만으로 필터링 대상 후보를 빠르게 최소화 하겠다는 거다.
+
+아래의 표를 보면서 좀 더 자세히 설명하도록 하겠다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_10.png' | relative_url }}" alt="" /></span>
+
+왼쪽 표의 문자열 데이터들에 대해서 오른쪽 표의 해시 테이블을 생성한다.
+
+해시 테이블을 생성하는 방법은
+문자열의 각 글자들을 해시키로 잡고, 
+자신의 위치(배열의 index, 메모리 주소, 혹은 데이터 테이블의 key, … 어떤 거라도 좋다)를 해시테이블의 데이터로 붙여준다.
+(참고로 왼쪽 표에서 데이터 영역에 있는 숫자들은 오른쪽 문자열 데이터 배열의 index이다.)
+
+이렇게 생성되는 해시 테이블의 타입은 아마도
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_11.png' | relative_url }}" alt="" /></span>
+
+와 같은 형태가 될 것이다.
+
+사실 개인적으로는 vector 보다는 CAtlMap을 선호한다. (가변 데이터의 추가/삭제/조회가 vector, list에 비해 월등히 빠르기 때문이다.) 여기서는 이해를 쉽게 하기 위해 vector로 표현 했다.
+
+이게 이번 아이디어로 생성된 자료구조의 끝이다.
+
+너무 심플해서 이게 뭐냐라는 질문을 할 수 있다.
+아무것도 아니네~ 라는 실망을 할 수도 있다.
+
+하지만, Trie나 전체 검색과 비교하면 이 단순한 구조가 만드는 엄청난 속도에 놀라게 될 수도 있다.
+
+이 자료구조의 장점은
+1.	해싱이 빠르다.
+형태소 테이블은 문자열이 아니기 때문에 wchar_t 타입(int 타입)의 테이블이기 때문에 별도 해싱계산이 필요없다.
+2.	인덱싱 구조의 메모리가 적게 든다. 
+대상 문자열 데이터들 만큼이 최대 필요 메모리다. 
+하나의 문자열 데이터에 중복 글자가 있다면 그만큼 필요한 메모리는 줄어들게 된다.
+3.	한글자씩 입력시 바로바로 필터링된 결과의 Count를 알 수 있다.
+
+검색 과정은 단순하다,
+한 글자를 입력하면 
+그 글자를 해시로 해서 데이터 리스트에 있는 리스트를 받아온다.
+
+두 글자 이상을 입력하면
+각 글자가 물고 있는 데이터리스트 중에서 count가 가장 작은 List를 가져온다.
+이 List는 아직 문자열 데이터는 아니고, 각 문자열의 위치를 가리키고 있는 데이터들이다.
+(배열의 index, 메모리 주소, 혹은 데이터 테이블의 key, …)
+
+이렇게 얻은 List들을 대상으로 문자열 비교(strstr)를 통해서 검색 쿼리가 포함된 문자열을 최종 필터링을 하면 아래 데모 프로그램과 같이 빠른 결과를 얻을 수 있다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/pic_12.png' | relative_url }}" alt="" /></span>
+
+실제 테스트 프로그램을 통해서 확인해 봤을 때,
+약 100만개 이상의 문자열 데이터에 대해서 평균 20ms(약 0.02초) 이내의 검색 속도를 보주고 있다.
+
+특히 한글을 입력하는 과정에서 일치하는 글자가 없는 경우에는 count가 0이 되어 비교연산 없이도 바로 다음 입력으로 넘어갈 수 있는 실시간 연산이 이루어지고 있다.
+
+실시간 검색을 위한 자료구조를 연구하는 과정을 꽤 길게 설명해 놓은 거 같다.
+하지만 실무는 항상 또다른 문제를 안고 있다.
+
+백엔드 연산으로 실시간 검색을 해내지만, 프론트엔드에서 보여주는 ListCtrl 또는 TreeView에서 아이템을 구성하는 속도 역시 꽤 긴 시간이 걸린다.
+
+이 문제를 해결해야만 실무 적용이 가능하다.
+
+<span class="image left"><img src="{{ 'assets/images/post/hsshim/demo.gif' | relative_url }}" alt="" /></span>
+
+그래서 현재 진행하면서 참고하고 있는 ListCtrl 및 TreeView의 성능개선 사이트를 아래에 함께 기록한다.
+
+CListCtrl 일반 사용법 + Virtual List 기능
+http://blog.naver.com/PostView.nhn?blogId=mycpp&logNo=220687812222&redirect=Dlog&widgetTypeCall=true 
+
+Using virtual lists
+https://www.codeproject.com/Articles/7891/Using-virtual-lists 
+
+Thread: CTreeCtrl SOOO SLOW !
+http://forums.codeguru.com/showthread.php?390333-CTreeCtrl-SOOO-SLOW-!
