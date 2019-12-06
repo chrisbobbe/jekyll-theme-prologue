@@ -581,6 +581,8 @@
 			}
 
 			li {
+				font-size: 100%;
+				
 				a {
 					display: block;
 					padding: 0.5em 1.5em 0.5em 1.5em;
@@ -921,6 +923,10 @@
 		/* Header */
 			#nav {
 				ul {
+					li {
+						font-size: 100%;
+					}
+
 					hr {
 						margin: auto 1.25em;
 					}
@@ -978,6 +984,8 @@
 				ul {
 					list-style: none;
 					li {
+						font-size: 100%;
+					
 						a {
 							font-size: 0.8em;
 							padding-top: 0.5em;
@@ -1100,6 +1108,8 @@
 						margin: auto 1.25em;
 					}
 					li {
+						font-size: 100%;
+
 						a {
 							padding: 0.5em 1.25em 0.5em 1.25em;
 
