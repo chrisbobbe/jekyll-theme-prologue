@@ -283,7 +283,7 @@
 			display: block;
 			margin: 0 0 2em 0;
 
-			img {
+			img, video {
 				margin: 0 auto;
 				max-width: 100%;
 				width: auto;
@@ -1316,7 +1316,7 @@
 
 			.image.centered {
 				width: 100%;
-				img {
+				img, video {
 					width: 100%;
 				}
 			}
