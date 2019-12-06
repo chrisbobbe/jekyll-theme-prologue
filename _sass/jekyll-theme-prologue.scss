@@ -285,6 +285,7 @@
 
 			img {
 				margin: 0 auto;
+				max-width: 100%;
 				width: auto;
 			}
 		}
@@ -1308,6 +1309,15 @@
 							padding: 0 1em;
 						}
 					}
+				}
+			}
+
+		/* Image */
+
+			.image.centered {
+				width: 100%;
+				img {
+					width: 100%;
 				}
 			}
 
