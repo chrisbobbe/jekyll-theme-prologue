@@ -56,6 +56,10 @@ pinterest_url:
 slack_url:
 dribbble_url:
 
+# Whatsapp setting 
+# Make sure to include your full number, with country code, e.g +5535123456789
+whatsapp_number:
+
 # Google Analytics Tracking ID goes here:
 google_analytics:
 
