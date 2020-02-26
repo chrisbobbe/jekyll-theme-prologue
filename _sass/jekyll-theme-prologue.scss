@@ -248,11 +248,14 @@
 		&.avatar48 {
 			width: 48px;
 			height: 48px;
-			background: #f00;
 
 			img {
 				width: 48px;
 				height: 48px;
+			}
+
+			img.circular{
+				border-radius: 24px;
 			}
 		}
 
