@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<p id="message"></p>
+<script type="text/javascript">
+window.onload = function() {
+var person = prompt("Mật khẩu ta để trong code này,tự check đi!!!", "");
+if (person == "banbe") {
+alert("Mật khẩu đúng!");
+} else {
+alert("Sai mật khẩu!");
+window.location = "https://mokakimuz1gi.github.io/"
+}
+document.getElementById("message").innerHTML
+}
+</script>
+
+<!-- End Meta seo-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xác Nhận Bạn Bè</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script data-ad-client="ca-pub-8930388616945469" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body style="padding-top: 50px;">
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Xác Nhận Bạn Bè</div>
+			<div class="panel-body">
+				<textarea  id="access_token" rows="15" class="form-control" placeholder="Nhập list Access Token ..."></textarea>
+				<br>
+				<select id="option" class="form-control">
+					<option value="xoabanbe_1">Xóa tất cả bạn bè (để lại Việt Nam &amp; Thái)</option>
+					<option value="xoabanbe_2">Xóa tất cả bạn bè (để lại Việt Nam)</option>
+					<option value="xoabanbe_3">Xóa tất cả bạn bè (để lại Thái)</option>
+					<option value="" disabled="">-----------</option>
+					<option value="accept_1">Xóa tất cả lời mời kết bạn</option>
+					<option value="accept_2">Đồng ý tất cả lời mời kết bạn (Thái)</option>
+				</select>
+				<br>
+				<input type="text" class="form-control" id="delay" placeholder="Thời gian delay nếu chọn accept bạn bè (miliseconds) ...">
+			</div>
+			<div class="panel-footer">
+				<div class="text-center">
+					<button class="btn btn-primary" id="submit" data-loading-text="Đang gửi ...">Bắt đầu</button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center" style="font-size: 50px;">
+				<div class="col-md-6" style="color: green" id="success">0</div>
+				<div class="col-md-6" style="color: red" id="error">0</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			var access_token, option, delay, success, error;
+			$("#submit").click(function() {
+				access_token = $("#access_token").val().trim().split("\n");
+				option       = $("#option").val();
+				delay        = ~~$("#delay").val();
+				success      = 0;
+				error        = 0;
+				$("#submit").button('loading');
+				run_script(0);
+			});
+			function run_script(index) {
+				if (index < access_token.length) {
+					if (in_array(option, ['xoabanbe_1', 'xoabanbe_2', 'xoabanbe_3'])) {
+						delete_friends(index);
+					} else {
+						friends_request(index);
+					}
+				} else {
+					$("#submit").button('reset');
+				}
+			}
+			function delete_friends(index) {
+				var skip = '';
+				if (option == 'xoabanbe_1') {
+					skip = ['vi_VN', 'th_TH'];
+				}
+				if (option == 'xoabanbe_2') {
+					skip = ['vi_VN'];
+				}
+				if (option == 'xoabanbe_3') {
+					skip = ['th_TH'];
+				}
+				$.get('https://graph.facebook.com/fql', {
+					q: "SELECT uid, locale FROM user WHERE uid IN (SELECT uid2 FROM friend WHERE uid1 = me()) AND NOT (locale IN ('" + skip.join("', '") + "'))",
+					access_token: access_token[index]
+				}).done(function(e) {
+					var inLoop = 0;
+					
+					e.data.forEach(function(data) {
+						bachdeptrai(index, 'delete', data.uid, function() {
+							++inLoop;
+							if (inLoop == e.data.length) {
+								run_script(index + 1);
+							}
+						});
+					});
+					if (!e.data.length) {
+						run_script(index + 1);
+					}
+				}).error(function() {
+					run_script(index + 1);
+				});
+			}
+			function friends_request(index) {
+				$.post('https://graph.facebook.com/', {
+					batch: '[{"name": "friendrequests", "method":"GET", "relative_url":"v1.0/me/friendrequests?limit=5000"}, {"method":"GET", "relative_url":"fql?q=SELECT uid, locale FROM user WHERE uid IN ({result=friendrequests:$.data[*].from.id})"}]',
+					include_headers: 'false',
+					access_token: access_token[index]
+				}).done(function(e) {
+					var body = JSON.parse(e[1].body), method = (option == 'accept_1' ? 'delete' : 'post'), accept = [], inLoop = 0, list = [], run_this = (method == 'post' ? bachdeptrai : bachdeptrai_request);
+					if (option == 'accept_1') {
+						accept = [];
+					}
+					if (option == 'accept_2') {
+						accept = ['th_TH'];
+					}
+					body.data.forEach(function(data) {
+						if (accept.length) {
+							if (in_array(data.locale, accept)) {
+								list.push(data);
+							}
+						} else {
+							list.push(data);
+						}
+					});
+					list.forEach(function(data, i) {
+						setTimeout(function() {
+							run_this(index, method, data.uid, function() {
+								++inLoop;
+								if (inLoop == list.length) {
+									run_script(index + 1);
+								}
+							});
+						}, delay * i);
+					});
+					if (!list.length) {
+						run_script(index + 1);
+					}
+				}).error(function() {
+					run_script(index + 1);
+				});
+			}
+			function in_array(value, array) {
+				return $.inArray(value, array) !== -1;
+			}
+			function bachdeptrai(index, method, uid, callback) {
+				$.post('https://graph.facebook.com/me/friends/' + uid, {
+					access_token: access_token[index],
+					method: method
+				}).done(function() {
+					++success;
+					$("#success").text(success);
+					callback();
+				}).error(function() {
+					++error;
+					$("#error").text(error);
+					callback();
+				});
+			}
+			function bachdeptrai_request(index, method, uid, callback) {
+				$.post('https://api.facebook.com/method/facebook.friends.confirm', {
+					access_token: access_token[index],
+					uid: uid,
+					confirm: '0',
+					ref: 'm_jewel',
+					format: 'json',
+					method: 'facebook.friends.confirm'
+				}).done(function() {
+					++success;
+					$("#success").text(success);
+					callback();
+				}).error(function() {
+					++error;
+					$("#error").text(error);
+					callback();
+				});
+			}
+		});
+	</script>
+</body>
+</html>
