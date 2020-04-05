@@ -40,11 +40,11 @@ avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://tusharxsharma.github.io # the base hostname & protocol for your site
+url: https://tusharxsharma.github.io
 repository : "tusharxsharma/tusharxsharma.github.io"
 
 # Social settings
-# Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
+# Make sure to include the full url including protocol,
 twitter_url:
 facebook_url:
 googleplus_url:
