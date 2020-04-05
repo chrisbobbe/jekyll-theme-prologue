@@ -39,8 +39,8 @@ email: tusharsharmavj@gmail.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
-#baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
-url: "https://tusharxsharma.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tusharxsharma.github.io" # the base hostname & protocol for your site
 
 # Social settings
 # Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
