@@ -45,13 +45,13 @@ repository : "tusharxsharma/tusharxsharma.github.io"
 
 # Social settings
 # Make sure to include the full url including protocol,
-twitter_url:
-facebook_url:
+twitter_url: 
+facebook_url: https://www.facebook.com/tusharxsharma
 googleplus_url:
 instagram_url: https://www.instagram.com/jaggerxr/
 linkedin_url: https://www.linkedin.com/in/tusharsharmavj/
 github_url: https://github.com/tusharxsharma
-stackoverflow_url:
+stackoverflow_url: https://stackoverflow.com/users/13233971/tushar-sharma
 pinterest_url:
 slack_url:
 dribbble_url:
