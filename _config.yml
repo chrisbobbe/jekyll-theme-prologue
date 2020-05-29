@@ -30,8 +30,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: HIIMTEO
-subtitle: Documenting my journey of self-learning CS
+title: Hi, it's Teo
+subtitle: Come learn with me!
 description: >- # this means to ignore newlines until "baseurl:"
   Documenting my journey of self-learning CS
 author: Teo Petrea
@@ -48,6 +48,7 @@ twitter_url:
 facebook_url:
 googleplus_url:
 instagram_url:
+youtube_url: https://www.youtube.com/channel/UC1BkKl-KwRgdQWXPYG-KKDA?view_as=subscriber
 linkedin_url: https://www.linkedin.com/in/teodora-petrea-444617193/
 github_url: https://github.com/teopufulete
 stackoverflow_url:
