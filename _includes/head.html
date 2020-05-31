@@ -1,7 +1,4 @@
 <head>
-  {%- if site.google_analytics and jekyll.environment == 'production' -%}
-    {%- include google_analytics.html -%}
-  {%- endif -%}
   
   <!-- Robots -->
   <meta name="robots" content="{{- page.robots | default: 'index, follow' -}}" />
