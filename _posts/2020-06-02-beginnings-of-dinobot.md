@@ -12,17 +12,17 @@ layout: post
 <h3>Broswer Emulation</h3>
 <p> Needing to emulate Chrome I had to download the Selenium Chrome <a href="
 https://chromedriver.chromium.org/downloads">driver</a> compatible with my current Chrome version. One of the first bugs I ran into was initializing the driver- inputing the its path did not seem to work, so I just ended up moving the executable into the dinobot project directory. The following code excerpt initializes the driver and starts up the bot. </p>
-<pre><code>public class GameStart {
+```public class GameStart {
 	public static void main(String[] args) {
         //initialize driver
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         //start dinobot
         new TRexBot().startGame();
     }
-}</code></pre>
+}```
 
 <p> The next code excerpt is from the main TRexBot class, that opens a new Chrome window and browses to the game's link.
-{% highlight raw java linenos %}public class TRexBot {
+{% highlight java linenos %}public class TRexBot {
   //class level variables 
 	private ChromeDriver driver;
 	private WebElement window;
@@ -44,7 +44,7 @@ https://chromedriver.chromium.org/downloads">driver</a> compatible with my curre
         // the start game function will be discussed later
         start();
     }
-    {% endraw endhighlight %}</p>
+    {% endhighlight %}</p>
 
 <p><span class="image left"><img src="{{'assets/images/dino.png' | relative_url }}" alt="" /></span>What I struggled with the most was figuring out how to find the element on thechrome://dino/ which reresented the container of the game itself. I inspected different parts of the page using Chrome Dev Tools and eventually found what I was looking for. I was only able to use the game canvas after a lengthy dive into the specific <a href="
 https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/">documentation</a>. I cannot stress how usefull reading the docs is and how all of us need to do more of it. </p>
