@@ -50,8 +50,8 @@ https://chromedriver.chromium.org/downloads">driver</a> compatible with my curre
 
 <p><span class="image left"><img src="{{'assets/images/dino.png' | relative_url }}" alt="" /></span>What I struggled with the most was line 15 from above: figuring out how to find the webpage element which reresented the container of the game itself. I inspected different parts of the page using Chrome Dev Tools and eventually found what I was looking for. I was only able to use the game canvas after a lengthy dive into the specific <a href="
 https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/">documentation</a>. I cannot stress how usefull reading the docs is and how all of us need to do more of it. </p>
-<br></br>
-<br></br>
+<p></p>
+<p></p>
 
 <h3>Algorithm implementation</h3>
 <p> The game has very simple rules: dodge the incoming static (cactuses on the ground) or moving (bird) obstacles. The velocity of the dino increases as the game progresses, which would normally complicate things, but in our case it should not be a problem as we directly inject the webpage js script into our code to get the dino's current speed. This is the general JavascriptExecutor object: 
@@ -66,3 +66,14 @@ https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locatin
         Long tRexPos = (Long) executeScript("return Runner.instance_.tRex.xPos");
         Double currentSpeed = (Double) executeScript("return Runner.instance_.currentSpeed");
 	{% endhighlight %}</p>
+	
+<p> Determining when to jump over an obstacle depends on the current speed of the dino and the distance from the dino to the obstacle. The default parameter was set to private static final int DEFAULT_DISTANCE = 0.
+{% highlight java linenos %}Long distanceToStartJump = firstJump ? new Long(DEFAULT_DISTANCE + 180) : new Long(DEFAULT_DISTANCE + 100);
+        //dynamically calculate the distance difference to 
+        if(currentSpeed >= 10) {
+            distanceToStartJump = Math.round(distanceToStartJump + (20 * (currentSpeed % 10))) + 40;
+        }
+        //speed is > 13, space bar needs to be pressed in advance
+        if(currentSpeed > 13) {
+            distanceToStartJump += 50;
+        }{% endhighlight %}</p>
