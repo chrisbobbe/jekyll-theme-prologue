@@ -3,6 +3,7 @@ title: The beginnings of dinobot
 author: Teo
 layout: post
 ---
+<header> <h3> Challenges of browser emulation with Selenium in Java </h3> </header>
 <p> I got inspired to start this project after seeing a Youtube <a href="https://www.youtube.com/watch?v=Du__JfXqsAs">video</a> about android game app automatization in Python. I decided to turn the difficulty up a knotch and attempt my first ever project in Java: a bot that plays the Google Chrome offline dinosaur game. This is how <a href="https://github.com/teopufulete/dinobot">dinobot</a> was born, and I'm very thrilled to see where it will lead, as I have many improvements in mind, but that's for another <a href="">post</a>. Now let's dive in! </p>
 
 <h3>Setting up: Creating a Maven project in Eclipse for the first time</h3>
@@ -26,7 +27,6 @@ https://chromedriver.chromium.org/downloads">driver</a> compatible with my curre
 	private ChromeDriver driver;
 	private WebElement window;
     public TRexBot() {
-    	initializeDriver();
     }
     // initialize a new chrome instance
     private void initializeDriver() {
