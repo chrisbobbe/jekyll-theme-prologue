@@ -21,6 +21,6 @@ layout: default
 		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
 		{%- assign _content = _excerpt | append: _link -%}
 		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
-		<link href="/css/fruity.css" rel="stylesheet">
+		<link href="assets/css/fruity.css" rel="stylesheet">
 	{%- endfor -%}
 </div>
