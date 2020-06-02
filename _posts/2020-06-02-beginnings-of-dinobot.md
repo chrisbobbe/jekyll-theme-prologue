@@ -38,6 +38,8 @@ https://chromedriver.chromium.org/downloads">driver</a> compatible with my curre
       // find the element we need to analyze
       window = driver.findElement(By.cssSelector(".runner-canvas"));
       new WebDriverWait(driver, 1000).until(ExpectedConditions.visibilityOf(window));
+	//add delay to for page be loaded before starting the game 
+       checkPageIsReady(1000);
     }
     public void startGame() {
         initializeGamePage();
@@ -48,3 +50,18 @@ https://chromedriver.chromium.org/downloads">driver</a> compatible with my curre
 
 <p><span class="image left"><img src="{{'assets/images/dino.png' | relative_url }}" alt="" /></span>What I struggled with the most was line 15 from above: figuring out how to find the webpage element which reresented the container of the game itself. I inspected different parts of the page using Chrome Dev Tools and eventually found what I was looking for. I was only able to use the game canvas after a lengthy dive into the specific <a href="
 https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locating_elements/">documentation</a>. I cannot stress how usefull reading the docs is and how all of us need to do more of it. </p>
+
+<h3>Algorithm implementation</h3>
+<p> The game has very simple rules: dodge the incoming static (cactuses on the ground) or moving (bird) obstacles. The velocity of the dino increases as the game progresses, which would normally complicate things, but in our case it should not be a problem as we directly inject the webpage js script into our code to get the dino's current speed. This is the general JavascriptExecutor object: 
+
+{% highlight java linenos %}private Object executeScript(String command) {
+		return ((JavascriptExecutor)driver).executeScript(command);
+	}{% endhighlight %}</p>
+
+<p> Now let's see it in action! Using the java.util.Map as well as <b>executescript</b> I created an object that takes each one of the incoming obstacles visible in the horizon and maps it to their position on the oX axis. The position of the dino on the x axis, as well as it's current speed are also readily available upon returning more javascript code.
+{% highlight java linenos %}private Boolean isObstaclePresent() {
+        Map<String, Long> obstacle = (Map<String, Long>) executeScript("return Runner.instance_.horizon.obstacles.filter(o => (o.xPos > 25))[0] || {}");
+        Long tRexPos = (Long) executeScript("return Runner.instance_.tRex.xPos");
+        Double currentSpeed = (Double) executeScript("return Runner.instance_.currentSpeed");
+
+	{% endhighlight %}</p>
