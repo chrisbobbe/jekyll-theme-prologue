@@ -77,3 +77,47 @@ https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locatin
         if(currentSpeed > 13) {
             distanceToStartJump += 50;
         }{% endhighlight %}</p>
+
+<p> Of course, there is no point in jumping if there is no obstacle so we check for one based on 2 conditions: the object ```obstacle != null``` and it is required to have a position on the x axis. We check for this using the <a href="https://www.baeldung.com/java-map-key-from-value">getKey method</a>. If these 2 conditions are met, we calculate the ```currentDistanceToObstacle``` by subtracting the dino's position on the oX axis from the obstacles position. Now, if the dino is in the appropriate position to jump (line #) it will perform the action.
+ {% highlight java linenos %}         // Check if obstacle is present 
+        if (obstacle != null && obstacle.containsKey("xPos")) {
+        	//If obstacle is flying, jump only if dino height >= vertical position of the obstacle 
+       	 	if (obstacle.get("width") == FLYING_OBSTACLE_WIDTH && obstacle.get("yPos") < TREX_HEIGHT) {
+       	 		return false;
+       	 	}
+       	 	Long currentDistanceToObstacle = obstacle.get("xPos") - tRexPos;
+        	       	 	if (obstacle.get("xPos") > tRexPos && currentDistanceToObstacle <= distanceToStartJump) {
+       	 		if (firstJump) {
+       	 			firstJump = false;
+       	 		}
+       	 		System.out.println("Identified Obstacle at "+ currentDistanceToObstacle);
+       	 		return true;
+       	 	}
+        }{% endhighlight %} </p>
+
+<p> But how do we get the dino to jump in the first place. We use selenium's ```sendKeys``` method to input space.
+{% highlight java linenos %}    private void jump() {
+    	new Actions(driver).sendKeys(window, Keys.SPACE). build().perform();
+    }{% endhighlight %} </p>
+
+<p> One problem to be aware of is that the bot might start 'playing' before the webpage has loaded. To combat that, I added a ```sleep``` fuction that delays the start of the page until the page is fully loaded:
+{% highlight java linenos %}     private void checkPageIsReady(Integer time) {
+        try {
+            Thread.sleep(time);
+        } catch (Exception e) {}
+    } {% endhighlight %} </p>
+	
+<p> Now that we have the algorithm figured out,	to start the game, the bot inputs space once than continues to jump if the obstacles are present. To avoid the while loop ordeal™ (we don't want the game to restart infinitely), I added an initial condition: the dino will only to dodge the obstacles as only until it loses.
+{% highlight java linenos %}private void start() {
+    	firstJump = true;
+        jump();
+        while (!isGameEnded()) {
+        	if (isObstaclePresent()) {
+        		jump();
+        	}
+        }
+        System.out.println("Your score is:" + getScore());
+    }{% endhighlight %} </p>
+  
+ <p> All of the code is available on <a href="https://github.com/teopufulete/dinobot">github</a>. Keep learning and happy botting<3! </p>
+	
