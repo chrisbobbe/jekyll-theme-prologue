@@ -78,7 +78,7 @@ https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locatin
             distanceToStartJump += 50;
         }{% endhighlight %}</p>
 
-<p> Of course, there is no point in jumping if there is no obstacle so we check for one based on 2 conditions: the object ```obstacle != null``` and it is required to have a position on the x axis. We check for this using the <a href="https://www.baeldung.com/java-map-key-from-value">getKey method</a>. If these 2 conditions are met, we calculate the ```currentDistanceToObstacle``` by subtracting the dino's position on the oX axis from the obstacles position. Now, if the dino is in the appropriate position to jump (line #) it will perform the action.
+<p> Of course, there is no point in jumping if there is no obstacle so we check for one based on 2 conditions: the object obstacle cannot be empt and needs to have a position on the x axis. We check for this using the <a href="https://www.baeldung.com/java-map-key-from-value">getKey method</a>. If these 2 conditions are met, we calculate the <b>currentDistanceToObstacle</b> by subtracting the dino's position on the oX axis from the obstacles position. Now, if the dino is in the appropriate position to jump (line #) it will perform the action.
  {% highlight java linenos %}         // Check if obstacle is present 
         if (obstacle != null && obstacle.containsKey("xPos")) {
         	//If obstacle is flying, jump only if dino height >= vertical position of the obstacle 
@@ -95,7 +95,7 @@ https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locatin
        	 	}
         }{% endhighlight %} </p>
 
-<p> But how do we get the dino to jump in the first place. We use selenium's ```sendKeys``` method to input space.
+<p> But how do we get the dino to jump in the first place. We use selenium's <b>sendKeys</b> method to input space.
 {% highlight java linenos %}    private void jump() {
     	new Actions(driver).sendKeys(window, Keys.SPACE). build().perform();
     }{% endhighlight %} </p>
@@ -119,5 +119,5 @@ https://www.selenium.dev/documentation/en/getting_started_with_webdriver/locatin
         System.out.println("Your score is:" + getScore());
     }{% endhighlight %} </p>
   
- <p> All of the code is available on <a href="https://github.com/teopufulete/dinobot">github</a>. Keep learning and happy botting<3! </p>
+ <p> All of the code is available on <a href="https://github.com/teopufulete/dinobot">github</a>. Keep learning and happy botting💖! </p>
 	
