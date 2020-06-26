@@ -23,7 +23,7 @@ for the problem at hand.</p>
 
 <hr/>
 
-
+<br>
 <h2> Arrays </h2>
 <p> An array is the simplest and most widely used data structure. Other data structures like stacks and queues are derived from arrays
 
@@ -56,7 +56,7 @@ Each data element is assigned a positive numerical value called the Index, which
 <h3> Implementation in Java </h3>
 <hr/>
 
-
+<br>
 <h2> Linked Lists</h2>
 <p> A linked list is another important linear data structure which might look similar to arrays at first but differs in memory allocation, internal structure and how basic operations of insertion and deletion are carried out.
 
@@ -89,6 +89,7 @@ Here’s a visual representation of the internal structure of a linked list: </p
 <h3> Implementation in Java </h3>
 
 <p> 🧠In the <b> array </b> the elements belong to indexes, i.e., if you want to get into the fourth element you have to write the variable name with its index or location within the square bracket. In a <b> linked list </b> though, you have to start from the head and work your way through until you get to the fourth element. As a result, accessing an element in an array is fast, while linked list takes linear time, so it is quite a bit slower. 
+	<br>
 🧠 Operations like insertion and deletion in  <b> array </b> consume a lot of time. On the other hand, the performance of these operations in <b> linked lists </b> is fast.</p>
 
 <p> 🧠<b> Arrays </b> are of fixed size. In contrast,<b> linked lists </b> are dynamic and flexible and can expand and contract its size. </p>
@@ -97,6 +98,7 @@ Here’s a visual representation of the internal structure of a linked list: </p
 	
 <p> 🧠Elements are stored consecutively in  <b> arrays </b> whereas they are stored randomly in <b> linked lists </b>.</p>
 <hr/>
+<br>
 
 
 	
