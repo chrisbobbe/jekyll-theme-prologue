@@ -25,13 +25,9 @@ for the problem at hand.</p>
 
 <br>
 <h2> Arrays </h2>
-<p> An array is the simplest and most widely used data structure. Other data structures like stacks and queues are derived from arrays
+<p> An array is the simplest and most widely used data structure. Other data structures like stacks and queues are derived from arrays. Here’s an image of a simple array of size 10, containing elements [10, 20, 30, 40, 50, 60, 70, 80, 90 and 100].
 
-<p><span class="image left"><img src="{{ 'assets/images/arr.png' | relative_url }}" alt="" /></span> Here’s an image of a simple array of size 10, containing elements (1, 2, 3 and 4).  
-Each data element is assigned a positive numerical value called the Index, which corresponds to the position of that item in the array. The majority of languages define the starting index of the array as 0. </p>
- <br>
- <br>
- <br>
+<p><span class="image left"><img src="{{ 'assets/images/arr.png' | relative_url }}" alt="" /></span> Each data element is assigned a positive numerical value called the Index, which corresponds to the position of that item in the array. The majority of languages define the starting index of the array as 0. </p>
 <p><span class="image right"><img src="{{ 'assets/images/rsz_dimensionalarr.png' | relative_url }}" alt="" /></span>  
 
 <div class="6u$ 12u$(small)">
