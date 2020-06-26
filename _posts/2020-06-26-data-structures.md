@@ -61,29 +61,17 @@ System.out.println(dogs[1]); // Now outputs beagles
 System.out.println(dogs.length); // Outputs 4
 }{% endhighlight %}
 
-{% highlight java linenos %}class Array {   
-    // Function to insert x in arr at position pos 
-    public static int[] insertX(int n, int arr[], 
-                                int x, int pos) 
-    { 
-        int i; 
-          // create a new array of size n+1 
-        int newarr[] = new int[n + 1]; 
-          // insert the elements from 
-        // the old array into the new array 
-        // insert all elements till pos 
-        // then insert x at pos 
-        // then insert rest of the elements 
-        for (i = 0; i < n + 1; i++) { 
-            if (i < pos - 1) 
-                newarr[i] = arr[i]; 
-            else if (i == pos - 1) 
-                newarr[i] = x; 
-            else
-                newarr[i] = arr[i - 1]; 
-        } 
-        return newarr; 
-    }{% endhighlight %}
+{% highlight java linenos %}
+// Function to insert an element in arr at given index 
+public static int[] insertElement(int[] arr, int index, int element) {
+    int[] result = new int[arr.length];
+    for(int i = 0; i < index; i++)
+        result[i] = a[i];
+    newarr[index] = element;
+    for(int i = index + 1; i < arr.length; i++)
+        result[i] = a[i - 1];
+    return newarr;
+}{% endhighlight %}
 <hr/>
 
 <br>
