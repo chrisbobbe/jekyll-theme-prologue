@@ -43,7 +43,7 @@ Each data element is assigned a positive numerical value called the Index, which
   </p>
 
 <div class="6u$ 12u$(small)">
-	<h4> Basic Operations on Arrays </h4>
+	<h3> Basic Operations on Arrays </h3>
 			<ul>
 				<li> <b>Insert</b> — Inserts an element at a given index</li>
 				<li> <b> Get </b>— Returns the element at a given index </li>
@@ -52,7 +52,7 @@ Each data element is assigned a positive numerical value called the Index, which
 			</ul>
 		</div>
 
-<h4> Implementation in Java </h4>
+<h3> Implementation in Java </h3>
 <hr/>
 
 
@@ -73,7 +73,7 @@ Here’s a visual representation of the internal structure of a linked list: </p
 		</div>
 		
 <div class="6u$ 12u$(small)">
-	<h4> Basic Operations on Linked Lists </h4>
+	<h3> Basic Operations on Linked Lists </h3>
 			<ul>
 				<li> <b> InsertAtEnd </b> — Inserts a given element at the end of the linked list </li>
 				<li> <b> InsertAtHead </b> — Inserts a given element at the start/head of the linked list </li>
@@ -84,18 +84,17 @@ Here’s a visual representation of the internal structure of a linked list: </p
 			</ul>
 		</div>		    
 
-<h4> Implementation in Java </h4>
+<h3> Implementation in Java </h3>
 
-<div class="6u$ 12u$(small)">
-	<h4> Bonus: Diferences between Arrays and Linked Lists </h4>
-			<ul>
-				<li> In the <b> array </b> the elements belong to indexes, i.e., if you want to get into the fourth element you have to write the variable name with its index or location within the square bracket. In a <b> linked list </b> though, you have to start from the head and work your way through until you get to the fourth element. As a result, accessing an element in an array is fast, while linked list takes linear time, so it is quite a bit slower. </li>
-				<li> Operations like insertion and deletion in  <b> array </b> consume a lot of time. On the other hand, the performance of these operations in <b> linked lists </b> is fast.</li>
-				<li>  <b> Arrays </b> are of fixed size. In contrast,<b> linked lists </b> are dynamic and flexible and can expand and contract its size. </li>
-				<li> In an  <b> array </b>, memory is assigned during compile time while in a <b> linked list </b>it is allocated during execution or runtime. </li>
-				<li> Elements are stored consecutively in  <b> arrays </b> whereas they are stored randomly in <b> linked lists </b>.</li>
-			</ul>
-		</div>
+<p> 🧠In the <b> array </b> the elements belong to indexes, i.e., if you want to get into the fourth element you have to write the variable name with its index or location within the square bracket. In a <b> linked list </b> though, you have to start from the head and work your way through until you get to the fourth element. As a result, accessing an element in an array is fast, while linked list takes linear time, so it is quite a bit slower. </p>
+				
+<p> 🧠Operations like insertion and deletion in  <b> array </b> consume a lot of time. On the other hand, the performance of these operations in <b> linked lists </b> is fast.</p>
+
+<p> 🧠<b> Arrays </b> are of fixed size. In contrast,<b> linked lists </b> are dynamic and flexible and can expand and contract its size. </p>
+	
+<p>🧠 In an  <b> array </b>, memory is assigned during compile time while in a <b> linked list </b>it is allocated during execution or runtime. </p>
+	
+<p> 🧠Elements are stored consecutively in  <b> arrays </b> whereas they are stored randomly in <b> linked lists </b>.</p>
 <hr/>
 
 
