@@ -64,7 +64,9 @@ A linked list is like a chain of nodes, where each node contains information lik
 
 Linked lists are used to implement file systems, hash tables, and adjacency lists.
 
-Here’s a visual representation of the internal structure of a linked list: <span class= class="image fit"><img src="{{ 'assets/images/linked.png.jpg' | relative_url }}" alt="" /></span>  </p>
+<p> Here’s a visual representation of the internal structure of a linked list:  <div class="item">
+        <a href="#" class="image fit"><img src="{{ 'assets/images/linked.png' | relative_url }}" alt="Ipsum Feugiat" /></a>
+      </div>  </p>
 
 <div class="6u$ 12u$(small)">
 		<h3> Types of Linked Lists </h3>
