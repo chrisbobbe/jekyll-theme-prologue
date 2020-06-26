@@ -32,7 +32,7 @@ Each data element is assigned a positive numerical value called the Index, which
  <br>
  <br>
  <br>
-<p><span class="image right"><img src="{{ 'assets/images/dimensionalarr.png' | relative_url }}" alt="" /></span>  
+<p><span class="image right"><img src="{{ 'assets/images/rsz_dimensionalarr.png' | relative_url }}" alt="" /></span>  
 
 <div class="6u$ 12u$(small)">
 		<h3> Types of Arrays </h3>
