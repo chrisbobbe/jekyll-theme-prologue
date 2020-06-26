@@ -225,6 +225,7 @@ public class LinkedList {
         return list; 
     } 
 
+<h3> Bonus: Arrays vs Linked Lists </h3>
 <p> 🧠 In the <b> array </b> the elements belong to indexes, i.e., if you want to get into the fourth element you have to write the variable name with its index or location within the square bracket. In a <b> linked list </b> though, you have to start from the head and work your way through until you get to the fourth element. As a result, accessing an element in an array is fast, while linked list takes linear time, so it is quite a bit slower. 
 	<br>
 🧠 Operations like insertion and deletion in  <b> array </b> consume a lot of time. On the other hand, the performance of these operations in <b> linked lists </b> is fast.
