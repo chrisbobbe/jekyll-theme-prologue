@@ -1,9 +1,9 @@
 ---
-title: The beginnings of dinobot
+title: Data Structures
 author: Teo
 layout: post
 ---
-<header> <h3> What are data structures? </h3> </header>
+<header> <h2> What are data structures? </h2> </header>
 <p> Data structure are specialized formats for organizing, processing, retrieving and storing data. While there are several basic and advanced structure types,
 any data structure is efficient in some operations and inefficient in others. Therefore, the goal is to understand them in order to pick the most optimal data structure
 for the problem at hand.</p>
@@ -20,11 +20,47 @@ for the problem at hand.</p>
         <li>Hash Tables</li>
 			</ol>
 		</div>
-</p>
-<hr />
+
+<hr/>
 
 
-<h3> </h3>
-<p> /p><
+<h2> Arrays </h2>
+<p> An array is the simplest and most widely used data structure. Other data structures like stacks and queues are derived from arrays
+
+<p><span class="image left"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span> Here’s an image of a simple array of size 10, containing elements (1, 2, 3 and 4).  
+Each data element is assigned a positive numerical value called the Index, which corresponds to the position of that item in the array. The majority of languages define the starting index of the array as 0. </p>
+
+<p><span class="image right"><img src="{{ 'assets/images/pic03.jpg' | relative_url }}" alt="" /></span>  The following are the two types of arrays:
+
+<div class="6u$ 12u$(small)">
+			<ol>
+				<li> One-dimensional arrays (as shown above)</li>
+				<li>  Multi-dimensional arrays (arrays within arrays)</li>
+			</ol>
+		</div>
+  </p>
+
+<h2> </h2>
 <p> </p>
+
+<h2> </h2>
 <p> </p>
+
+<h2> </h2>
+<p> </p>
+
+<h2> </h2>
+<p> </p>
+
+<h2> </h2>
+<p> </p>
+
+<h2> </h2>
+<p> </p>
+
+<h2> </h2>
+<p> </p>
+
+<h2> </h2>
+<p> </p>
+
