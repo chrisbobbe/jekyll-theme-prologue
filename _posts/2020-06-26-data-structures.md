@@ -123,7 +123,7 @@ public class LinkedList {
     } 
     // **************INSERTION************** 
     // Method to insert a new node at end
-    public static LinkedList insert(LinkedList list, int data) 
+    public static LinkedList insertAtEnd(LinkedList list, int data) 
     { 
         // Create a new node with given data 
         Node new_node = new Node(data); 
