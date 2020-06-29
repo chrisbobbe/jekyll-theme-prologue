@@ -83,7 +83,7 @@ A linked list is like a chain of nodes, where each node contains information lik
 Linked lists are used to implement file systems, hash tables, and adjacency lists.
 
 <p> Here’s a visual representation of the internal structure of a linked list:  <div class="item">
-        <a href="#" class="image fit"><img src="{{ 'assets/images/linked.png' | relative_url }}" alt="Ipsum Feugiat" /></a>
+        <a href="#" class="image fit"><img src="{{ 'assets/images/linked.png' | relative_url }}" alt="Linked List" /></a>
       </div>  </p>
 
 <div class="6u$ 12u$(small)">
@@ -241,8 +241,11 @@ public class LinkedList {
 
 
 <h2>Stacks </h2>
-<p> We are all familiar with the Undo option, present in almost every application. Ever wondered how it works? The idea: you store the previous states of your work (which are limited to a specific number) in the memory in such an order that the last one appears first. This can’t be done just by using arrays. That is where Stacks come in. </p>
-<p>A real-life example of Stack could be a number of plates stacked on top of each other. In order to get the plate that’s somewhere in the middle, you will need to remove all the plates placed on top of it. This is how the LIFO (Last In First Out) method works. </p>
+<p> We are all familiar with the Undo option, present in almost every application. Ever wondered how it works? The idea: you store the previous states of your work (which are limited to a specific number) in the memory in such an order that the last one appears first. This can’t be done just by using arrays. That is where Stacks come in. Here’s a visual representation of the internal structure of a linked list:  <div class="item">
+        <a href="#" class="image fit"><img src="{{ 'assets/images/stack.png' | relative_url }}" alt="Ipsum Feugiat" /></a>
+      </div> </p>
+<p><span class="image left"><img src="{{ 'assets/images/pancake.png' | relative_url }}" alt="" /></span> EA real-life example of Stack could be a number of pancakes stacked on top of each other. In order to get the extra syrupy pancake that’s somewhere in the middle, you will need to remove (or alternatively, eat) all the pancakes placed on top of it. This is how the LIFO (Last In First Out) method works. </p>
+
 
 <div class="6u$ 12u$(small)">
 	<h3> Basic Operations of Stacks </h3>
@@ -253,6 +256,7 @@ public class LinkedList {
 				<li> <b> Top </b> — Returns the top element without removing from the stack </li>
 			</ul>
 		</div>	
+		
 <h3> Stack implementation in Java </h3>	
 {% highlight java linenos %}
 import java.util.Iterator;
