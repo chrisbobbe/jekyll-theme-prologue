@@ -254,9 +254,27 @@ public class LinkedList {
 			</ul>
 		</div>	
 <h3> Stack implementation in Java </h3>	
+<br>
+
+
+
+<h2>Queues </h2>
+<p> Similar to Stack, Queue is another linear data structure that stores elementa in a sequential manner. The only significant difference between Stack and Queue is that instead of using the LIFO method, Queue implements the FIFO method, which is short for First in First Out. </p>
+<p> A perfect real-life example of Queue: a line of people waiting at a ticket booth. If a new person comes, they will join the line from the end, not from the start — and the person standing at the front will be the first to get the ticket and hence leave the line. </p>
 <p> </p>
-<p> </p>
-<p> </p>
+
+<div class="6u$ 12u$(small)">
+	<h3> Basic Operations of Queues </h3>
+			<ul>
+				<li> <b> Enqueue </b> — Inserts an element at the end of the queue </li>
+				<li> <b> Dequeue </b> — Removes an element from the start of the queue </li>
+				<li> <b> isEmpty </b> — Returns true if the queue is empty </li>
+				<li> <b> Top </b> — Returns the first element of the queue </li>
+			</ul>
+		</div>	
+<h3> Queue implementation in Java </h3>	
+<br>
+
 
 <h2> </h2>
 <p> </p>
