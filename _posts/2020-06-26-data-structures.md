@@ -255,6 +255,8 @@ public class LinkedList {
 		</div>	
 <h3> Stack implementation in Java </h3>	
 {% highlight java linenos %}
+import java.util.Iterator;
+import java.util.NoSuchElementException;
 public class Stack<Item> implements Iterable<Item> {
     private Node<Item> first;     // top of stack
     private int n;                // size of the stack
