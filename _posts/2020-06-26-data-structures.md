@@ -328,6 +328,7 @@ public class Stack<Item> implements Iterable<Item> {
             return item;
         }
     }
+}
 {% endhighlight %}
 <br>
 
