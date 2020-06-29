@@ -106,7 +106,7 @@ Linked lists are used to implement file systems, hash tables, and adjacency list
 			</ul>
 		</div>		    
 
-<h3> Implementation in Java </h3>
+<h3> Linkled List implementation in Java </h3>
 {% highlight java linenos %}
 import java.io.*; 
 public class LinkedList { 
@@ -239,8 +239,23 @@ public class LinkedList {
 <br>
 
 
-	
-<h2> </h2>
+
+<h2>Stacks </h2>
+<p> We are all familiar with the Undo option, present in almost every application. Ever wondered how it works? The idea: you store the previous states of your work (which are limited to a specific number) in the memory in such an order that the last one appears first. This can’t be done just by using arrays. That is where Stacks come in. </p>
+<p>A real-life example of Stack could be a number of plates stacked on top of each other. In order to get the plate that’s somewhere in the middle, you will need to remove all the plates placed on top of it. This is how the LIFO (Last In First Out) method works. </p>
+
+<div class="6u$ 12u$(small)">
+	<h3> Basic Operations of Stacks </h3>
+			<ul>
+				<li> <b> Push </b> — Inserts an element at the top </li>
+				<li> <b> Pop </b> — Returns the top element after removing from the stack </li>
+				<li> <b> isEmpty </b> — Returns true if the stack is emptyt </li>
+				<li> <b> Top </b> — Returns the top element without removing from the stack </li>
+			</ul>
+		</div>	
+<h3> Stack implementation in Java </h3>	
+<p> </p>
+<p> </p>
 <p> </p>
 
 <h2> </h2>
