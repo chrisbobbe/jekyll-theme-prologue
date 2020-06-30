@@ -358,6 +358,7 @@ public class Stack<Item> implements Iterable<Item> {
 		
 		
 <h3> Queue implementation in Java </h3>	
+{% highlight java linenos %}
 public class Queue<Item> implements Iterable<Item> {
     private Node<Item> first;    // beginning of queue
     private Node<Item> last;     // end of queue
@@ -438,6 +439,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
     }
 }
+{% endhighlight %}
 <hr/>
 <br>
 
