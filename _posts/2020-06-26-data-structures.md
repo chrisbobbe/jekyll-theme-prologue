@@ -343,6 +343,7 @@ public class Stack<Item> implements Iterable<Item> {
 
 <h2>Queues </h2>
 <p><span class="image right"><img src="{{ 'assets/images/q.png' | relative_url }}" alt="" /></span> Similar to Stack, Queue is another linear data structure that stores elementa in a sequential manner. The only significant difference between Stack and Queue is that instead of using the LIFO method, Queue implements the FIFO method, which is short for First in First Out.  </p>
+
 <p> A perfect real-life example of Queue: a line of people waiting at a ticket booth. If a new person comes, they will join the line from the end, not from the start — and the person standing at the front will be the first to get the ticket and hence leave the line. </p>
 
 
