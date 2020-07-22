@@ -289,9 +289,9 @@
 	}
 
 /* List */
-
 	ul {
-		list-style: disc;
+           padding: 0;
+           list-style-type: none;
 
 		&.icons {
 			cursor: default;
@@ -515,7 +515,7 @@
 		.icons {
 			font-size: 0.8em;
 			text-align: center;
-
+			
 			a {
 				color: #41484c;
 				@include vendor('transition', 'color 0.35s ease-in-out');
@@ -565,6 +565,7 @@
 		ul {
 			list-style: none;
 			margin-bottom: 0;
+			padding:0;
 			hr {
 				margin: auto 1.5em;
 			}
@@ -789,7 +790,6 @@
 			}
 
 		/* List */
-
 			ul {
 				&.icons {
 					li {
@@ -799,7 +799,6 @@
 					}
 				}
 			}
-
 		/* Item */
 
 			.item {
