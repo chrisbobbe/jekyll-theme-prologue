@@ -30,14 +30,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-subtitle: Your awesome subtitle
+title: SNG
+subtitle: Systems Neuroscience Group
 description: >- # this means to ignore newlines until "baseurl:"
-  This is the demo site for a Jekyll theme version of
-  HTML5 UP's sleek, responsive site template Prologue.
-author: Your Incredible Name
-email: your-email@example.com
-avatar: assets/images/avatar.jpg
+  Welcome!
+author: SNG
+email:
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -61,4 +59,62 @@ google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
 remote_theme: chrisbobbe/jekyll-theme-prologue
-collections: [sections]
+collections: [sections, people, research]
+
+# Add team
+team:
+    title: "SYSTEMS NEUROSCIENCE GROUP"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Click on our portrait to get more information!
+    section: team
+    people:
+      - name: "Michael Breakspear"
+        role: "Group Leader"
+        image: assets/images/leonie_borne.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+          - url: https://scholar.google.com.au/citations?user=hrx691cAAAAJ&hl=en
+            icon: fab fa-google
+  
+      - name: "Léonie Borne"
+        role: "Postdoc"
+        image: assets/images/leonie_borne.jpg
+        social:
+          - url: https://twitter.com/LeonieBorne
+            icon: fab fa-twitter
+          - url: https://fr.linkedin.com/in/leonieborne
+            icon: fab fa-linkedin-in
+          - url: https://www.researchgate.net/profile/Leonie_Borne
+            icon: fab fa-researchgate
+        research_interest: I am passionate about the use of artificial intelligence in medical imaging. My work aims to develop intelligent algorithms to help the analysis of these images, notably using deep learning. How does our brain work? This is still a mystery today and the algorithms I am developing aim to give us a clearer picture. I have been working in particular on the folds of the cortex, in order to understand their link with the functioning of the brain.
+
+      - name: "Renate Thienel"
+        role: "Researcher"
+        image: assets/images/leonie_borne.jpg
+        newline: true
+      - name: "Megan Campbell"
+        role: "Postdoc"
+        image: assets/images/leonie_borne.jpg
+        newline: false
+      - name: "Jayson Jeganathan"
+        role: "PhD student"
+        image: assets/images/leonie_borne.jpg
+        social:
+          - url: https://twitter.com
+            icon: fab fa-twitter
+          - url: https://linkedin.com
+            icon: fab fa-linkedin-in
+        newline: false
+      - name: "Nikitas Koussis"
+        role: "PhD student"
+        image: assets/images/leonie_borne.jpg
+        social:
+      - name: "Bryan Panton"
+        role: "Researcher"
+        image: assets/images/leonie_borne.jpg
+      - name: "Bob"
+        role: "Copain"
+        image: assets/images/leonie_borne.jpg
