@@ -1,0 +1,15 @@
+---
+layout: default
+---
+{%- assign _research = site.research | sort: 'order' -%}
+{%- include header.html scrolly_nav=_research -%}
+<!-- Main -->
+<div id="main">
+	{%- if page.content != "" -%}
+		{%- include section.html title=page.title photo=page.cover-photo photo-alt=page.cover-photo-alt auto-header=page.auto-header content=page.content -%}
+	{%- endif -%}
+	<!-- Sections -->
+	{%- for _r in _research -%}
+		{%- include section.html title=_r.title photo=_r.cover-photo photo-alt=_r.cover-photo-alt auto-header=_r.auto-header content=_r.content -%}
+	{%- endfor -%}
+</div>
