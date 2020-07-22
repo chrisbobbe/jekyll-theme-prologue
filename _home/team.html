@@ -1,0 +1,48 @@
+---
+title: Who are we?
+icon: fa-users
+order: 4
+---
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img.portrait {
+  border-radius: 50%;
+  width: 90%;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+</head>
+
+<body>
+<!-- Team -->
+<section id="{{ site.team.section | default: "team" }}">
+  <div class="row">
+  {% for person in site.team.people %}
+	<div class="col">
+		<a href="https://leonieborne.github.io//people.html">
+		<img class="portrait" src="{{ person.image }}" alt="">
+		</a>
+		<h3>{{ person.name }}</h4>
+		<h5>{{ person.role }}</h5>
+	</div>
+	{% if person.newline %}
+	</div>
+	<div class="row">
+	{% endif %}
+  {% endfor %}
+  </div>
+  <div class="row">
+	  {{ site.team.subtext | markdownify }}
+  </div>
+</section>
+<!-- End Team -->
+</body>
