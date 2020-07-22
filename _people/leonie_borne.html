@@ -1,0 +1,46 @@
+---
+title: Léonie Borne
+icon: fa-mountain
+order: 2
+---
+<head>
+<style>
+img.portrait {
+  border-radius: 50%;
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
+</head>
+
+<section>
+  <div class="row">
+  {% for person in site.team.people %}
+	{% if person.name == "Léonie Borne" %}
+	  <div class="col">
+		<img class="portrait" src="{{ person.image }}" alt="">
+		 <ul class="icons">
+		{% for network in person.social %}
+		  <li><a href="{{- network.url -}}" class="{{ network.icon }}"></a></li>
+		{% endfor %}
+		</ul>
+	  </div> 
+	  <div class="col">
+              <h3>Research Interests</h5>
+		  {{ person.research_interest | markdownify }}
+	  </div> 
+  </div>
+  <div class="row">
+	  {{ person.research_interest | markdownify }}
+  </div>
+	{% endif %}
+  {% endfor %}
+</section>
+
