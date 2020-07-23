@@ -1,7 +1,7 @@
 ---
 title: Where are we?
 icon: fa-map-signs
-cover-photo: /assets/images/hmri.jpg 
+cover-photo: /assets/images/imaging-center.jpeg 
 cover-photo-alt: hmri
 auto-header: none
 order: 3
