@@ -1,5 +1,5 @@
 ---
-title: LB
+title: "LB"
 auto-header: none
 icon: fa-tree
 order: 2
