@@ -7,23 +7,6 @@ order: 2
 order: 3
 ---
 
-<head>
-<style>
-img.portrait {
-  border-radius: 50%;
-  width: 300px;
-  border: 1px solid #ddd;
-  padding: 5px;
-}
-
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-</style>
-</head>
-
 <section>
   <div class="row">
   {% for person in site.team.people %}
