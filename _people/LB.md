@@ -26,16 +26,16 @@ img.portrait {
 	{% if person.initials == "LB" %}
 	  <div class="col">
 		<img class="portrait" src="{{ person.image }}" alt="">
-		 <ul class="icons">
-		{% for network in person.social %}
-		  <li><a href="{{- network.url -}}" class="{{ network.icon }}"></a></li>
-		{% endfor %}
-		</ul>
 	  </div> 
 	  <div class="col">
 	      <h3> {{person.name}} </h3>
               <b> {{ person.role }} </b>
 		 {{ person.research_interest | markdownify }}
+		 <ul class="icons">
+		{% for network in person.social %}
+		  <li><a href="{{- network.url -}}" class="{{ network.icon }}"></a></li>
+		{% endfor %}
+		</ul>
 	  </div> 
 	{% endif %}
   {% endfor %}
