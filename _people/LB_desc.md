@@ -1,8 +1,6 @@
 ---
 title: Léonie Borne
 auto-header: none
-cover-photo: assets/images/bogey-hole.jpg
-cover-photo-alt: Leonie Borne
 order: 2
 ---
 <head>
@@ -12,6 +10,10 @@ img.portrait {
   width: 300px;
   border: 1px solid #ddd;
   padding: 5px;
+}
+.row {
+  display: flex;
+  justify-content: center;
 }
 </style>
 </head>
@@ -32,7 +34,7 @@ img.portrait {
 	      <h1> {{person.name}} </h1>
               <h3> {{ person.role }} </h3>
 		 {{ person.research_interest | markdownify }}
-		 {{title}}
+		 {{ title }}
 	  </div> 
   </div>
 	{% endif %}
