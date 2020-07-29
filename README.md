@@ -6,7 +6,7 @@ Welcome on the SNG Github Page!
 # Add your profile
 
 You will have to (1) add an image of you in the assets/images folder, (2) add you as a member of the team in the file _config.yml 
-and (3) add a markedown file with a short description of your research interests in the _people folder. Note that step (3) is optional.
+and (3) add a Markdown file with a short description of your research interests in the _people folder. Note that step (3) is optional.
 
 So here are the steps you need to do to make a pull request to do so.
 
@@ -171,3 +171,5 @@ We (and the magic of automation) will take care of the rest. :-)
 # Contributing
 
 Please feel free to submit issues and feature requests!
+
+If you need more information about the general organization of the website, you can check the original theme [here](https://github.com/chrisbobbe/jekyll-theme-prologue).
