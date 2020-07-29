@@ -38,7 +38,7 @@ img.portrait {
 	  </div> 
   </div>
   <div class="row">
-	   <div w3-include-html="LB_desc.html"></div> 
+	   <script>$("#includedContent").load("LB_desc.html");</script>
   </div>
 	{% endif %}
   {% endfor %}
