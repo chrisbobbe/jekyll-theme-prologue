@@ -28,8 +28,8 @@ img.portrait {
 		<img class="portrait" src="{{ person.image }}" alt="">
 	  </div> 
 	  <div class="col">
-	      <h4> {{person.name}} </h4>
-              <h2> {{ person.role }} </h2>
+	      <h2> {{person.name}} </h2>
+              <h3> {{ person.role }} </h3>
 		 {{ person.research_interest | markdownify }}
 		 <ul class="icons">
 		{% for network in person.social %}
