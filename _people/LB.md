@@ -1,5 +1,5 @@
 ---
-title: Léonie Borne
+title: LB
 auto-header: none
 order: 2
 ---
