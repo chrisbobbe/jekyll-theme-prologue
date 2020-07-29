@@ -1,5 +1,5 @@
 ---
-title: "LB"
+title: Léonie Borne
 auto-header: none
 icon: fa-tree
 order: 2
@@ -23,7 +23,7 @@ img.portrait {
 <section>
   <div class="row">
   {% for person in site.team.people %}
-	{% if person.initials == title %}
+	{% if person.initials == "LB" %}
 	  <div class="col">
 		<img class="portrait" src="{{ person.image }}" alt="">
 		 <ul class="icons">
@@ -48,7 +48,7 @@ img.portrait {
 I have been working in particular on the folds of the cortex, in order to understand their link with the functioning of the brain.
 
 ## Biography
-After a master's degree in artificial intelligence, Leonie Borne did her PhD at Neurospin in France. In this research centre for the innovation of brain imaging, she mainly worked on the development of an algorithm for the automatic recognition of cortical folds, under the supervision of J.-F. Mangin and D. Riviere. For this purpose, she developed and implemented different machine learning algorithms, including deep learning algorithms. The tools she developed are now available in the BrainVISA toolbox ([www.brainvisa.info]), to help researchers study the link between the fold shape and brain function. Following her PhD, Leonie started a postdoc in 2020 in M. Breakspear's team at HMRI. 
+After a master's degree in artificial intelligence, Leonie Borne did her PhD at Neurospin in France. In this research centre for the innovation of brain imaging, she mainly worked on the development of an algorithm for the automatic recognition of cortical folds, under the supervision of J.-F. Mangin and D. Riviere. For this purpose, she developed and implemented different machine learning algorithms, including deep learning algorithms. The tools she developed are now available in the BrainVISA toolbox ([www.brainvisa.info](www.brainvisa.info)), to help researchers study the link between the fold shape and brain function. Following her PhD, Leonie started a postdoc in 2020 in M. Breakspear's team at HMRI. 
 
 
 
