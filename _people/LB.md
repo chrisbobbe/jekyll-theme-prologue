@@ -1,6 +1,7 @@
 ---
 title: LB
 auto-header: none
+icon: fa-tree
 order: 2
 ---
 
@@ -22,7 +23,7 @@ img.portrait {
 <section>
   <div class="row">
   {% for person in site.team.people %}
-	{% if person.initials == "LB" %}
+	{% if person.initials == title %}
 	  <div class="col">
 		<img class="portrait" src="{{ person.image }}" alt="">
 		 <ul class="icons">
