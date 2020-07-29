@@ -34,11 +34,11 @@ img.portrait {
 	  </div> 
 	  <div class="col">
               <h3> {{ person.role }} </h3>
-		 <object data="LB_desc.html" type="text/html"></object>
+		 {{ person.research_interest | markdownify }}
 	  </div> 
   </div>
   <div class="row">
-	  {{ person.research_interest | markdownify }}
+	  <object data="LB_desc.html" type="text/html"></object>
   </div>
 	{% endif %}
   {% endfor %}
