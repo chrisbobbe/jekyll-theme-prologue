@@ -78,5 +78,7 @@ team:
             icon: fab fa-linkedin-in
           - url: https://www.researchgate.net/profile/Leonie_Borne
             icon: fab fa-researchgate
+          - url: https://github.com/LeonieBorne
+            icon: fab fa-github
         research_interest: Machine Learning & Neuroimaging
         newline: false
