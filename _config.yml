@@ -80,6 +80,7 @@ team:
             icon: fab fa-google
   
       - name: "Léonie Borne"
+        initials: "LB"
         role: "Postdoc"
         image: assets/images/leonie_borne.jpg
         social:
@@ -90,6 +91,7 @@ team:
           - url: https://www.researchgate.net/profile/Leonie_Borne
             icon: fab fa-researchgate
         research_interest: Machine Learning, Neuroimaging, Anatomy, Dementia
+
       - name: "Renate Thienel"
         role: "Researcher"
         image: assets/images/leonie_borne.jpg
