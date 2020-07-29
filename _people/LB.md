@@ -3,6 +3,7 @@ title: LB
 auto-header: none
 order: 2
 ---
+
 <head>
 <style>
 img.portrait {
@@ -21,7 +22,7 @@ img.portrait {
 <section>
   <div class="row">
   {% for person in site.team.people %}
-	{% if person.initals == title %}
+	{% if person.initals == "LB" %}
 	  <div class="col">
 		<img class="portrait" src="{{ person.image }}" alt="">
 		 <ul class="icons">
