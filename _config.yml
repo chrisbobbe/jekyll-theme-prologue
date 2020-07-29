@@ -64,21 +64,9 @@ collections: [sections, people, research]
 # Add team
 team:
     title: "SYSTEMS NEUROSCIENCE GROUP"
-    text: "Lorem ipsum dolor sit amet consectetur."
     subtext: Click on our portrait to get more information!
     section: team
     people:
-      - name: "Michael Breakspear"
-        role: "Group Leader"
-        image: assets/images/leonie_borne.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-          - url: https://scholar.google.com.au/citations?user=hrx691cAAAAJ&hl=en
-            icon: fab fa-google
-  
       - name: "Léonie Borne"
         initials: "LB"
         role: "Postdoc"
@@ -91,31 +79,4 @@ team:
           - url: https://www.researchgate.net/profile/Leonie_Borne
             icon: fab fa-researchgate
         research_interest: Machine Learning, Neuroimaging, Anatomy, Dementia
-
-      - name: "Renate Thienel"
-        role: "Researcher"
-        image: assets/images/leonie_borne.jpg
-        newline: true
-      - name: "Megan Campbell"
-        role: "Postdoc"
-        image: assets/images/leonie_borne.jpg
         newline: false
-      - name: "Jayson Jeganathan"
-        role: "PhD student"
-        image: assets/images/leonie_borne.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-        newline: false
-      - name: "Nikitas Koussis"
-        role: "PhD student"
-        image: assets/images/leonie_borne.jpg
-        social:
-      - name: "Bryan Panton"
-        role: "Researcher"
-        image: assets/images/leonie_borne.jpg
-      - name: "Bob"
-        role: "Copain"
-        image: assets/images/leonie_borne.jpg
