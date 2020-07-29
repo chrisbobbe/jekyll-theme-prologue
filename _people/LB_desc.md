@@ -4,7 +4,6 @@ auto-header: none
 cover-photo: assets/images/bogey-hole.jpg
 cover-photo-alt: Leonie Borne
 order: 2
-order: 3
 ---
 
 <section>
