@@ -33,7 +33,7 @@ img.portrait {
 		 {{ person.research_interest | markdownify }}
 		 <ul class="icons">
 		{% for network in person.social %}
-		  <li><a href="{{- network.url -}}" class="{{ network.icon }}"></a></li>
+		  <li><a href="{{- network.url -}}" class="{{ network.icon }}"></a> fa-4x </li>
 		{% endfor %}
 		</ul>
 	  </div> 
