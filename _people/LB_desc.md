@@ -5,6 +5,16 @@ cover-photo: assets/images/bogey-hole.jpg
 cover-photo-alt: Leonie Borne
 order: 2
 ---
+<head>
+<style>
+img.portrait {
+  border-radius: 50%;
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+</style>
+</head>
 
 <section>
   <div class="row">
