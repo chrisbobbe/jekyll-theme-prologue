@@ -34,6 +34,7 @@ img.portrait {
 		</ul>
 	  </div> 
 	  <div class="col">
+	      <h1> {{person.name}} </h1>
               <h3> {{ person.role }} </h3>
 		 {{ person.research_interest | markdownify }}
 	  </div> 
