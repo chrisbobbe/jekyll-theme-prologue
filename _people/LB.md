@@ -21,7 +21,7 @@ img.portrait {
 <section>
   <div class="row">
   {% for person in site.team.people %}
-	{% if person.name == "Léonie Borne" %}
+	{% if person.initals == title %}
 	  <div class="col">
 		<img class="portrait" src="{{ person.image }}" alt="">
 		 <ul class="icons">
@@ -31,10 +31,9 @@ img.portrait {
 		</ul>
 	  </div> 
 	  <div class="col">
-	      <h1> {{person.name}} </h1>
-              <h3> {{ person.role }} </h3>
+	      <h3> {{person.name}} </h3>
+              <b> {{ person.role }} </b>
 		 {{ person.research_interest | markdownify }}
-		 {{ title }}
 	  </div> 
   </div>
 	{% endif %}
