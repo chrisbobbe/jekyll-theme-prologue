@@ -2,8 +2,6 @@
 title: Léonie Borne
 auto-header: none
 icon: fa-tree
-cover-photo: assets/images/bogey-hole.jpg
-cover-photo-alt: LB
 order: 2
 ---
 
