@@ -82,3 +82,20 @@ team:
             icon: fab fa-github
         research_interest: Machine Learning & Neuroimaging
         newline: false
+      - name: "Johan van der Meer"
+        initials: "JN"
+        role: "Postdoc"
+        image: assets/images/Johan_van_der_Meer.jpg
+        social:
+          - url: https://github.com/jnvandermeer
+            icon: fab fa-github
+          - url: https://scholar.google.com/citations?user=uj8Y9pUAAAAJ&hl=nl
+            icon: fab fa-google-scholar
+          - url: https://twitter.com/jnvandermeer
+            icon: fab fa-twitter
+          - url: https://www.linkedin.com/in/johan-van-der-meer-3a055410
+            icon: fab fa-linkedin-in
+          - url: https://www.researchgate.net/profile/Johan_Van_Der_Meer2
+            icon: fab fa-researchgate
+        research_interest: Real-time approaches to monitor or change brain signals
+        newline: false
