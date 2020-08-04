@@ -2,7 +2,7 @@
 title: Nikitas Koussis
 auto-header: none
 icon: fa-chess-knight
-order: 2
+order: 4
 ---
 <head>
 <style>
