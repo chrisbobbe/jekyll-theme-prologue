@@ -99,3 +99,18 @@ team:
             icon: fab fa-researchgate
         research_interest: Real-time approaches to monitor or change brain signals
         newline: false
+      - name: "Nikitas Koussis"
+	initials: "NK"
+	role: "PhD Student"
+	image: assets/images/nik.jpg
+	social:
+	  - url: https://twitter.com/KoussisNikitas
+	    icon: fab fa-twitter
+	  - url: https://github.com/nikitas-k
+	    icon: fab fa-github
+	  - url: https://www.researchgate.net/profile/Nikitas_Koussis2
+	    icon: fab fa-researchgate
+	  - url: https://scholar.google.com.au/citations?user=IYvoykoAAAAJ&hl=en
+	    icon: fab fa-google
+	research_interest: Active inference in cognitive deficits in psychosis
+	newline: false
