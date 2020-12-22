@@ -36,7 +36,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is the demo site for a Jekyll theme version of
   HTML5 UP's sleek, responsive site template Prologue.
 author: Vivienne Litzke
-avatar: bio-photo.jpeg
+avatar: assets/images/avatar.jpg
 
 
 # You'll want to customize url and baseurl for your own site:
@@ -46,7 +46,7 @@ url: "vlitzke.github.io" # the base hostname & protocol for your site
 # Social settings
 # Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
 email: vivienne.litzke@gmail.com
-twitter: VivienneLitzke
+twitter: https://twitter.com/VivienneLitzke
 researchgate: https://www.researchgate.net/profile/Vivienne_Litzke
 github_url: https://github.com/vlitzke
 
