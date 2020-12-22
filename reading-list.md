@@ -1,6 +1,10 @@
 ---
+<<<<<<< HEAD
+title: Books!
+=======
 title: Reading List
 subtitle: A list of books I am reading/have read! 
+>>>>>>> master
 layout: "page"
 icon: fa-book
 order: 3
