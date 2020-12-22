@@ -35,9 +35,9 @@ subtitle: Your awesome subtitle
 description: >- # this means to ignore newlines until "baseurl:"
   This is the demo site for a Jekyll theme version of
   HTML5 UP's sleek, responsive site template Prologue.
-author: Your Incredible Name
-email: your-email@example.com
-avatar: assets/images/avatar.jpg
+author: Vivienne Litzke
+avatar: bio-photo.jpeg
+
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: # the subpath of your site, e.g. /blog
@@ -45,9 +45,9 @@ url: "vlitzke.github.io" # the base hostname & protocol for your site
 
 # Social settings
 # Make sure to include the full url including protocol, e.g. https://github.com/chrisbobbe
-twitter_url:
-facebook_url:
-linkedin_url:
+email: vivienne.litzke@gmail.com
+twitter: VivienneLitzke
+researchgate: https://www.researchgate.net/profile/Vivienne_Litzke
 github_url: https://github.com/vlitzke
 
 # The following settings are NECESSARY for the Prologue theme to run:
