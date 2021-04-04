@@ -31,6 +31,25 @@ There are two ways to get started (choose one):
 
 Next, make sure that `url` and `base_url` are set for your own website in `_config.yml`. For local testing, make them both blank. Add a photo avatar to your project, then set `avatar: path/to/your/avatar.jpg` in _config.yml; for example, `avatar: assets/images/avatar.jpg` (48x48 pixels works best). Poke around the sample `_config.yml` file to see how you can add your social profiles.
 
+For locally testing out the page, run `bundle exec jekyll serve` in the root directory. It should give you back a url for a local host port.
+If you're triyng to make a static page with github pages with the url `<username>.github.io`, use these settings in your `_config.yml`,
+
+```
+baseurl: "",
+url: "https://<username>.github.io/"
+```
+
+You should remember that if you have made a repository with the name `<username>.github.io`, you cannot change the branch for github pages over to anything else except `master`, which means creating a `gh-pages` branch is not really useful in this case
+To check if your setup is correct and is published to your repo, perform the following steps,
+```
+git remote set-url origin git@github.com:<username>/<username>.github.io.git
+git add .
+git commit -m "basic commit" $ change the git message as you wish
+git push origin master
+```
+
+And head over to `<username>.github.io` in your browser. If it works, viola! 
+
 # Build your homepage
 
 1. **Your `_config.yml` file must include the following line or your homepage won't work**: `collections: [sections]`. This tells Jekyll to look in the _sections folder (which you will create) for your content and render it all on one page.
