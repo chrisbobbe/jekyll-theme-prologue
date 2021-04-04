@@ -38,6 +38,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 author: Your Incredible Name
 email: your-email@example.com
 avatar: assets/images/avatar.jpg
+circular_avatar:  "false"
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
@@ -55,6 +56,7 @@ stackoverflow_url:
 pinterest_url:
 slack_url:
 dribbble_url:
+resume_url: 
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
