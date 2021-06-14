@@ -33,4 +33,7 @@
   {%- if site.email -%}
   <li><a href="mailto:{{- site.email -}}" class="icon fa-envelope"><span class="label">Email</span></a></li>
   {%- endif -%}
+  {%- if site.whatsapp_number -%}
+  <li><a href="https://api.whatsapp.com/send?phone={{- site.whatsapp_number -}}" class="icon-b fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+  {%- endif -%}
 </ul>
