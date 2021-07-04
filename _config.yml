@@ -55,6 +55,8 @@ stackoverflow_url:
 pinterest_url:
 slack_url:
 dribbble_url:
+# The full url of your site with "/feed.xml", e.g. https://mydomain.me/feed.xml
+rss_url:
 
 # Google Analytics Tracking ID goes here:
 google_analytics:
