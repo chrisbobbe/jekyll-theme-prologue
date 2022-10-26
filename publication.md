@@ -1,6 +1,6 @@
 ---
-layout: blog
-title: Publications (all) 
+layout: publication
+title: Publications
 icon: fa-book
 order: 3
 ---
