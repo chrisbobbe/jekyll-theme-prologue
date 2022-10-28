@@ -2,6 +2,7 @@
 title: Conference Proceedings
 icon: fa-pencil-square-o
 order: 2
+hide: true
 ---
 
 

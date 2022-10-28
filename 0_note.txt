@@ -1,0 +1,32 @@
+
+update date in _config.yml
+
+bundle install
+bundle exec jekyll s
+http://127.0.0.1:4000/
+
+
+project page
+competition
+github
+
+_sections/facility
+- lab space
+	- treadmill, mocap, etc.
+- big lab
+
+People
+- once have group photo
+	cover-photo: assets/images/overview.png
+	cover-photo-alt: overview image
+
+Publication (once have publication)
+- change style
+	- left align, etc.
+font-family: "Font Awesome 5 Free"; -> 6
+css style
+	pages:
+		/* Basic */?
+		/* Main */?
+
+
