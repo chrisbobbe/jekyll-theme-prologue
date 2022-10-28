@@ -1,7 +1,7 @@
 ---
-title: Alumni
-icon: fa-graduation-cap
-order: 3
+title: Open Positions
+icon: fa-search
+order: 2
 ---
 
 
