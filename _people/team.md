@@ -40,7 +40,7 @@ order: 1
 <div class="group">
 <div class="people">
 	<div class="photo">
-		<img src="/assets/people/postdoc_2023_Chun_Kwang_Tan.jfif" />
+		<img src="/assets/people/postdoc_2023_Chun_Kwang_Tan.jpg" />
 	</div>
 	<div class="spec">
 		<p>
