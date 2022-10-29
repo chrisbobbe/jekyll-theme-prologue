@@ -5,6 +5,9 @@ icon: fa-comment
 order: 2
 ---
 
+![overview](/assets/images/overview.png){: class="fit"}
+
+
 How do humans control movement?
 
 To investigate this question,\
@@ -17,8 +20,6 @@ to **study human physiology**\
 to **test rehabilitation treatment**\
 and to **control robotic systems**.
 
-
-![overview](/assets/images/overview.png){: class="fit"}
 
 <style>
     .fit {

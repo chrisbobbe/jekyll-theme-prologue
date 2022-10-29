@@ -15,34 +15,54 @@ order: 1
 		<img src="/assets/people/seungmoon_song_2022.jpg" />
 	</div>
 	<div class="spec">
+		<p>
 		<strong>Seungmoon Song</strong><br>
 		Assistant Professor<br>
-		Mechanical and Industrial Engineering<br>
-		s.song@northeastern.edu
-		homepage; google scholar; twitter; ...
+		Mechanical Engineering<br>
+		s.song@northeastern.edu<br>
+		<a href="http://seungmoon.com/" target="_blank"><i class="fa fa-home"></i></a>&nbsp;
+		<a href="
+		https://scholar.google.com/citations?user=Ca2lQs8AAAAJ&hl=en" target="_blank">
+		<i class="ai ai-google-scholar-square"></i></a>&nbsp;
+		<a href="
+		https://twitter.com/SeungmoonS" target="_blank"><i class="fa-brands fa-twitter"></i></a>&nbsp;
+		<a href="
+		https://github.com/smsong" target="_blank"><i class="fa-brands fa-github"></i></a>
+		</p>
 	</div>
 </div>
 </div>
 <!--<div style="clear: both;" />-->
+<br>
 
 ### **Postdoctoral Researcher**
 
 <div class="group">
 <div class="people">
 	<div class="photo">
-		<img src="/assets/people/dummy.jpg" />
+		<img src="/assets/people/postdoc_2023_Chun_Kwang_Tan.jfif" />
 	</div>
 	<div class="spec">
+		<p>
 		<strong>Chun Kwang Tan</strong><br>
+		Mechanical Engineering<br>
+		NeuMover in Feb 2023<br>
 		riodren.tan@gmail.com<br>
-		will start: Feb 2022<br>
-		homepage; google scholar; twitter; ...
+		<a href="
+		https://scholar.google.com/citations?user=Qi8y8W4AAAAJ&hl=en" target="_blank">
+		<i class="ai ai-google-scholar-square"></i></a>&nbsp;
+		<a href="
+		https://jp.linkedin.com/in/chun-kwang-tan-a806412b" target="_blank">
+		<i class="fa-brands fa-linkedin"></i></a>
+		</p>
 	</div>
 </div>
 </div>
 
+<br>
 
-### **PhD Students**
+
+### **Doctoral Students**
 
 <div class="group">
 <div class="people">
@@ -50,12 +70,23 @@ order: 1
 		<img src="/assets/people/phd_2023_morteza_khosrotabar.jpg" />
 	</div>
 	<div class="spec">
+		<p>
 		<strong>Morteza Khosrotabar</strong><br>
-		khosrotabar.m@northeastern.edu
-		homepage; google scholar; twitter; ...
+		Mechanical Engineering<br>
+		NeuMover in Feb 2023<br>
+		khosrotabar.m@northeastern.edu<br>
+		<a href="
+		https://scholar.google.com/citations?user=LQ75ksUAAAAJ&hl=en" target="_blank">
+		<i class="ai ai-google-scholar-square"></i></a>&nbsp;
+		<a href="
+		https://ir.linkedin.com/in/mortybiomech" target="_blank">
+		<i class="fa-brands fa-linkedin"></i></a>
+		</p>
 	</div>
 </div>
 </div>
+
+<br>
 
 
 ### **Master's Students**
@@ -66,9 +97,12 @@ order: 1
 		<img src="/assets/people/ms_2022_guangping_liu.jpg" />
 	</div>
 	<div class="spec">
+		<p>
 		<strong>Guangping Liu</strong><br>
-		liu.guangp@northeastern.edu
-		homepage; google scholar; twitter; ...
+		Mechanical Engineering<br>
+		NeuMover since May 2022<br>
+		liu.guangp@northeastern.edu<br>
+		</p>
 	</div>
 </div>
 
@@ -77,9 +111,12 @@ order: 1
 		<img src="/assets/people/ms_2022_jayston_menezes.jpg" />
 	</div>
 	<div class="spec">
+		<p>
 		<strong>Jayston Menezes</strong><br>
-		menezes.j@northeastern.edu
-		homepage; google scholar; twitter; ...
+		Mechanical Engineering<br>
+		NeuMover since May 2022<br>
+		menezes.j@northeastern.edu<br>
+		</p>
 	</div>
 </div>
 </div>

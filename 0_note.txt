@@ -5,10 +5,13 @@ bundle install
 bundle exec jekyll s
 http://127.0.0.1:4000/
 
+font awesome 6
 
-project page
-competition
+Activities
+bridge biomechanics, motor control, robotics and machine learning (figure)
 github
+competition
+
 
 _sections/facility
 - lab space
@@ -23,8 +26,7 @@ People
 Publication (once have publication)
 - change style
 	- left align, etc.
-font-family: "Font Awesome 5 Free"; -> 6
-css style
+- css style
 	pages:
 		/* Basic */?
 		/* Main */?
