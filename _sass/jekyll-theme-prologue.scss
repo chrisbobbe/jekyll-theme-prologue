@@ -99,6 +99,7 @@
 	h2 {
 		font-size: 2em;
 		letter-spacing: -1px;
+		font-weight: 700;
 	}
 
 	h3 {
@@ -118,7 +119,7 @@
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 700;
 		color: #666;
 	}
 
@@ -231,6 +232,46 @@
 		ul, ol {
 			padding-left: 0.25em;
 			margin-left: 1.25em;
+		}
+	}
+
+/* People */
+	.group {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.people {
+		width: 500px;
+
+		.photo {
+			float: left;
+			width: 180px;
+			height: 180px;
+			padding: 10px 10px 10px 10px;
+		}
+
+		img {
+			float: center;
+			width: 160px;
+			height: 160px;
+			border-radius:50%;
+		}
+
+		.spec {
+			float: left;
+			width: 320px;
+			height: 180px;
+			text-align: left;
+			line-height: 1.25em;
+			font-size: 0.8em;
+
+			p {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			}
 		}
 	}
 
@@ -510,6 +551,9 @@
 			> :last-child {
 				margin-bottom: 0;
 			}
+			text-align: center;
+			font-size: 0.6em;
+			opacity: 0.5;
 		}
 
 		.icons {
@@ -541,17 +585,17 @@
 			position: relative;
 			color: #fff;
 			font-weight: 600;
-			font-size: 1em;
+			font-size: 2em;
 			line-height: 1em;
 		}
 
 		p {
 			position: relative;
 			display: block;
-			font-size: 0.6em;
+			font-size: 0.7em;
 			color: rgba(255, 255, 255, 0.5);
-			line-height: 1.25em;
-			margin: 0.5em 0 0 0;
+			line-height: 1.00em;
+			margin: 0 0 0 0;
 		}
 
 		.image {

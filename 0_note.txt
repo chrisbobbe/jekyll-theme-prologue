@@ -1,0 +1,34 @@
+
+update date in _config.yml
+
+bundle install
+bundle exec jekyll s
+http://127.0.0.1:4000/
+
+font awesome 6
+
+Activities
+bridge biomechanics, motor control, robotics and machine learning (figure)
+github
+competition
+
+
+_sections/facility
+- lab space
+	- treadmill, mocap, etc.
+- big lab
+
+People
+- once have group photo
+	cover-photo: assets/images/overview.png
+	cover-photo-alt: overview image
+
+Publication (once have publication)
+- change style
+	- left align, etc.
+- css style
+	pages:
+		/* Basic */?
+		/* Main */?
+
+
