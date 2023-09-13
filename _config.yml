@@ -5,7 +5,7 @@
 #
 # theme: jekyll-theme-prologue
 # collections: [sections]
-remote_theme: chrisbobbe/jekyll-theme-prologue
+
 #
 # They activate the theme and tell Jekyll to find your homepage content
 # in /_sections. Note where "sections" starts with an underscore
@@ -41,7 +41,7 @@ email: your-email@example.com
 avatar: assets/images/avatar.jpg
 
 # You'll want to customize url and baseurl for your own site:
-baseurl: "/jekyll-theme-prologue" # the subpath of your site, e.g. /blog
+baseurl: "rihamnazeer.github.io" # the subpath of your site, e.g. /blog
 url: "rihamnazeer.github.io" # the base hostname & protocol for your site
 
 # Social settings
@@ -61,5 +61,5 @@ dribbble_url:
 google_analytics:
 
 # The following settings are NECESSARY for the Prologue theme to run:
-theme: jekyll-theme-prologue
+remote_theme: chrisbobbe/jekyll-theme-prologue
 collections: [sections]
