@@ -237,56 +237,70 @@
 /* Image */
 
 	.image {
-		display: inline-block;
-		border: 0;
+    display: inline-block;
+    border: 0;
 
-		img {
-			display: block;
-			width: 100%;
-		}
+    img {
+        display: block;
+        width: 100%;
+        transition: transform 0.3s, opacity 0.3s;
+    }
 
-		&.avatar48 {
-			width: 48px;
-			height: 48px;
-			background: #f00;
+    &.avatar48 {
+        width: 60px;
+        height: 60px;
+        background: #f00;
 
-			img {
-				width: 48px;
-				height: 48px;
-			}
-		}
+        img {
+            width: 60px;
+            height: 60px;
+        }
+    }
 
-		&.fit {
-			display: block;
-			width: 100%;
-		}
+    &.fit {
+        display: block;
+        width: 100%;
+    }
 
-		&.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
-		}
+    &.featured {
+        display: block;
+        width: 100%;
+        margin: 0 0 2em 0;
+    }
 
-		&.left {
-			float: left;
-			margin: 0 2em 2em 0;
-		}
+    &.left {
+        float: left;
+        margin: 0 2em 2em 0;
+    }
 
-		&.right {
-			float: right;
-			margin: 0 0 2em 2em;
-		}
+    &.right {
+        float: right;
+        margin: 0 0 2em 2em;
+    }
 
-		&.centered {
-			display: block;
-			margin: 0 0 2em 0;
+    &.centered {
+        display: block;
+        margin: 0 0 2em 0;
 
-			img {
-				margin: 0 auto;
-				width: auto;
-			}
-		}
-	}
+        img {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+
+    &:hover {
+        img {
+            opacity: 0.8;
+        }
+    }
+
+    &:active {
+        img {
+            transform: scale(1.2);
+        }
+    }
+}
+
 
 /* List */
 
