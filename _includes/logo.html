@@ -1,7 +1,7 @@
 <!-- Logo -->
 <div id="logo">
   <a href="{{- '/' | absolute_url -}}" id="home-link">
-    <span class="image avatar48"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}"  onclick="showFullImage(this)" /></span>
+    <span class="image avatar48"><img src="{{- site.avatar | relative_url -}}" alt="{{- site.author | default: 'unknown author' | prepend: 'Avatar of ' -}}"  /></span>
     <br>
     <br>
     <br>
@@ -9,27 +9,3 @@
     <p>{{- site.subtitle -}}</p>
   </a>
 </div>
-
-<script>
-  function showFullImage(element) {
-    // Create a modal for the full image
-    const modal = document.createElement('div');
-    modal.classList.add('modal');
-    
-    // Create an image element inside the modal
-    const fullImage = document.createElement('img');
-    fullImage.src = element.src;
-    fullImage.alt = element.alt;
-    
-    // Append the image to the modal
-    modal.appendChild(fullImage);
-    
-    // Append the modal to the body
-    document.body.appendChild(modal);
-    
-    // Close the modal when clicked outside the image
-    modal.addEventListener('click', () => {
-      document.body.removeChild(modal);
-    });
-  }
-</script>
