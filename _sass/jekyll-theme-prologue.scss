@@ -237,20 +237,12 @@
 /* Image */
 
 	.image {
-  display: inline-block;
+   display: inline-block;
    border: 0;
-  position: relative; /* Added for absolute positioning of overlay */
 
   img {
     display: block;
     width: 100%;
-    border-radius: 50%; /* Make the image round */
-    transition: transform 0.3s ease, border-radius 0.3s ease; /* Added for smooth transition */
-  }
-
-  &:hover img {
-    transform: scale(1.1); /* Zoom in on hover */
-    border-radius: 50%; /* Maintain round shape on hover */
   }
 
   &.avatar48 {
@@ -261,7 +253,6 @@
     img {
       width: 48px;
       height: 48px;
-      border-radius: 50%; /* Make the avatar round */
     }
   }
 
